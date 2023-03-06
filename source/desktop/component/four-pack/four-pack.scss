@@ -1,0 +1,64 @@
+.four-pack {
+    display: flex;
+    justify-content: space-between;
+
+    .story {
+        position: relative;
+        width: 225px;
+        height: 94px;
+
+        @media (min-width: 1366px) {
+            width: 300px;
+            height: 125px;
+        }
+
+        &__thumb {
+            width: 225px;
+            height: 94px;
+
+            @media (min-width: 1366px) {
+                width: 300px;
+                height: 125px;
+            }
+
+            position: relative;
+
+            &::before {
+                position: absolute;
+                content: "";
+                width: 300px;
+                height: 125px;
+                top: 0;
+                right: 0;
+                background: rgba(0, 0, 0, 0.6);
+                z-index: 1;
+            }
+        }
+
+        &__heading a {
+            padding: 9px 22px;
+            font-family: "Oswald";
+            font-weight: $font-weight-normal;
+            font-size: 19px;
+            line-height: 28px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: #ffffff;
+            position: absolute;
+            top: 0;
+            z-index: 1;
+            height: 100%;
+            width: 100%;
+            justify-content: center;
+
+            @media (min-width : 1366px) {
+                padding: 13px 22px;
+            }
+
+            &:hover {
+                color: #ccc !important;
+            }
+        }
+    }
+}

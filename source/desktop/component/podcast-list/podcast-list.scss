@@ -1,0 +1,103 @@
+.podcast-list {
+    margin-top: 26px !important;
+    display: flex;
+    flex-wrap: wrap;
+
+    .story {
+        width: 315px;
+        margin-top: 33px;
+        margin-right: 15px;
+
+        @media (min-width: 1366px) {
+            margin-right: 28px;
+            width: 410px;
+        }
+
+        &:nth-child(-n + 3) {
+            margin-top: 0;
+        }
+
+        &:nth-child(3n + 3) {
+            margin-right: 0;
+        }
+
+        &__thumb {
+            width: 100%;
+            height: 210px;
+            position: relative;
+
+            @media (min-width: 1366px) {
+                height: 250px;
+            }
+
+            .ic-audio {
+                position: absolute;
+                display: flex !important;
+                align-items: center;
+                bottom: 16px;
+                left: 16px;
+                background-color: rgba(255, 255, 255, 0.8);
+                height: 40px;
+                font-family: "Quicksand";
+                font-weight: normal;
+                font-size: 18px !important;
+                line-height: 32px;
+                color: #000000;
+                padding: 0 10px;
+                min-width: 46px;
+
+                &::before {
+                    font-size: 30px;
+                }
+
+                >* {
+                    margin-left: 5px;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    font-style: normal;
+
+
+                }
+            }
+        }
+
+        &__meta a {
+            font-family: "Quicksand";
+            font-weight: $font-weight-semibold;
+            font-size: 16px;
+            line-height: 20px;
+            text-transform: uppercase;
+            color: #6c757d;
+            padding-top: 16px;
+            display: block;
+
+            &:hover {
+                color: $hover;
+            }
+        }
+
+        &__heading a {
+            padding-top: 8px;
+            font-weight: $font-weight-bold;
+            font-size: 20px;
+            line-height: 160%;
+            color: $primary;
+        }
+
+        &__summary {
+            font-family: "Quicksand";
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 160%;
+            padding-top: 8px;
+            color: #343a40;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            line-clamp: 4;
+            -webkit-box-orient: vertical;
+        }
+    }
+}

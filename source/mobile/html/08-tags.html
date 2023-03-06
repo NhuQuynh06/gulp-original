@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>NGHE AN</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../styles/css/mobile.css">
+</head>
+
+<body>
+    <div class="wrapper-page">
+        <!-- site header -->
+        @@include('../component/header/header.html')
+        <!-- site body -->
+        <div class="site-body">
+            <div class="container">
+                <div class="wrap-tags">
+                    <p class="tags">#TIÊM VACCINE PHÒNG COVID-19</p>
+                    <p class="result">
+                        có <span>3841</span> kết quả
+                    </p>
+                </div>
+                @@include('../component/timeline/timeline.html')
+                <button class="more-news">
+                    tải thêm tin
+                </button>
+            </div>
+        </div>
+        @@include('../component/footer/footer.html')
+
+        <!-- JS Global Compulsory -->
+        <script src="../js/jquery-3.1.1.js"></script>
+        <script src="../js/slick.min.js"></script>
+        <script src="../js/ui.js"></script>
+</body>

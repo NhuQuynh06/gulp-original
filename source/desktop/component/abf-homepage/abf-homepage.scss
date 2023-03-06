@@ -1,0 +1,137 @@
+.abf-homepage {
+    margin-top: 24px !important;
+    display: flex;
+
+    &__col-left {
+        width: 225px;
+        padding-right: 12px;
+
+        @media (min-width: 1366px) {
+            padding-right: 16px;
+            width: 379px;
+        }
+
+        .story {
+            overflow: auto;
+            border-top: 1px solid $border-color;
+            padding-top: 16px;
+            margin-top: 16px;
+
+            &:first-child {
+                margin-top: 0;
+                padding-top: 0;
+                border-top: 0;
+            }
+
+            &__thumb {
+                width: 90px;
+                height: 60px;
+                margin-right: 16px;
+                float: left;
+                display: none;
+
+                @media (min-width: 1287px) {
+                    display: block;
+                }
+
+                @media (min-width: 1366px) {
+                    width: 130px;
+                    height: 90px;
+                }
+            }
+
+            &__heading a {
+
+
+                font-weight: $font-weight-bold;
+                font-size: 14px;
+                line-height: 160%;
+                color: $primary;
+            }
+        }
+    }
+
+    &__col-center {
+        width: 424px;
+        padding: 0 12px;
+        border-right: 1px solid $border-color;
+        border-left: 1px solid $border-color;
+
+        @media (min-width:1366px) {
+            width: 592px;
+            padding: 0 15px;
+        }
+
+        .story {
+            overflow: hidden;
+
+            &__thumb {
+                width: 400px;
+                height: 226px;
+
+                @media (min-width: 1366px) {
+                    width: 100%;
+                    min-height: 300px;
+                }
+            }
+
+            &__heading a {
+
+
+                font-weight: $font-weight-bold;
+                font-size: 20px;
+                line-height: 160%;
+                color: $primary;
+                padding-top: 12px;
+            }
+
+            &__summary {
+                font-family: "Quicksand";
+
+                font-weight: $font-weight-normal;
+                line-height: 20px;
+                padding-top: 12px;
+            }
+
+            &__sub-heading a {
+                padding-top: 12px;
+
+                font-weight: $font-weight-bold;
+                color: $secondary;
+                display: block;
+                padding-left: 12px;
+                position: relative;
+                font-size: 14px;
+
+                &::before {
+                    position: absolute;
+                    content: "";
+                    width: 4px;
+                    height: 4px;
+                    background: $third;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(50%);
+                }
+            }
+        }
+    }
+
+    &__col-right {
+        width: 312px;
+        padding-left: 12px;
+
+        @media (min-width: 1366px) {
+            width: 316px;
+            padding-left: 16px;
+        }
+
+        >* {
+            margin-top: 24px !important;
+
+            &:first-child {
+                margin-top: 0 !important;
+            }
+        }
+    }
+}

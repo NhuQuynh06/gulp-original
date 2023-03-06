@@ -1,0 +1,82 @@
+.timeline,
+.zone-timeline {
+    .story {
+        overflow: auto;
+        margin-top: 24px;
+        padding-top: 24px;
+        border-top: 1px solid $border-color;
+
+        &:first-child {
+            margin-top: 0;
+            padding-top: 0;
+            border-top: none;
+        }
+
+        &__thumb {
+            float: left;
+            margin-right: 16px;
+            width: 125px;
+            height: 84px;
+
+            @media (min-width:1366px) {
+                width: 240px;
+                margin-right: 20px;
+                height: 160px;
+            }
+        }
+
+        &__heading a {
+            font-weight: $font-weight-bold;
+            font-size: 17px;
+            line-height: 160%;
+            color: $primary;
+        }
+
+        &__meta {
+            margin-top: 8px;
+            display: flex;
+        }
+
+        .time {
+            display: block;
+            font-family: "Quicksand";
+
+            font-weight: $font-weight-normal;
+            font-size: 13px;
+            line-height: 16px;
+            color: #adb5bd;
+        }
+
+        .title-cate {
+            padding-right: 16px;
+            font-family: "Quicksand";
+            font-weight: $font-weight-bold;
+            font-size: 13px;
+            line-height: 16px;
+            text-transform: uppercase;
+            color: #DC3545;
+            position: relative;
+            white-space: nowrap;
+
+            &::before {
+                position: absolute;
+                content: "-";
+                right: 8px;
+                font-weight: $font-weight-normal;
+                width: 2px;
+                height: 1px;
+                color: #ADB5BD;
+            }
+        }
+
+        &__summary {
+            font-family: "Quicksand";
+
+            font-weight: $font-weight-normal;
+            font-size: 14px;
+            line-height: 20px;
+            color: #343a40;
+            margin-top: 8px;
+        }
+    }
+}

@@ -1,0 +1,68 @@
+.box-think {
+    width: 300px;
+    height: 167px;
+    padding: 16px 16px 20px;
+    background: url(../img/think.png) center center/300px no-repeat;
+    margin-top: 32px;
+
+    .heading {
+        font-family: "Oswald";
+
+        font-weight: $font-weight-medium;
+        font-size: 18px;
+        line-height: 27px;
+        text-transform: uppercase;
+        color: #ffffff;
+
+        &:hover {
+            color: #ccc !important;
+        }
+    }
+
+    .box-content {
+        margin-top: 18px;
+    }
+
+    .story {
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 4px;
+        padding: 8px;
+        overflow: auto;
+
+        &__thumb {
+            width: 70px;
+            height: 70px;
+            border-radius: 80px;
+            margin-right: 14px;
+            float: left;
+            outline: 4px solid rgba(255, 255, 255, 0.7);
+            outline-offset: -3px;
+
+            &:hover {
+                img {
+                    -webkit-transform: none;
+                    /* Safari and Chrome */
+                    -moz-transform: none;
+                    /* Firefox */
+                    -ms-transform: none;
+                    /* IE 9 */
+                    -o-transform: none;
+                    /* Opera */
+                    transform: none;
+                }
+            }
+        }
+
+        &__heading a {
+
+
+            font-weight: $font-weight-normal;
+            font-size: 15px;
+            line-height: 160%;
+            color: $primary;
+            height: 70px;
+            display: flex;
+            align-items: center;
+        }
+    }
+}

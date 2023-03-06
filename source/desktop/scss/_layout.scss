@@ -1,0 +1,132 @@
+.container {
+    width: 975px !important;
+    max-width: 975px !important;
+    margin-right: auto;
+    margin-left: auto;
+
+
+    @media (min-width:1366px) {
+        width: 1319px !important;
+        max-width: 1319px !important;
+        padding: 0 16px;
+    }
+}
+
+
+.zone-1 {
+    display: flex;
+    justify-content: space-between;
+
+    .col-left {
+        width: 225px;
+
+        @media (min-width:1366px) {
+            width: 230px;
+        }
+    }
+
+    .col-center {
+        width: 400px;
+
+        @media (min-width:1366px) {
+            width: 690px;
+        }
+    }
+
+    .col-right {
+        width: 300px;
+
+        >* {
+            margin-top: 32px !important;
+
+            &:first-child {
+                margin-top: 0 !important;
+            }
+        }
+    }
+}
+
+.zone-2 {
+    display: flex;
+    flex-wrap: wrap;
+
+    .banner {
+        width: 100%;
+    }
+
+    >* {
+        margin-right: 25px;
+        margin-top: 48px;
+
+        @media (min-width:1366px) {
+            margin-right: 21px;
+        }
+
+        &:nth-child(5),
+        &:nth-child(11),
+        &:nth-child(17),
+        &:nth-child(23),
+        &:nth-child(29) {
+            margin-right: 0;
+        }
+
+        &:nth-child(-n +5) {
+            margin-top: 0;
+        }
+    }
+}
+
+.wrap-col {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-col {
+    width: 696px;
+
+    @media (min-width: 1366px) {
+        width: 792px;
+    }
+}
+
+.sub-col {
+    width: 300px;
+
+    >* {
+        margin-top: 32px !important;
+
+        &:first-child {
+            margin-top: 0 !important;
+        }
+    }
+}
+
+
+.wrap-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+
+    .main-col {
+        width: 650px !important;
+
+        @media (min-width:1366px) {
+            width: 954px !important;
+        }
+    }
+}
+
+.article .tts-player {
+    margin-top: 0;
+}
+
+.multimedia.container {
+    max-width: 1221px !important;
+}
+
+.podcast-wrap {
+    .box-comment {
+        width: 792px;
+        margin: 0 auto;
+    }
+}

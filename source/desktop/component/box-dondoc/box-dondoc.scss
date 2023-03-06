@@ -1,0 +1,57 @@
+.box-dondoc {
+    margin-top: 32px;
+    position: relative;
+
+    .story {
+        background: url(../img/bg-dondoc.png) center center no-repeat;
+        width: 300px;
+        height: 146px;
+
+        &__thumb {
+            width: 116px;
+            height: 147px;
+            position: absolute;
+            bottom: -16px;
+            right: 16px;
+        }
+
+        &__tag {
+            position: absolute;
+            font-family: "Oswald";
+            font-weight: $font-weight-medium;
+            font-size: 18px;
+            line-height: 27px;
+            text-transform: uppercase;
+            color: #ffffff;
+            background: url(../img/tag-dondoc.png) left -5px center/130px 45px no-repeat;
+            left: -12px;
+            top: 16px;
+            width: fit-content;
+            height: 45px;
+            padding: 4px 12px;
+
+            >* {
+                font-size: 18px;
+                line-height: 27px;
+                color: #ffffff;
+            }
+        }
+
+        &__heading a {
+
+
+            font-weight: $font-weight-bold;
+            font-size: 16px;
+            line-height: 150%;
+            position: absolute;
+            color: $white;
+            bottom: 25px;
+            left: 21px;
+            max-width: 120px;
+
+            &:hover {
+                color: #ccc !important;
+            }
+        }
+    }
+}

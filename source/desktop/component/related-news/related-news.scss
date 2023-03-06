@@ -1,0 +1,50 @@
+.related-news {
+    background: #ffffff;
+    border: 1px solid #dddddd;
+    padding: 24px 33px 33px;
+
+    .heading {
+        font-family: "Quicksand";
+        font-weight: $font-weight-bold;
+        font-size: 20px;
+        line-height: 25px;
+        text-transform: uppercase;
+        color: $primary;
+        pointer-events: none;
+    }
+
+    .box-content {
+        margin-top: 16px;
+    }
+
+    .story {
+        margin-top: 12px;
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        &__heading a {
+
+
+            font-weight: $font-weight-bold;
+            font-size: 16px;
+            line-height: 20px;
+            color: #343A40;
+            padding-left: 20px;
+            position: relative;
+
+            &::before {
+                position: absolute;
+                content: "";
+                left: 0;
+                width: 6px;
+                height: 6px;
+                background: #E9ECEF;
+                border-radius: 50%;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+}

@@ -1,0 +1,146 @@
+.multi-pack {
+    background: #fff3cd;
+    margin-top: 56px;
+    padding: 40px 0;
+
+    .heading {
+        font-family: "Oswald";
+        font-weight: $font-weight-medium;
+        font-size: 28px;
+        line-height: 41px;
+        text-transform: uppercase;
+        color: #000000;
+    }
+
+    .box-content {
+        margin-top: 13px;
+        display: flex;
+        flex-wrap: wrap;
+
+
+    }
+
+    .story {
+        width: 225px;
+        margin-top: 33px;
+        margin-right: 25px;
+
+        @media (min-width: 1366px) {
+            width: 300px;
+            margin-right: 29px;
+        }
+
+        &:nth-child(-n+4) {
+            margin-top: 0;
+        }
+
+        &:nth-child(4n) {
+            margin-right: 0;
+        }
+
+        &__thumb {
+            width: 225px;
+            height: 150px;
+            position: relative;
+
+            @media (min-width: 1366px) {
+                width: 100%;
+                height: 170px;
+            }
+
+
+            .ic-watching {
+
+                width: 145px;
+                height: 50px;
+                border-radius: 26px;
+                position: absolute;
+                left: 12px;
+                bottom: 12px;
+                display: flex !important;
+                align-items: center;
+                font-weight: $font-weight-medium;
+
+                color: #ffffff;
+                background: rgba(226, 31, 38, 0.6);
+
+                &::before {
+                    content: "\e902";
+                    font-size: 20px;
+                    margin-right: 10px;
+                }
+
+                >* {
+                    font-size: 16px;
+                    font-family: "Quicksand";
+                }
+            }
+
+            .ic-video {
+                position: absolute;
+                left: 12px;
+                bottom: 12px;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                background: rgba(255, 255, 255, 0.6);
+
+                &::before {
+                    content: "\e902";
+                    font-size: 20px;
+                }
+            }
+        }
+
+        &__heading a {
+            padding-top: 8px;
+
+
+            font-weight: $font-weight-bold;
+            font-size: 16px;
+            line-height: 160%;
+            color: #343a40;
+        }
+    }
+}
+
+.multimedia {
+    .multi-pack {
+        background: none;
+
+        .heading {
+            font-family: "Oswald";
+            font-weight: $font-weight-normal;
+            font-size: 24px;
+            line-height: 160%;
+            text-transform: uppercase;
+            color: #000000;
+            pointer-events: none;
+        }
+
+        .story {
+            width: 230px;
+            overflow: hidden;
+
+            @media (min-width: 1366px) {
+                width: 280px;
+                margin-right: 23px;
+            }
+
+            &:nth-child(4n) {
+                margin-right: 0;
+            }
+
+            &__thumb {
+                width: 100%;
+                height: 153px;
+                position: relative;
+
+                @media (min-width: 1750px) {
+                    height: 160px;
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>NGHEAN</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../styles/css/desktop.css">
+</head>
+
+<body>
+    <!-- site header -->
+    @@include('../component/header/header.html')
+
+    <!-- site body -->
+    <div class="site-body ">
+        <div class="container">
+            <div class="banner">
+                <div class="banner_show">
+                    <img src="https://source.unsplash.com/random/700x90?sig=2" alt="">
+                </div>
+            </div>
+            <div class="wrap-content">
+                <div class="main-col">
+                    @@include("../component/box-social/box-social.html")
+                    @@include("../component/breadcrumb/breadcrumb.html")
+                    <div class="article">
+                        @@include('../component/article-header/article-header.html')
+                        @@include('../component/article-body/article-body.html')
+                    </div>
+                </div>
+                <div class="sub-col">
+                    @@include('../component/box-trending/box-trending.html')
+                    @@include('../component/box-media/box-media.html')
+                    <div class="banner">
+                        <div class="banner_show">
+                            <img src="https://source.unsplash.com/random/300x100?sig=1" alt="">
+                        </div>
+                    </div>
+                    @@include('../component/box-link/box-link.html')
+                    <div class="banner">
+                        <div class="banner_show">
+                            <img src="https://source.unsplash.com/random/300x100?sig=2" alt="">
+                        </div>
+                    </div>
+                    @@include('../component/box-tag/box-tag.html')
+                    @@include('../component/box-default/box-default.html')
+
+                </div>
+            </div>
+        </div>
+        @@include('../component/multi-pack/multi-pack.html')
+        <div class="wrap-content container">
+            <div class="main-col">
+                <div class="zone-timeline">
+                    <h3 class="box-heading">
+                        <a href="" class="heading"> <i class="ic-hot-news"></i> tin mới</a>
+                    </h3>
+                    @@include('../component/timeline/timeline.html')
+                    <button class="more-news">
+                        tải thêm tin
+                    </button>
+                </div>
+            </div>
+            <div class="sub-col">
+                <div class="banner">
+                    <div class="banner_show">
+                        <img src="https://source.unsplash.com/random/300x600?sig=1" alt="">
+                    </div>
+                </div>
+                <div class="banner">
+                    <div class="banner_show">
+                        <img src="https://source.unsplash.com/random/200x600?sig=3" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- site header -->
+    @@include('../component/footer/footer.html')
+    @@include('../component/modal/modal.html')
+    <!-- JS Global Compulsory-->
+    <script src="../js/jquery-3.1.1.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <script src="../js/ui.js"></script>
+</body>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>NGHEAN</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../styles/css/desktop.css">
+</head>
+
+<body>
+    <!-- site header -->
+    @@include('../component/header/header.html')
+
+    <!-- site body -->
+    <div class="site-body ">
+        <div class="container">
+            <div class="wrap-content">
+                <div class="main-col">
+                    <div class="heading-page">
+                        <p class="news">Tin địa phương</p>
+                        <p class="local">cục thuế nghệ an</p>
+                    </div>
+                    <div class="abf-cate">
+                        <div class="top">
+                            @@for ( var i=0; i < 2; i++) {
+                                <article class="story">
+                                    <figure class="story__thumb">
+                                        <a href="#" title=""> <img src="https://source.unsplash.com/random/460x300?sig=1"
+                                                alt="460x300 (3x2)"></a>
+                                    </figure>
+                                    <h5 class="story__heading">
+                                        <a href="#">
+                                            Thủ tướng Chính phủ dự chỉ đạo Hội nghị trực tuyến tổng kết ngành Tài chính
+                                        </a>
+                                    </h5>
+                                    <div class="story__summary">
+                                        <p>
+                                            (Baonghean.vn) - Phát biểu chỉ đạo tại Hội nghị, Thủ tướng Chính phủ Phạm Minh
+                                            Chính đánh giá cao vai trò, kết quả ngành Tài chính đạt được trong năm qua; đồng
+                                            thời chỉ đạo ngành Tài chính tiếp tục làm tốt vai trò tham mưu chiến lược.
+                                        </p>
+                                    </div>
+                                </article>
+                            }
+                        </div>
+                    </div>
+                    <div class="location-detail">
+                        @@for ( var i=0; i < 30; i++) { <article class="story">
+                            <figure class="story__thumb">
+                                <a href="#" title=""> <img src="https://source.unsplash.com/random/300x200?sig=1"
+                                        alt="300x200 (3x2)"></a>
+                            </figure>
+                            <h5 class="story__heading">
+                                <a href="#">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur, nesciunt.
+                                    <i class="ic-chart"></i>
+                                </a>
+                            </h5>
+                            </article>
+                            }
+                    </div>
+                    <button class="more-news">
+                        tải thêm tin
+                    </button>
+                </div>
+                <div class="sub-col">
+                    @@include('../component/box-trending/box-trending.html')
+                    @@include('../component/box-media/box-media.html')
+                    <div class="banner">
+                        <div class="banner_show">
+                            <img src="https://source.unsplash.com/random/300x100?sig=1" alt="">
+                        </div>
+                    </div>
+                    @@include('../component/box-link/box-link.html')
+                    <div class="banner">
+                        <div class="banner_show">
+                            <img src="https://source.unsplash.com/random/300x100?sig=2" alt="">
+                        </div>
+                    </div>
+                    @@include('../component/box-tag/box-tag.html')
+                    @@include('../component/box-default/box-default.html')
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- site footer -->
+    @@include('../component/footer/footer.html')
+
+    <!-- JS Global Compulsory-->
+    <script src="../js/jquery-3.1.1.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <script src="../js/ui.js"></script>
+</body>

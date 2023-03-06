@@ -1,0 +1,31 @@
+.page-footer {
+    background: #CF2228;
+    padding: 36px 16px;
+
+    >* {
+        font-family: "Quicksand";
+
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 23px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-top: 4px;
+
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+
+    .NA-newspaper {
+        text-transform: uppercase;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: $font-weight-bold;
+        display: block;
+    }
+
+    .bold {
+        font-weight: $font-weight-bold;
+    }
+}

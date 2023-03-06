@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>NGHEAN</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../styles/css/desktop.css">
+</head>
+
+<body>
+    <!-- site header -->
+    @@include('../component/header-multimedia/header-multimedia.html')
+
+    <!-- site body -->
+    <div class="site-body ">
+        <div class="container multimedia">
+            @@include('../component/breadcrumb/breadcrumb.html')
+            @@include('../component/abf-multimedia/abf-multimedia.html')
+            <div class="multi-pack">
+                <h3 class="box-heading">
+                    <a href="#" class="heading">Xem tiếp</a>
+                </h3>
+                <div class="box-content">
+                    <article class="story">
+                        <figure class="story__thumb">
+                            <a href="#" title="">
+                                <img src="https://source.unsplash.com/random/280x160?sig=1" alt="280x160 (16x9)">
+                                <i class="ic-watching">
+                                    <span>Đang xem</span>
+                                </i></a>
+                        </figure>
+                        <h5 class="story__heading">
+                            <a href="#">
+                                Doanh nghiệp và thanh niên tìm tiếng nói chung trong giảm thiểu ô nhiễm rác thải
+                            </a>
+                        </h5>
+                    </article>
+                    @@for (var i = 0; i < 3; i++) { <article class="story">
+                        <figure class="story__thumb">
+                            <a href="#" title="">
+                                <img src="https://source.unsplash.com/random/280x160?sig=1" alt="280x160 (16x9)">
+                                <i class="ic-video"></i></a>
+                        </figure>
+                        <h5 class="story__heading">
+                            <a href="#">
+                                Doanh nghiệp và thanh niên tìm tiếng nói chung trong giảm thiểu ô nhiễm rác thải
+                            </a>
+                        </h5>
+                        </article>
+                        }
+                </div>
+            </div>
+            <div class="multi-pack">
+                <h3 class="box-heading">
+                    <a href="#" class="heading">CÓ THỂ BẠN QUAN tâm</a>
+                </h3>
+                <div class="box-content">
+                    @@for (var i = 0; i < 24; i++) { <article class="story">
+                        <figure class="story__thumb">
+                            <a href="#" title="">
+                                <img src="https://source.unsplash.com/random/280x160?sig=1" alt="280x160 (16x9)">
+                                <i class="ic-video"></i></a>
+                        </figure>
+                        <h5 class="story__heading">
+                            <a href="#">
+                                Doanh nghiệp và thanh niên tìm tiếng nói chung trong giảm thiểu ô nhiễm rác thải
+                            </a>
+                        </h5>
+                        </article>
+                        }
+                </div>
+                <button class="more-news">
+                    tải thêm tin
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- site footer -->
+    @@include('../component/footer/footer.html')
+
+    <!-- JS Global Compulsory-->
+    <script src="../js/jquery-3.1.1.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <script src="../js/ui.js"></script>
+</body>

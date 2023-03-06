@@ -1,0 +1,108 @@
+.abf-multimedia {
+    background-color: #f8f9fa;
+    overflow: auto;
+    padding-right: 20px;
+
+    .text-wrapper {
+        overflow: auto;
+        padding-bottom: 38px;
+
+        >* {
+            margin-top: 16px;
+
+            &:first-child {
+                margin-top: 26px;
+            }
+
+        }
+
+        iframe {
+            height: 20px;
+            margin-top: 52px;
+            float: right;
+        }
+
+        .article__title {
+            font-weight: $font-weight-bold;
+            font-size: 24px;
+            line-height: 150%;
+            color: $primary;
+        }
+
+        .article__sapo {
+            font-family: "Quicksand";
+            font-weight: $font-weight-normal;
+            font-size: 16px;
+            line-height: 24px;
+            color: #343a40;
+        }
+
+        .time {
+            font-family: "Quicksand";
+            font-style: normal;
+            font-weight: $font-weight-medium;
+            font-size: 16px;
+            line-height: 20px;
+            color: #6c757d;
+            display: block;
+        }
+    }
+
+    .media-wrapper {
+        float: left;
+        margin-right: 33px;
+        width: 70%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .article__share {
+        margin-top: 16px;
+        display: flex;
+
+        a {
+            margin-left: 16px;
+            width: 30px;
+            height: 30px;
+            font-size: 0;
+            display: block;
+
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+    }
+
+    .article__author {
+        width: 100%;
+        font-family: "Quicksand";
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 28px;
+        color: #495057;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        clear: both;
+        padding-top: 16px;
+    }
+
+    .box-social {
+        display: flex;
+        margin: 16px 0 0 0 !important;
+        position: relative;
+        align-items: center;
+
+        >* {
+            margin-top: 0;
+            margin-left: 10px;
+
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+    }
+}

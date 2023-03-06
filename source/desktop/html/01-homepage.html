@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>NGHEAN</title>
+  <!-- Meta -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" type="text/css" href="../styles/css/desktop.css">
+</head>
+
+<body>
+  <!-- site header -->
+  @@include('../component/header/header.html')
+
+  <!-- site body -->
+  <div class="site-body">
+    <div class="container">
+      <div class="banner">
+        <div class="banner_show">
+          <img src="https://source.unsplash.com/random/700x90?sig=1" alt="">
+        </div>
+      </div>
+      @@include('../component/abf-homepage/abf-homepage.html')
+      @@include('../component/four-pack/four-pack.html')
+      <div class="banner">
+        <div class="banner_show">
+          <img src="https://source.unsplash.com/random/700x94?sig=1" alt="">
+        </div>
+      </div>
+      @@include('../component/box-multimedia/box-multimedia.html')
+      <div class="banner">
+        <div class="banner_show">
+          <img src="https://source.unsplash.com/random/700x94?sig=2" alt="">
+        </div>
+      </div>
+      <div class="zone-1">
+        <div class="col-left">
+          @@include('../component/popular-news/popular-news.html')
+        </div>
+        <div class="col-center">
+          @@include('../component/timeline/timeline.html')
+        </div>
+        <div class="col-right">
+          @@include('../component/box-covid/box-covid.html')
+          <div class="banner">
+            <img src="https://source.unsplash.com/random/300x250?sig=1" alt="">
+          </div>
+          @@include('../component/box-think/box-think.html')
+          <div class="banner">
+            <img src="https://source.unsplash.com/random/300x250?sig=2" alt="">
+          </div>
+          @@include('../component/box-location/box-location.html')
+          <div class="banner">
+            <img src="https://source.unsplash.com/random/300x250?sig=3" alt="">
+          </div>
+          @@include('../component/box-link/box-link.html')
+          <div class="banner">
+            <img src="https://source.unsplash.com/random/300x250?sig=4" alt="">
+          </div>
+          @@include('../component/box-tag/box-tag.html')
+          <div class="banner">
+            <img src="https://source.unsplash.com/random/300x250?sig=5" alt="">
+          </div>
+          @@include('../component/box-dondoc/box-dondoc.html')
+        </div>
+      </div>
+      <div class="banner">
+        <div class="banner_show">
+          <img src="https://source.unsplash.com/random/700x94?sig=1" alt="">
+        </div>
+      </div>
+      <div class="zone-2">
+        @@for (var i = 0; i < 5; i++) { @@include('../component/box-story/box-story.html') } <div class="banner">
+          <div class="banner_show">
+            <img src="https://source.unsplash.com/random/700x94?sig=1" alt="">
+          </div>
+      </div>
+      @@for (var i = 0; i < 5; i++) { @@include('../component/box-story/box-story.html') } <div class="banner">
+        <div class="banner_show">
+          <img src="https://source.unsplash.com/random/700x94?sig=2" alt="">
+        </div>
+    </div>
+    @@for (var i = 0; i < 5; i++) { @@include('../component/box-story/box-story.html') } </div> </div> 
+  </div> 
+
+  <!-- site footer -->
+  @@include('../component/footer/footer.html')
+
+  <!-- JS Global Compulsory-->
+  <script src="../js/jquery-3.1.1.js"></script>
+  <script src="../js/slick.min.js"></script>
+  <script src="../js/ui.js"></script>
+</body>
