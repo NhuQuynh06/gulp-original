@@ -1,8 +1,8 @@
-.heading {
+.title {
     display: block;
 
     &:hover {
-        color: $third !important;
+        color: $third;
     }
 }
 
@@ -15,7 +15,7 @@
 
     &__thumb {
         overflow: hidden;
-        background: transparent url(../img/background_ver4.png) center center/60% no-repeat;
+        background: transparent url(../img/background.png) center center/ no-repeat;
         background: #ccc;
 
         a {

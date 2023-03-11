@@ -21,7 +21,10 @@
   },
   "homepage": "https://github.com/tatuan142/baomoi-core#readme",
   "devDependencies": {
+    "@babel/core": "^7.21.0",
+    "@babel/preset-env": "^7.20.2",
     "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
     "gulp-clean-css": "^4.2.0",
     "gulp-concat": "^2.6.1",
     "gulp-if": "^3.0.0",
@@ -42,5 +45,10 @@
     "imagemin-pngquant": "^8.0.0",
     "node-sass": "^4.14.0",
     "yargs": "^14.2.0"
+  },
+  "babel": {
+    "presets": [
+      "@babel/env"
+    ]
   }
 }

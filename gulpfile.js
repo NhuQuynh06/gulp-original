@@ -10,8 +10,9 @@ var gulp = require('gulp'),
     inject = require('gulp-inject-string'),
     imagemin = require('imagemin'),
     imageminJpegtran = require('imagemin-jpegtran'),
-    imageminPngquant = require('imagemin-pngquant');
-    removeEmptyLines = require('gulp-remove-empty-lines');
+    imageminPngquant = require('imagemin-pngquant'),
+    removeEmptyLines = require('gulp-remove-empty-lines'),
+    babel = require('gulp-babel');
 
 
 concat = require('gulp-concat');
@@ -84,6 +85,7 @@ function compile_scss_component() {
 // > copy 
 async function copy_js() {
     return src(paths.js_source)
+        .pipe(babel())
         .pipe(dest(paths.js_dist));
 };
 

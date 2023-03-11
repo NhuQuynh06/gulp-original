@@ -1,8 +1,10 @@
-/* > root */
 @import "variables";
 @import "./mixins/global";
 
-// > content
+// ----------------------------------
+// INFO : style for global
+// ----------------------------------
+
 @import "reboot.scss";
 @import "fonts";
 @import "icons";
@@ -11,37 +13,31 @@
 @import "fyi";
 @import "story";
 @import "styles";
-@import "article";
-// @import "modal";
 
-// INFO : style for component
+// ----------------------------------
+// INFO : style for component 
+// ----------------------------------
+
 @import '../component/header/header.scss';
 @import '../component/footer/footer.scss';
-@import '../component/header-multimedia/header-multimedia.scss';
 @import '../component/modal/modal.scss';
 
+// ----------------------------------
+// INFO : style for detail-page
+// ----------------------------------
+
+@import '../component/detail-page/article-header/article-header.scss';
+@import '../component/detail-page/article-body/article-body.scss';
+@import '../component/detail-page/audio/audio.scss';
+@import '../component/detail-page/comment/comment.scss';
+@import '../component/detail-page/interview/interview.scss';
+@import '../component/detail-page/live/live.scss';
+@import '../component/detail-page/longform/longform.scss';
+@import '../component/detail-page/old-style/old-style.scss';
+
+
+// ----------------------------------
 // INFO : style for box-style
-@import "../component/abf-homepage/abf-homepage.scss";
-@import "../component/multi-pack-small/multi-pack-small.scss";
-@import "../component/four-pack/four-pack.scss";
-@import "../component/box-multimedia/box-multimedia.scss";
-@import "../component/popular-news/popular-news.scss";
-@import "../component/timeline/timeline.scss";
-@import "../component/box-covid/box-covid.scss";
-@import "../component/box-think/box-think.scss";
-@import "../component/box-location/box-location.scss";
-@import "../component/box-link/box-link.scss";
-@import "../component/box-tag/box-tag.scss";
-@import "../component/box-dondoc/box-dondoc.scss";
-@import "../component/box-story/box-story.scss";
-@import "../component/breadcrumb/breadcrumb.scss";
-@import "../component/abf-cate/abf-cate.scss";
-@import "../component/box-trending/box-trending.scss";
-@import "../component/box-media/box-media.scss";
-@import "../component/box-default/box-default.scss";
-@import "../component/box-social/box-social.scss";
-@import "../component/multi-pack/multi-pack.scss";
-@import "../component/box-filter/box-filter.scss";
-@import "../component/abf-multimedia/abf-multimedia.scss";
-@import "../component/podcast-list/podcast-list.scss";
-@import "../component/podcast/podcast.scss";
+// ----------------------------------
+@import '../component/box-style/box-default/box-default.scss';
+@import '../component/box-style/timeline/timeline.scss';

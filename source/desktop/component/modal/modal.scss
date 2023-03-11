@@ -63,15 +63,12 @@
         padding: 12px;
 
         .modal-title {
+
             font-weight: normal;
+            font-size: 20px;
             line-height: 34px;
             text-transform: uppercase;
             color: $white;
-            font-size: 16px;
-
-            @media (min-width: 1024px) {
-                font-size: 20px;
-            }
         }
     }
 
@@ -173,15 +170,11 @@
                 height: 40px;
                 padding: 0 12px;
                 width: 100%;
-
-                &::placeholder {
-                    font-size: 14px;
-                }
             }
 
             .form-text {
                 font-size: 13px;
-                color: $primary;
+                
             }
         }
 
@@ -214,15 +207,12 @@
             }
         }
 
+
         // style for heading body
         .heading-body {
             color: #343a40;
-            font-size: 14px;
+            font-size: 18px;
             font-weight: $font-weight-bold;
-
-            @media (min-width: 1024px) {
-                font-size: 18px;
-            }
         }
 
         // style for table
@@ -364,8 +354,122 @@
         color: #666;
 
         label {
-            color: $primary;
+            
             font-weight: $font-weight-bold;
+        }
+    }
+}
+
+// only login form
+
+.modal-body:has(> .w-650) {
+    max-width: fit-content;
+    width: fit-content;
+}
+
+.w-650 {
+    width: 650px !important;
+}
+
+.modal-body {
+
+    .d-flex {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+
+        >* {
+            width: calc(50% - 16px);
+
+            >* {
+                margin-top: 16px;
+
+                &:first-child {
+                    margin-top: 0;
+                }
+            }
+        }
+
+        .ic-eye {
+            position: absolute;
+            padding: 13px 10px;
+            width: 35px;
+            right: 0;
+            cursor: pointer;
+
+            &.slash {
+                &::after {
+                    position: absolute;
+                    content: '';
+                    width: 27px;
+                    height: 1px;
+                    top: 19px;
+                    left: 6px;
+                    background: black;
+                    transform: rotate(32deg);
+                }
+            }
+        }
+
+        .rank-1 {
+            position: relative;
+
+            &::before {
+                content: "";
+                position: absolute;
+                border-left: 1px solid #ccc;
+                width: 1px;
+                height: 90%;
+                right: -16px;
+                top: 50%;
+                transform: translateY(-50%);
+
+            }
+        }
+    }
+
+    .rank-1,
+    .rank-2 {
+        >* {
+            margin-top: 6px;
+
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+    }
+
+    .social {
+        a {
+            color: #fff;
+            font-weight: 600;
+            height: 46px;
+            background: #979797;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 3px;
+
+            &:not(:last-child) {
+                margin-bottom: 12px;
+            }
+        }
+
+        i {
+            font-size: 16px;
+            margin-right: 6px;
+        }
+
+        .fb {
+            background: #3B5998;
+        }
+
+        .zl {
+            background: #008FE5;
+        }
+
+        .gg {
+            background: #DB4437;
         }
     }
 }
