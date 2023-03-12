@@ -95,18 +95,6 @@
             }
         }
 
-        &[align="left"] {
-            width: 50%;
-            float: left;
-            margin-right: 16px;
-        }
-
-        &[align="right"] {
-            float: right;
-            width: 50%;
-            margin-left: 16px;
-        }
-
     }
 
     table.full-video {
@@ -420,36 +408,45 @@
         }
     }
 
+
     // style attribute align-left, right, center, full-width, max-width
+
     .align-center {
         width: 100%;
     }
 
+    .align-left,
+    .align-right {
+        width: 50% !important;
+    }
+
     .align-left {
-        width: 50%;
         float: left;
         margin-right: 16px;
     }
 
     .align-right {
-        width: 50%;
         float: right;
         margin-left: 16px;
     }
 
     // style class align-left, right, center, full-width, max-width
-    &[align="center"] {
+
+    [align="center"] {
         width: 100%;
     }
 
+    [align="left"],
+    [align="right"] {
+        width: 50% !important;
+    }
+
     [align="left"] {
-        width: 50%;
         float: left;
         margin-right: 16px;
     }
 
-    [align="left"] {
-        width: 50%;
+    [align="right"] {
         float: right;
         margin-left: 16px;
     }
