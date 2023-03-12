@@ -51,6 +51,14 @@
     font-display: block;
 }
 
+[class^=ic-] {
+    font-size: 0;
+
+    &::before {
+        font-size: 20px;
+    }
+}
+
 [class^="ic-"],
 [class*=" ic-"] {
     /* use !important to prevent issues with browser extensions that change fonts */

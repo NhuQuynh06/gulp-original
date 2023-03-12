@@ -4,3 +4,12 @@
 .d-flex {
     display: flex;
 }
+
+.row {
+    display: flex;
+    align-items: center;
+}
+
+a:hover {
+    color: $primary;
+}
