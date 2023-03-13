@@ -129,7 +129,7 @@
 
     .navigation {
         background: $primary;
-        z-index: 9999;
+        z-index: 999;
 
         .menu {
             margin: 0 auto;
@@ -207,6 +207,10 @@
                     }
                 }
             }
+        }
+
+        &.show-modal {
+            width: calc(100% - 17px);
         }
     }
 

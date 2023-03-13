@@ -50,11 +50,13 @@ $('.btn-modal').on('click', function () {
     $('.modal-backdrop').fadeIn();
     var id = $(this).data('target');
     $('.modal[data-target="' + id + '"]').fadeIn();
+    $(".navigation.sticky.fixed").addClass("show-modal");
 });
 
 $('.btn-close').on('click', function () {
     setTimeout(() => {
         $("body").removeClass("modal-open");
+        $(".navigation.sticky.fixed").removeClass("show-modal");
     }, 400);
     $('.modal-backdrop').fadeOut();
     $('.modal').fadeOut();
@@ -63,6 +65,7 @@ $('.btn-close').on('click', function () {
 $('.modal-backdrop').on('click', function () {
     setTimeout(() => {
         $("body").removeClass("modal-open");
+        $(".navigation.sticky.fixed").removeClass("show-modal");
     }, 400);
     $('.modal-backdrop').fadeOut();
     $('.modal').fadeOut();
