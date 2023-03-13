@@ -103,4 +103,117 @@
         }
     }
 
+    .list-icon {
+        width: 540px;
+        margin-left: 160px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .item {
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            margin-top: 12px;
+
+            [class^="ic-"] {
+                width: 48px;
+                height: 48px;
+                margin: 0 auto;
+                display: block;
+            }
+        }
+
+        .text {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 27px;
+            color: #000;
+            text-transform: capitalize;
+            display: block;
+        }
+
+        // icon live
+        .ic-report {
+            background: url("../img/icon-report.png") center center/48px no-repeat;
+        }
+
+        .ic-mobile {
+            background: url("../img/icon-mobile.png") center center/48px no-repeat;
+        }
+
+        .ic-qoute {
+            background: url("../img/icon-qoute.png") center center/48px no-repeat;
+        }
+
+        .ic-facebook {
+            background: url("../img/icon-facebook.png") center center/48px no-repeat;
+        }
+
+        .ic-twitter {
+            background: url("../img/icon-twitter.png") center center/48px no-repeat;
+        }
+
+        .ic-mail {
+            background: url("../img/icon-mail.png") center center/48px no-repeat;
+        }
+
+        .ic-video-live {
+            background: url("../img/icon-video-live.png") center center/48px no-repeat;
+        }
+
+        .ic-photo {
+            background: url("../img/icon-photo.png") center center/48px no-repeat;
+        }
+
+        .ic-goal {
+            background: url("../img/icon-goal.png") center center/48px no-repeat;
+        }
+
+        .ic-conner {
+            background: url("../img/icon-conner.png") center center/48px no-repeat;
+        }
+
+        .ic-yellow {
+            background: url("../img/icon-yellow.png") center center/48px no-repeat;
+        }
+
+        .ic-red {
+            background: url("../img/icon-red.png") center center/48px no-repeat;
+        }
+
+        .ic-substitute {
+            background: url("../img/icon-substitute.png") center center/48px no-repeat;
+        }
+
+        .ic-start {
+            background: url("../img/icon-start.png") center center/48px no-repeat;
+        }
+
+        .ic-tatic {
+            background: url("../img/icon-tatic.png") center center/48px no-repeat;
+        }
+
+        .ic-stadium {
+            background: url("../img/icon-stadium.png") center center/48px no-repeat;
+        }
+
+        .ic-time-live {
+            background: url("../img/icon-time-live.png") center center/48px no-repeat;
+        }
+
+        .ic-fault {
+            background: url("../img/icon-fault.png") center center/48px no-repeat;
+        }
+
+        .ic-jnjure {
+            background: url("../img/icon-jnjure.png") center center/48px no-repeat;
+        }
+
+        .ic-penalty {
+            background: url("../img/icon-penalty.png") center center/48px no-repeat;
+        }
+    }
+
 }

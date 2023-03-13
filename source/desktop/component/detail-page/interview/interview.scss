@@ -94,7 +94,24 @@
                     right: 0;
                 }
             }
+
+            &::-webkit-scrollbar {
+                width: 4px;
+                opacity: 0.5;
+                background: #f0f0f0;
+                border-radius: 4.5px;
+            }
+
+            &::-webkit-scrollbar-track {
+                background: #f5f5f5;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background: #ccc;
+                border-radius: 10px;
+            }
         }
+
     }
 
     .itv-note {

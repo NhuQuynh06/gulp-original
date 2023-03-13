@@ -55,7 +55,7 @@
 
     .modal-header {
         min-height: 50px;
-        background: #e21f26;
+        background: $primary;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -108,13 +108,13 @@
         }
 
         .btn-submit {
-            background: #cf2228;
+            background: $primary;
             border: none;
             color: #fff;
 
             &:hover {
-                color: #cf2228;
-                border: 1px solid #cf2228;
+                color: $primary;
+                border: 1px solid $primary;
                 background-color: #fff;
             }
         }
@@ -150,6 +150,7 @@
             >* {
                 margin-top: 6px;
                 display: block;
+                width: 100%;
 
                 &:first-child {
                     margin-top: 0;
@@ -170,11 +171,16 @@
                 height: 40px;
                 padding: 0 12px;
                 width: 100%;
+                font-size: 14px;
+
+                &::placeholder {
+                    font-size: 14px;
+                }
             }
 
             .form-text {
                 font-size: 13px;
-                
+
             }
         }
 
@@ -332,7 +338,7 @@
 
         .color-result {
             position: relative;
-            background: $secondary;
+            background: $primary;
             float: left;
             height: 5px;
         }
@@ -354,7 +360,7 @@
         color: #666;
 
         label {
-            
+
             font-weight: $font-weight-bold;
         }
     }
@@ -396,6 +402,8 @@
             width: 35px;
             right: 0;
             cursor: pointer;
+            height: 40px;
+            bottom: 0;
 
             &.slash {
                 &::after {

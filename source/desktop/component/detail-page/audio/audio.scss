@@ -41,7 +41,7 @@
         }
 
         i {
-            font-size: 12px ;
+            font-size: 12px;
             color: #495057;
         }
 
@@ -288,6 +288,10 @@
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
+    &::before {
+        font-size: 16px;
+    }
 }
 
 
@@ -309,6 +313,7 @@
 
 .ic-audio-pause:before {
     content: "\1f554";
+    font-size: 13px;
 }
 
 .ic-audio-play:before {
@@ -317,7 +322,7 @@
 
 
 // > bm-player
-.tts-player {
+.audio {
     @include audio-player;
     height: 60px;
     font-size: 0;

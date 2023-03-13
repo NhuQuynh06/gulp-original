@@ -129,6 +129,7 @@
 
     .navigation {
         background: $primary;
+        z-index: 9999;
 
         .menu {
             margin: 0 auto;
@@ -207,5 +208,12 @@
                 }
             }
         }
+    }
+
+    .fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
     }
 }
