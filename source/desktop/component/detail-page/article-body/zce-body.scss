@@ -1,27 +1,64 @@
-.article {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 28px;
-    color: #212529;
+// ----------------------------------
+// INFO :  must not be changed
+// ----------------------------------
+.zce-content-body {
+    >* {
+        margin-top: 16px;
 
+        &:first-child {
+            margin-top: 0;
+        }
+    }
 
+    // table not class
+    table:not([class]) {
+        width: 100% !important;
 
-    table.full-video {
-        margin: 16px auto 0;
-        max-width: initial;
+        td,
+        th {
+            padding: 10px;
+            border: 1px solid #E9ECEF;
+        }
+    }
+
+    // INFO : table max-width, full-width
+    table.picture,
+    table.video {
+        width: 100%;
         text-align: center;
-        max-width: 100%;
-        width: 1300px;
+        position: relative;
+        transform: translateX(-50%);
+        left: 50%;
+        width: max-content;
+        margin: inherit;
+        max-width: 822px;
+
+        tr,
+        td {
+            padding: 0;
+        }
 
         img {
             width: 100%;
+            max-width: fit-content;
         }
 
-        .caption,
-        .fig {
-            max-width: 700px;
-            margin: 0 auto;
-            font-family: "Quicksand";
+        video {
+            width: 100%;
+        }
+
+        .pic {
+            position: relative;
+
+            img {
+                max-width: 100%;
+                width: auto;
+                display: flex;
+                margin: 0 auto;
+            }
+        }
+
+        .caption {
             font-weight: 500;
             margin-top: 8px;
             font-size: 16px;
@@ -30,135 +67,289 @@
             display: block;
             text-align: center;
             font-style: normal;
+
+            >* {
+                margin-top: 0;
+            }
         }
+
+        &.full-width {
+            max-width: calc(100vw - 17px);
+            width: max-content !important;
+        }
+
+        &.max-width {
+            max-width: 1600px;
+            width: max-content !important;
+
+            @media (max-width: 1600px) {
+                max-width: calc(100vw - 17px);
+
+            }
+        }
+
     }
 
-    .photo {
-        img {
-            max-width: 100%;
-        }
-    }
-
-    // style zce-body
+    // INFO : table left, right
     table.picture,
     table.video {
-        .caption {
-            font-family: "Quicksand";
+
+        // chỉnh box left, phải
+        &[align="center"],
+        &[align="center"],
+        &.align-center,
+        &.align-center {
+            width: 100%;
+        }
+
+        &.outset-left,
+        &.outset-right,
+        &[align="left"],
+        &[align="right"],
+        &.align-left,
+        &.align-right {
+            width: 50%;
+        }
+
+        &[align="left"],
+        &.align-left {
+            margin: initial;
+            float: right;
+            margin-left: 16px;
+            left: 25%;
+        }
+
+        &[align="right"],
+        &.align-right {
+            float: left;
+            margin-right: 16px !important;
+            left: 25%;
+        }
+
+    }
+
+    // INFO : table outset
+    table.picture,
+    table.video {
+        &.outset-left {
+            float: left;
+            margin-right: calc(-25% + 16px);
+            left: 0;
+        }
+
+        &.outset-right {
+            float: right;
+            margin-left: calc(-25% + 16px);
         }
     }
 
-    // style blockquote
-    blockquote {
-        background: #ffffff;
-        border: 2px solid #dc3545;
-
-        .author {
-            font-weight: $font-weight-bold;
-            font-size: 18px;
-            text-transform: uppercase;
-            text-align: left;
-            display: block;
-            position: relative;
-            padding-top: 18px;
-            overflow: auto;
-
-            &:before {
-                background: #adb5bd;
-                content: "";
-                width: 99px;
-                height: 3px;
-                position: absolute;
-                top: 0;
-                left: 0px;
-            }
-        }
-    }
-
-    // style notebox
-    .notebox {
-        border: 1px solid rgba(163, 207, 187, 0.5);
-    }
-
-    // style poll-box
+    // INFO : blockquote, notebox, poll-box outset
+    blockquote,
+    .notebox,
     .poll-box {
-        font-style: italic;
-        font-weight: $font-weight-bold;
-        font-size: 17px;
-        line-height: 165%;
-        padding: 25px 23px 22px;
-        text-align: left;
-        margin-bottom: 16px;
-        border: 2px solid #dc3545;
-        border-radius: 10px;
-        width: 100%;
+        padding: 20px;
 
-        .box-heading {
-            span {
-                font-family: "Quicksand";
-                font-style: normal;
-                font-weight: $font-weight-bold;
-                font-size: 20px;
-                line-height: 25px;
-                text-transform: uppercase;
+        >* {
+            margin-top: 16px !important;
 
+            &:first-child {
+                margin-top: 0 !important;
             }
         }
 
-        .box-content {
-            margin-top: 8px;
-            font-style: normal;
+        &[align="right"],
+        &.align-right,
+        &.qright,
+        &.nright {
+            width: 50%;
+            float: right;
+            margin-left: 16px;
+        }
 
-            .desc {
-                font-family: "Quicksand";
-                font-weight: $font-weight-semibold;
-                font-size: 16px;
-                line-height: 20px;
-                color: #343a40;
-                margin-bottom: 19px;
+        &[align="left"],
+        &.align-left,
+        &.qleft,
+        &.nleft {
+            width: 50%;
+            float: left;
+            margin-right: 16px;
+        }
+
+        &.outset-left {
+            float: left;
+            margin-left: calc(-25%);
+            margin-right: 16px;
+        }
+
+        &.outset-right {
+            float: right;
+            margin-right: calc(-25%);
+            margin-left: 16px;
+        }
+    }
+
+    // INFOR :style for table in box
+    blockquote,
+    .notebox,
+    .live-zone,
+    .interview-zone {
+
+        table.picture,
+        table.video {
+            max-width: 100% !important;
+            margin: 0;
+
+            &[align="left"] {
+                margin-left: 16px;
             }
 
-            label {
-                display: flex;
-                align-items: center;
-                cursor: pointer;
-
-                span {
-                    font-family: "Quicksand";
-                    font-weight: $font-weight-semibold;
-                    font-size: 14px;
-                    line-height: 20px;
-
-                    margin-left: 12px;
-                }
+            &.max-width {
+                left: 0;
+                transform: translateX(0);
+                margin: auto;
             }
+
+            &.outset-left {
+                left: calc(25%);
+                margin: initial;
+                margin-right: 16px;
+            }
+
+            &.outset-right {
+                margin: initial;
+                margin-left: 16px;
+                transform: translateX(0);
+                left: 0;
+            }
+
+        }
+    }
+
+}
+
+// ----------------------------------
+// INFO : be changed
+// ----------------------------------
+blockquote {
+    padding: 30px 24px;
+    margin: 10px 16px 20px;
+    position: relative;
+    border: 1px solid $primary;
+
+    &::before {
+        position: absolute;
+        content: "";
+        display: block;
+        background: url(../img/quote.png) center center/32px no-repeat;
+        position: absolute;
+        background-color: #fff;
+        width: 50px;
+        height: 50px;
+        left: 0;
+        top: 5px;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.poll-box {
+    padding: 16px 20px;
+    background: $gray-100;
+
+    .box-heading-line {
+        font-size: 16px;
+        color: $primary;
+        margin-bottom: 16px;
+
+        &:after {
+            background: $gray-400;
+        }
+
+        * {
+            background: $gray-100;
+        }
+    }
+
+    .box-content {
+        margin-bottom: 0;
+
+        .desc {
+            font-size: 16px;
+            margin-bottom: 12px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 6px;
+        }
+
+        span {
+            font-size: 16px;
+            color: $gray-900;
+            display: inline-block;
         }
 
         .wrap-button {
-            margin-top: 20px;
+            display: flex;
+            justify-content: flex-start;
+            width: calc(100%);
+            margin: 12px 0 0;
 
-            .btn-send {
-                background: #e21f26;
-                border-radius: 3px;
-                width: 100px;
-                height: 28px;
-                font-family: "Quicksand";
-                font-weight: $font-weight-bold;
+            button {
                 font-size: 14px;
-                line-height: 17px;
-                text-transform: uppercase;
-                color: #ffffff;
-                margin-right: 10px;
+                color: $gray-600;
+                margin-right: 8px;
+                width: 90px;
+                height: 30px;
+                box-shadow: none;
             }
 
-            .btn-see {
-                margin-top: 0;
-                font-family: "Quicksand";
-                font-weight: $font-weight-semibold;
-                font-size: 14px;
-                line-height: 17px;
-                color: #495057;
+            .btn-primary,
+            .btn-send {
+                font-size: 13px;
+                color: $white;
+                font-weight: 500;
+                text-transform: uppercase;
+                background: $primary;
+
+                &:hover {
+                    text-decoration: none;
+                    background: $secondary;
+                }
             }
         }
+    }
+}
+
+// ----------------------------------
+// INFO : style for detail-page
+// ----------------------------------
+.detail .zce-content-body {
+
+    table,
+    .notebox,
+    blockquote,
+    .poll-box {
+
+        &.max-width,
+        &.full-width {
+            width: 100% !important;
+
+        }
+
+        &.outset-left {
+            margin-left: 16px;
+        }
+
+        &.outset-right {
+            margin-right: 16px;
+        }
+
+        &.outset-left,
+        &.outset-right {
+            transform: translateX(0);
+            left: 0;
+        }
+
     }
 
 }

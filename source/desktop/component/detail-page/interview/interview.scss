@@ -198,10 +198,10 @@
             line-height: 28px;
 
             >* {
-                margin-top: 12px;
+                margin-top: 16px !important;
 
                 &:first-child {
-                    margin-top: 0;
+                    margin-top: 0 !important;
                 }
             }
         }

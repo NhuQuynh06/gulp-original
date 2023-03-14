@@ -2,138 +2,48 @@
     max-width: 822px !important;
     margin: -20px auto 0;
 
-    // INFO : style for table longform
-    table.picture,
-    table.video {
-        position: relative;
-        transform: translateX(-50%);
-        left: 50%;
-        width: max-content;
-        margin: inherit;
-        max-width: 822px;
+    .article {
 
-        &.full-width {
-            max-width: calc(100vw - 17px);
-        }
-
-        &.max-width {
-            max-width: 1600px;
-
-            @media (max-width: 1600px) {
-                max-width: calc(100vw - 17px);
-
-            }
-        }
-
-        .caption {
-            text-align: center;
+        // INFO : style for table longform
+        >table.picture,
+        >table.video {
+            position: relative;
+            transform: translateX(-50%);
+            left: 50%;
+            width: max-content;
+            margin: inherit;
             max-width: 822px;
-            margin: 8px auto 0;
 
-            >* {
-                margin-top: 5px;
+            &.full-width {
+                max-width: calc(100vw - 17px);
+            }
 
-                &:first-child {
-                    margin-top: 0;
+            &.max-width {
+                max-width: 1600px;
+
+                @media (max-width: 1600px) {
+                    max-width: calc(100vw - 17px);
+
                 }
             }
-        }
 
-        // style class, attribute align : left, right, center  
-        &.align-left,
-        &.align-right,
-        &[align=right],
-        &[align=left] {
-            transform: translateX(0);
-            left: 0;
-        }
-
-        &.align-left,
-        &[align=left] {
-            margin-right: 16px;
-        }
-
-        &.align-right,
-        &[align=right] {
-            margin-left: 16px;
-        }
-
-        // style class ouset : left, right  
-        &.outset-left,
-        &.outset-right {
-            width: 50%;
-        }
-
-        &.outset-left {
-            float: left;
-            left: 0;
-            margin-right: calc(-25% + 16px);
-        }
-
-        &.outset-right {
-            float: right;
-            transform: translateX(0);
-            left: 25%;
-            margin-left: calc(-25% + 16px);
-        }
-    }
-
-    blockquote,
-    .notebox,
-    .poll-box {
-
-        &.outset-left {
-            margin-right: calc(-25% + 16px);
-            position: relative;
-            left: -25%;
-        }
-
-        &.outset-right {
-            margin-right: calc(-25% + 16px);
-            position: relative;
-            left: 0;
-        }
-    }
-
-    // INFOR :style for table in box
-    blockquote,
-    .notebox,
-    .live-zone,
-    .interview-zone {
-
-        table.picture,
-        table.video {
-            width: 100%;
-            margin-right: 0;
-            margin-left: 0;
-
-            &.align-left,
-            &[align=left] {
-                margin-right: 16px;
+            img {
+                width: 100%;
             }
 
-            &.align-right,
-            &[align=right] {
-                margin-left: 16px;
-            }
+            .caption {
+                text-align: center;
+                max-width: 822px;
+                margin: 8px auto 0;
 
-            &.align-left,
-            &.align-right,
-            &[align=left],
-            &[align=right] {
-                width: 50%;
-            }
+                >* {
+                    margin-top: 5px;
 
-            &.outset-left {
-                left: calc(25%);
-                margin-right: 16px;
+                    &:first-child {
+                        margin-top: 0;
+                    }
+                }
             }
-
-            &.outset-right {
-                left: 0;
-                margin-left: 16px;
-            }
-
         }
     }
 }
