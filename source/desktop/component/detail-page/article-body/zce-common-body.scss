@@ -231,44 +231,37 @@
     }
 
     // style attribute align-left, right, center, full-width, max-width
+    [align="center"],
+    [align="center"],
+    .outset-center,
+    .outset-center,
+    .align-center,
     .align-center {
         width: 100%;
     }
 
+    [align="left"],
+    [align="right"],
+    .outset-left,
+    .outset-right,
     .align-left,
     .align-right {
         width: 50% !important;
     }
 
+    [align="left"],
+    .outset-left,
     .align-left {
         float: left;
         margin-right: 16px;
     }
 
+    [align="right"],
+    .outset-right,
     .align-right {
         float: right;
         margin-left: 16px;
     }
 
-    // style class align-left, right, center, full-width, max-width
-
-    [align="center"] {
-        width: 100%;
-    }
-
-    [align="left"],
-    [align="right"] {
-        width: 50% !important;
-    }
-
-    [align="left"] {
-        float: left;
-        margin-right: 16px;
-    }
-
-    [align="right"] {
-        float: right;
-        margin-left: 16px;
-    }
 
 }

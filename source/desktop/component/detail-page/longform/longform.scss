@@ -78,6 +78,23 @@
         }
     }
 
+    blockquote,
+    .notebox,
+    .poll-box {
+
+        &.outset-left {
+            margin-right: calc(-25% + 16px);
+            position: relative;
+            left: -25%;
+        }
+
+        &.outset-right {
+            margin-right: calc(-25% + 16px);
+            position: relative;
+            left: 0;
+        }
+    }
+
     // INFOR :style for table in box
     blockquote,
     .notebox,
@@ -107,12 +124,16 @@
                 width: 50%;
             }
 
-            &.outset-left,
-            &.outset-right {
-                transform: translateX(0);
-                width: 100%;
-                float: initial;
+            &.outset-left {
+                left: calc(25%);
+                margin-right: 16px;
             }
+
+            &.outset-right {
+                left: 0;
+                margin-left: 16px;
+            }
+
         }
     }
 }
