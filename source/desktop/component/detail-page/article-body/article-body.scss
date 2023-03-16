@@ -1,8 +1,6 @@
 @import './zce-common-body.scss';
 @import './zce-body.scss';
 
-
-
 // style related-topic
 .related-topic {
     background: #e9ecef;
@@ -15,7 +13,6 @@
         font-size: 20px;
         line-height: 25px;
         text-transform: uppercase;
-
     }
 
     .box-content {
@@ -30,8 +27,6 @@
         }
 
         &__heading a {
-
-
             font-weight: $font-weight-bold;
             font-size: 16px;
             line-height: 20px;
@@ -66,7 +61,6 @@
         font-size: 20px;
         line-height: 25px;
         text-transform: uppercase;
-
         pointer-events: none;
     }
 
@@ -82,8 +76,6 @@
         }
 
         &__heading a {
-
-
             font-weight: $font-weight-bold;
             font-size: 16px;
             line-height: 20px;
@@ -104,7 +96,6 @@
             }
         }
     }
-
 }
 
 // style author
@@ -170,5 +161,34 @@
         padding: 4px 12px;
         background-color: $gray-100;
     }
+}
 
+// style tags
+.article__tag {
+    position: relative;
+    background: url(../img/icon-key.png) left top 2px/24px no-repeat;
+
+    .box-content {
+        display: flex;
+        justify-content: flex-start;
+        flex-flow: row wrap;
+        padding-left: 44px;
+
+        a {
+            background: #ffffff;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            margin-right: 12px;
+            margin-bottom: 6px;
+            padding: 4px 8px;
+            font-weight: $font-weight-normal;
+            font-size: 13px;
+            line-height: 160%;
+            color: $primary;
+
+            &:hover {
+                color: $hover;
+            }
+        }
+    }
 }
