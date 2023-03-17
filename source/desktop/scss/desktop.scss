@@ -21,6 +21,7 @@
 @import '../component/header/header.scss';
 @import '../component/footer/footer.scss';
 @import '../component/modal/modal.scss';
+@import '../component/podcast/podcast.scss';
 
 // ----------------------------------
 // INFO : style for detail-page
@@ -41,3 +42,5 @@
 // ----------------------------------
 @import '../component/box-style/box-default/box-default.scss';
 @import '../component/box-style/timeline/timeline.scss';
+@import '../component/box-style/error/error.scss';
+@import '../component/box-style/search-tags/search-tags.scss';

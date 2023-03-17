@@ -6,8 +6,6 @@
     width: 20px;
     height: 20px;
     display: inline-block !important;
-    // INFO : ẩn tạm thời
-    display: none !important;
 }
 
 .ic-type-img {
@@ -78,59 +76,63 @@
     justify-content: center;
 }
 
-.ic-book:before {
-    content: "\e924";
+.ic-search:before {
+    content: "\e91d";
 }
 
-.ic-link:before {
-    content: "\e925";
+.ic-photo:before {
+    content: "\e91b";
 }
 
-.ic-podcast:before {
-    content: "\e900";
-}
-
-.ic-up:before {
-    content: "\e901";
-}
-
-.ic-play-solid:before {
-    content: "\e902";
-}
-
-.ic-layers:before {
-    content: "\e903";
-}
-
-.ic-location:before {
-    content: "\e904";
-}
-
-.ic-down:before {
-    content: "\e905";
-}
-
-.ic-right:before {
-    content: "\e906";
-}
-
-.ic-left:before {
-    content: "\e907";
-}
-
-.ic-play:before {
-    content: "\e908";
-}
-
-.ic-pause:before {
-    content: "\e909";
-}
-
-.ic-volumn:before {
-    content: "\e90a";
+.ic-video:before {
+    content: "\e91c";
 }
 
 .ic-audio:before {
+    content: "\e900";
+}
+
+.ic-reply:before {
+    content: "\e901";
+}
+
+.ic-calendar:before {
+    content: "\e902";
+}
+
+.ic-down:before {
+    content: "\e903";
+}
+
+.ic-down2:before {
+    content: "\e904";
+}
+
+.ic-droplet:before {
+    content: "\e905";
+}
+
+.ic-e-ma:before {
+    content: "\e906";
+}
+
+.ic-e-magazine:before {
+    content: "\e907";
+}
+
+.ic-home:before {
+    content: "\e908";
+}
+
+.ic-img:before {
+    content: "\e909";
+}
+
+.ic-lang:before {
+    content: "\e90a";
+}
+
+.ic-left:before {
     content: "\e90b";
 }
 
@@ -138,91 +140,58 @@
     content: "\e90c";
 }
 
-.ic-reply:before {
+.ic-mail:before {
     content: "\e90d";
 }
 
-.ic-mail:before {
+.ic-menu:before {
     content: "\e90e";
 }
 
-.ic-twitter:before {
+.ic-pen:before {
     content: "\e90f";
 }
 
-.ic-latest-news:before {
+.ic-phone:before {
     content: "\e910";
 }
 
-.ic-keyword:before {
+.ic-picture:before {
     content: "\e911";
 }
 
-.ic-quotes:before {
+.ic-podcast:before {
     content: "\e912";
-    color: #ce2e0e;
 }
 
-.ic-date:before {
+.ic-promo:before {
     content: "\e913";
 }
 
-.ic-source:before {
+.ic-quote:before {
     content: "\e914";
 }
 
-.ic-author:before {
+.ic-right:before {
     content: "\e915";
 }
 
-.ic-more:before {
+.ic-tele:before {
     content: "\e916";
 }
 
-.ic-video:before {
+.ic-tivi:before {
     content: "\e917";
 }
 
-.ic-most-read:before {
+.ic-top:before {
     content: "\e918";
 }
 
-.ic-trending:before {
+.ic-up:before {
     content: "\e919";
 }
 
-.ic-local-news:before {
+.ic-wind:before {
     content: "\e91a";
-}
-
-.ic-e-magazine:before {
-    content: "\e91b";
-}
-
-.ic-tv:before {
-    content: "\e91c";
-}
-
-.ic-menu:before {
-    content: "\e91d";
-}
-
-.ic-home:before {
-    content: "\e91e";
-}
-
-.ic-youtube:before {
-    content: "\e920";
-}
-
-.ic-facebook:before {
-    content: "\e921";
-}
-
-.ic-search:before {
-    content: "\e91f";
-}
-
-.ic-google:before {
-    content: "\e926";
 }

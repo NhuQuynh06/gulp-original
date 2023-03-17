@@ -71,6 +71,24 @@ $('.modal-backdrop').on('click', function () {
     $('.modal').fadeOut();
 });
 
+// style header
+$("body").append("<div class='backdrop'></div>");
+$(".extend .ic-menu").click(function (e) {
+    e.preventDefault();
+    $(".big-menu").fadeToggle("show");
+    $("body").toggleClass("modal-open");
+    $('.backdrop').fadeToggle();
+    $(".navigation.sticky.fixed").toggleClass("w");
+});
+
+$(".backdrop").on('click', function () {
+    setTimeout(() => {
+        $(".big-menu").fadeToggle("show");
+        $("body").toggleClass("modal-open");
+        $('.backdrop').fadeToggle();
+        $(".navigation.sticky.fixed").toggleClass("w");
+    }, 150);
+});
 // ----------------------------------
 // INFO : Js for project
 // ----------------------------------
