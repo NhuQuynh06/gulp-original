@@ -1,11 +1,20 @@
-// style global
 // style layout
+@mixin space {
+    >* {
+        margin-top: 16px;
+
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+}
+
 @mixin tableNotBorder {
 
     td,
     th {
-        padding: 0 !important;
-        border: none !important;
+        padding: 0;
+        border: none;
     }
 }
 
@@ -25,12 +34,23 @@
         margin-bottom: 16px;
     }
 
-    @include tableNotBorder();
+}
+
+@mixin maxWidth {
+    &.max-width {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        width: calc(100vw - 17px);
+        max-width: 1300px;
+    }
 }
 
 @mixin alignLeftRight {
     &[align="center"] {
         width: 100%;
+        @include tableNotBorder();
+        text-align: left;
     }
 
     &[align="left"] {
@@ -38,6 +58,8 @@
         float: right;
         margin-left: 16px;
         margin-bottom: 16px;
+        @include tableNotBorder();
+        text-align: left;
     }
 
     &[align="right"] {
@@ -45,10 +67,9 @@
         float: left;
         margin-right: 16px;
         margin-bottom: 16px;
+        @include tableNotBorder();
+        text-align: left;
     }
-
-    @include tableNotBorder();
-
 }
 
 @mixin classOutsetLeftRightDetail {
@@ -60,12 +81,33 @@
     &.outset-right {
         margin-right: auto;
     }
+}
+
+// style table in side blockquote, notebox
+@mixin table {
+    table {
+
+        &.full-width,
+        &.max-width {
+            width: 100%;
+        }
+    }
 
     @include tableNotBorder();
+
 }
 
 .zce-content-body {
-    img {
+    table {
+
+        td,
+        th {
+            padding: 0;
+        }
+    }
+
+    img,
+    video {
         max-width: 100%;
         width: auto;
         display: flex;
@@ -97,13 +139,29 @@
         }
     }
 
-
-    // style layout
     table,
     blockquote,
     .notebox,
-    .box-poll {
+    .poll-box {
         @include classLeftRight();
         @include alignLeftRight();
+        @include maxWidth();
+    }
+
+    blockquote,
+    .notebox {
+        @include space();
+        @include table();
+    }
+}
+
+// style global
+.zce-content-body {
+
+    blockquote,
+    .notebox,
+    .poll-box {
+        border: 2px dashed $primary;
+        padding: 20px;
     }
 }

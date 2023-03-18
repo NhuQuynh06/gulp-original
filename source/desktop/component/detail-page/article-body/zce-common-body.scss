@@ -210,16 +210,17 @@
     blockquote,
     .notebox {
         .outset-left {
-            left: calc(25%);
-            margin: initial;
+            // left: calc(25%);
+            margin-left: auto;
             margin-right: 16px;
         }
 
         .outset-right {
-            margin: initial;
+            margin-right: auto;
             margin-left: 16px;
-            transform: translateX(0);
-            left: 0;
+            // margin: initial;
+            // transform: translateX(0);
+            // left: 0;
         }
     }
 }
