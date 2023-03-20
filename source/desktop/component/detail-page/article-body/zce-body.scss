@@ -1,4 +1,40 @@
 // style layout
+// style for detail page
+
+@mixin classOutsetLeftRightDetail {
+
+    &.outset-left {
+        margin-left: auto;
+    }
+
+    &.outset-right {
+        margin-right: auto;
+    }
+}
+
+@mixin maxWidthFullWiwthDetail {
+
+    &.full-width,
+    &.max-width {
+        width: 100%;
+    }
+
+}
+
+// style table in side blockquote, notebox
+@mixin table {
+    table {
+
+        &.full-width,
+        &.max-width {
+            width: 100%;
+        }
+    }
+
+    @include tableNotBorder();
+
+}
+
 @mixin space {
     >* {
         margin-top: 16px;
@@ -72,30 +108,7 @@
     }
 }
 
-@mixin classOutsetLeftRightDetail {
 
-    &.outset-left {
-        margin-left: auto;
-    }
-
-    &.outset-right {
-        margin-right: auto;
-    }
-}
-
-// style table in side blockquote, notebox
-@mixin table {
-    table {
-
-        &.full-width,
-        &.max-width {
-            width: 100%;
-        }
-    }
-
-    @include tableNotBorder();
-
-}
 
 .zce-content-body {
     table {
@@ -153,6 +166,24 @@
     .notebox {
         @include space();
         @include table();
+    }
+}
+
+// for detail-page
+.detail {
+    .zce-content-body {
+
+        figure,
+        table,
+        blockquote,
+        .notebox,
+        .poll-box {
+            @include classOutsetLeftRightDetail();
+        }
+
+        table {
+            @include maxWidthFullWiwthDetail();
+        }
     }
 }
 
