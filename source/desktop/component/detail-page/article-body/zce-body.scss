@@ -167,6 +167,14 @@
         @include space();
         @include table();
     }
+
+    .live-zone,
+    .interview-zone {
+        table {
+            @include maxWidthFullWiwthDetail();
+            @include classOutsetLeftRightDetail();
+        }
+    }
 }
 
 // for detail-page
