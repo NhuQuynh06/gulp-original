@@ -178,19 +178,21 @@
 }
 
 // for detail-page
-.detail {
-    .zce-content-body {
-
-        figure,
-        table,
-        blockquote,
-        .notebox,
-        .poll-box {
-            @include classOutsetLeftRightDetail();
-        }
-
-        table {
-            @include maxWidthFullWiwthDetail();
+.site-body {
+    >.container:not(.longform) {
+        .zce-content-body {
+        
+            figure,
+            table,
+            blockquote,
+            .notebox,
+            .poll-box {
+                @include classOutsetLeftRightDetail();
+            }
+        
+            table {
+                @include maxWidthFullWiwthDetail();
+            }
         }
     }
 }
