@@ -47,10 +47,6 @@
 
 
         &:hover {
-            span {
-                background-color: #fff;
-                border: 1px solid rgba(0, 0, 0, .4)
-            }
 
             i {
                 color: #212529
@@ -63,6 +59,7 @@
     }
 
     .mute-wrap {
+
         &:hover {
             .volume-slider {
                 width: 62px;
@@ -204,24 +201,6 @@
             background-color: #fff;
             box-shadow: 0 0 4px rgba(0, 0, 0, .4)
         }
-
-        &:hover {
-
-            .bg,
-            .fill-recent {
-                border-top-width: 5px;
-                height: 10px;
-                padding-top: 15px;
-                cursor: pointer;
-            }
-
-            .current_time {
-                display: flex;
-                top: -8px;
-                width: 12px;
-                height: 12px;
-            }
-        }
     }
 
     .right {
@@ -327,11 +306,12 @@
     font-size: 0;
     background-color: #F7F7F7;
     border: 1px solid #DEE2E6;
+    padding-left: 16px;
 
     .play-button {
-        width: 60px;
+        min-width: 36px;
         height: 100%;
-        padding-left: 16px;
+        // padding-left: 16px;
         padding-right: 0;
         font-size: 14px;
 
@@ -343,12 +323,6 @@
 
         .ic-tts-play {
             margin-left: 3px;
-        }
-
-        .ic-tts-pause {}
-
-        &:hover {
-            .ic-tts-pause {}
         }
     }
 
@@ -374,14 +348,6 @@
         .bg,
         .fill-recent {
             top: 29px;
-        }
-
-        &:hover {
-
-            .bg,
-            .fill-recent {
-                top: 28px;
-            }
         }
     }
 
