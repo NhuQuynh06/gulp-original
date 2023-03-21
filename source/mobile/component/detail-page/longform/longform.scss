@@ -1,0 +1,70 @@
+// style for detail page
+
+@mixin classOutsetLeftRightDetail {
+
+    &.outset-left {
+        margin-left: auto;
+    }
+
+    &.outset-right {
+        margin-right: auto;
+    }
+}
+
+@mixin maxWidthFullWiwthDetail {
+
+    &.full-width,
+    &.max-width {
+        width: 100%;
+    }
+
+}
+
+.longform {
+    // max-width: 822px !important;
+    margin: -20px auto 0;
+
+    .article {
+        >table {
+            &.full-width {
+                max-width: calc(100vw - 17px);
+                width: 100vw;
+                left: 50%;
+                position: relative;
+                transform: translateX(-50%);
+                right: auto;
+            }
+
+            img {
+                width: 100%;
+            }
+
+            .caption {
+                font-size: 14px;
+                line-height: 21px;
+                color: #6C757D;
+                text-align: center;
+                margin-top: 8px;
+                display: block;
+                font-weight: $font-weight-normal;
+
+                >* {
+                    margin-top: 0;
+                }
+            }
+        }
+
+        figure,
+        table,
+        blockquote,
+        .notebox,
+        .poll-box {
+            @include classOutsetLeftRightDetail();
+        }
+
+        table {
+            @include maxWidthFullWiwthDetail();
+        }
+    }
+
+}

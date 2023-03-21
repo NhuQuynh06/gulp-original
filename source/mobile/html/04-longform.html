@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>NAME PROJECT</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../styles/css/mobile.css">
+</head>
+
+<body>
+    <!-- site header -->
+    @@include('../component/header/header.html')
+
+    <!-- site body -->
+    <div class="site-body">
+        <div class="container longform">
+            <div class="article">
+                <table class="picture full-width">
+                    <tbody>
+                        <tr>
+                            <td class="img">
+                                <img src="https://source.unsplash.com/random/2024x400?sig=1" alt="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="caption">Lorem ipsum dolor sit amet consectetur.</td>
+                        </tr>
+                    </tbody>
+                </table>
+                @@include('../component/detail-page/article-header/article-header.html')
+                @@include('../component/detail-page/article-body/article-body.html')
+            </div>
+        </div>
+    </div>
+
+    <!-- site footer -->
+    @@include('../component/footer/footer.html')
+
+    <!-- JS Global Compulsory-->
+    <script src="../js/jquery-3.1.1.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <script src="../js/ui.js"></script>
+</body>

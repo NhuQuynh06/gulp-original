@@ -1,0 +1,80 @@
+.title {
+    display: block;
+
+    &:hover {
+        color: $third;
+    }
+}
+
+.story {
+    overflow: auto;
+
+    figure {
+        margin: 0;
+    }
+
+    &__thumb {
+        overflow: hidden;
+        background: transparent url(../img/background.png) center center/ no-repeat;
+        background: #ccc;
+
+        a {
+            display: flex;
+            width: 100%;
+            transition: transform 0.5s ease-out 0.1s;
+            transition: 0.5s;
+        }
+
+        img {
+            width: 100%;
+            transition: transform 0.5s;
+            text-indent: -9999px;
+        }
+    }
+
+    &__heading a {
+        display: block;
+        transition: 0.5s;
+        overflow: hidden;
+
+        &:hover {
+            color: $third !important;
+        }
+    }
+
+    &__summary {
+        font-size: 14px;
+        font-weight: $font-weight-medium;
+        color: #343a40;
+        display: block;
+        overflow: hidden;
+        margin-bottom: 0;
+
+        >* {
+            font-size: 14px;
+            font-weight: $font-weight-medium;
+            color: #343a40;
+            display: block;
+            overflow: hidden;
+            margin-bottom: 0;
+        }
+    }
+
+    time {
+        display: block;
+    }
+
+    &__meta {
+        a {
+            &:hover {
+                color: $third;
+            }
+        }
+    }
+
+    &__sub-heading a {
+        &:hover {
+            color: $third !important;
+        }
+    }
+}

@@ -1,0 +1,48 @@
+.site-footer {
+    margin: 30px auto 12px;
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+
+    .info {
+        font-size: 15px;
+        line-height: 22px;
+        color: #495057;
+
+        >* {
+            margin-top: 8px;
+
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+
+        .logo {
+            background: url(../img/logo.png) center center/198px no-repeat;
+            width: 198px;
+            height: 50px;
+            display: block;
+            margin: 0 auto 12px;
+        }
+
+
+    }
+
+    .bold {
+        font-weight: $font-weight-semibold;
+    }
+
+    .row {
+        padding-top: 18px;
+        margin-top: 12px;
+
+        .text {
+            font-size: 15px;
+            line-height: 22px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #6C757D;
+
+        }
+    }
+}

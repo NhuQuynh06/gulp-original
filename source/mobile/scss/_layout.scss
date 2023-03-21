@@ -1,0 +1,26 @@
+.container {
+    max-width: 540px !important;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 16px;
+}
+
+.site-body {
+    margin-top: 65px;
+}
+
+// layout detail-page
+.col {
+    display: flex;
+    justify-content: space-between;
+
+    >* {
+        >* {
+            margin-top: 16px;
+
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+    }
+}
