@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>NAME PROJECT</title>
+  <title>NAME</title>
   <!-- Meta -->
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,53 +19,83 @@
 
   <!-- site body -->
   <div class="site-body">
+    <div class="social">
+      <a href="" class="fb">fb</a>
+      <a href="" class="yt">yt</a>
+      <a href="" class="zl">zl</a>
+      <a href="" class="tw">tw</a>
+    </div>
     <div class="container">
-      <div class="row">
-        <article class="story">
-          <figure class="story__thumb">
-            <a href="" title=""> <img src="https://source.unsplash.com/random/700x394?sig=1" data-src="dgfjbhjgdhj.jpg"
-                alt=""></a>
-          </figure>
-        </article>
-        <article class="story">
-          <figure class="story__thumb">
-            <a href="" title=""> <img src="https://source.unsplash.com/random/700x394?sig=1" data-src="gdfgdfgdhsjf.gif"
-                data-dhf="fgdfgdhsjf.gif" alt=""></a>
-          </figure>
-        </article>
-        <article class="story">
-          <figure class="story__thumb">
-            <a href="" title=""> <img src="https://source.unsplash.com/random/700x394?sig=1"
-                data-src="https://photo-cms-baonghean.epicdn.me/300x200/Uploaded/2023/asfsfzyrmyl/2023_03_11/bna-mastes-2504.gif"
-                alt=""></a>
-          </figure>
-        </article>
+      <div class="banner-wrap">
+        <div class="banner">
+          <div class="banner_show">
+            <a href="#">
+              <img src="https://source.unsplash.com/random/300x100?sig=1" alt="">
+            </a>
+          </div>
+          <div class="banner_show">
+            <a href="#">
+              <img src="https://source.unsplash.com/random/300x100?sig=1" alt="">
+            </a>
+          </div>
+          <div class="banner_show">
+            <a href="#">
+              <img src="https://source.unsplash.com/random/300x100?sig=1" alt="">
+            </a>
+          </div>
+        </div>
       </div>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita aperiam accusamus obcaecati distinctio
-        nesciunt dolorem repellendus eligendi rem beatae, quos quidem illo odit voluptatibus asperiores libero quas, et
-        alias dolorum fugiat voluptatem praesentium. Cumque tempore delectus, velit labore laboriosam debitis obcaecati
-        ipsa quos natus ad assumenda aliquid blanditiis iure optio ipsum, praesentium ab in nesciunt rem sequi? Ducimus,
-        laborum. Ratione accusantium rem numquam, sed sequi illum. Hic neque id labore officia perferendis officiis,
-        harum reiciendis aperiam obcaecati maiores numquam magnam illo exercitationem expedita deleniti blanditiis
-        ratione laudantium. Debitis nesciunt suscipit rerum nemo ullam delectus nobis optio magni quisquam, sit quo
-        fugiat corrupti expedita quia voluptatem culpa tempore quod dolorem. Natus qui quidem debitis praesentium
-        distinctio, autem corrupti repudiandae sapiente corporis incidunt fugit molestias assumenda libero suscipit
-        animi dolorum blanditiis iste doloremque! Doloribus, optio. Repudiandae delectus id odio voluptatem quos
-        perspiciatis rerum error culpa, unde explicabo ab pariatur? Repellendus qui culpa enim sapiente consequatur,
-        distinctio debitis deleniti eius nihil aliquam soluta sit quas ut illo perferendis doloribus laboriosam
-        molestiae itaque suscipit facilis error cupiditate. Blanditiis praesentium, iste autem voluptates debitis non ut
-        fugit, perspiciatis dolore quasi rerum mollitia nam esse id aliquam obcaecati? Suscipit autem ipsa, nemo numquam
-        voluptatem, nam excepturi iure nulla eum, sequi quia itaque repellat ipsum? Fugiat explicabo repudiandae quidem
-        alias eveniet reiciendis, vero rem a deserunt, non, beatae perferendis recusandae libero eligendi aperiam. Est
-        amet possimus voluptates laborum repellat nihil modi, maxime, nemo quos eos, maiores commodi voluptatem? Ratione
-        veritatis amet nesciunt? Ab sint maxime at, illum in, fugit exercitationem quisquam iusto necessitatibus
-        reprehenderit ea ducimus eos adipisci debitis cum eius veritatis libero. Deleniti quae magnam totam eum,
-        reiciendis illum, libero dignissimos accusantium ducimus, iste beatae quo expedita itaque accusamus. Eos esse
-        commodi sint corporis facere unde, facilis deserunt, odit, laboriosam sed repudiandae veritatis! Officia,
-        voluptates et.</p>
+      @@include('../component/box-style/abf-homepage/abf-homepage.html')
+      @@include('../component/box-style/topics/topics.html')
+      <div class="banner">
+        <div class="banner_show">
+          <img src="https://source.unsplash.com/random/700x100?sig=1" alt="">
+        </div>
+      </div>
+    </div>
+    @@include('../component/box-style/multimedia/multimedia.html')
+    <div class="banner">
+      <div class="banner_show">
+        <img src="https://source.unsplash.com/random/700x100?sig=1" alt="">
+      </div>
+    </div>
+    <div class="container">
+      <div class="col">
+        <div class="main-col">
+          <div class="timeline">
+            <div class="box-content">
+                @@for ( var i=0; i < 15; i++) { <article class="story">
+                    <figure class="story__thumb">
+                        <a href="#" title=""> <img src="https://source.unsplash.com/random/330x220?sig=1"
+                                alt="330x220 (3x2)"></a>
+                    </figure>
+                    <h5 class="story__heading">
+                        <a href="#">
+                            10 điều nên thử khi du lịch Đài Loan vào mùa đông
+                            <i class="ic-type-img"></i>
+                        </a>
+                    </h5>
+                    <div class="story__meta">
+                        <time class="time" datetime="2023-03-22T19:58:40+0700"> 22/03/2023 19:58 </time> </div>
+                    <div class="story__summary">
+                        Đối với Liverpool, chiến thắng 7-0 trước đại kình địch là giấc mơ điên rồ nhất. Đối với Man.United, đây
+                        thực
+                        sự là cơn ác mộng tồi tệ nhất trong mùa giải đầu tiên đầy hứa hẹn dưới sự dẫn dắt của HLV Erik ten Hag.
+                    </div>
+                    </article>
+                    }
+            </div>
+        </div>
+        </div>
+        <div class="sub-col">
+          @@include('../component/box-style/box-default/box-default.html')
+
+        </div>
+      </div>
+      @@include('../component/box-style/multi-pack/multi-pack.html')
     </div>
   </div>
-
+  <div class="back-to-top"></div>
   <!-- site footer -->
   @@include('../component/footer/footer.html')
 

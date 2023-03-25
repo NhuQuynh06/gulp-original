@@ -1,0 +1,41 @@
+.box-story {
+    .box-heading {
+        margin-bottom: 8px;
+    }
+
+    .title {
+        font-family: $font-family-branch;
+        font-weight: $font-weight-normal;
+        font-size: 25px;
+        line-height: 37px;
+        text-transform: uppercase;
+        color: #000000;
+    }
+
+    .story {
+        margin-top: 16px;
+        padding-top: 16px;
+        border-top: 1px solid #E9ECEF;
+
+        &:first-child {
+            margin-top: 0;
+            border-top: none;
+            padding-top: 0;
+
+            .story__heading a {
+                padding-top: 8px;
+            }
+        }
+
+        &__thumb {
+            width: 270px;
+            height: 180px;
+        }
+
+        &__heading a {
+            font-weight: $font-weight-medium;
+            font-size: 17px;
+            line-height: 25px;
+        }
+    }
+}

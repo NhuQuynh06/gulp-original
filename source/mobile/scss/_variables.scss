@@ -4,10 +4,10 @@ html {
 }
 
 $body-bg: #fff;
-$body-color: #343a40;
-$font-family-sans-serif: Arial, Helvetica, sans-serif;;
-$font-family-serif: Arial, Helvetica, sans-serif;;
-$font-family-branch: Arial, Helvetica, sans-serif;;
+$body-color: #343A40;
+$font-family-sans-serif: "SF", Arial, Helvetica, sans-serif;;
+$font-family-serif: "SF", Arial, Helvetica, sans-serif;;
+$font-family-branch: "Oswald", Arial, Helvetica, sans-serif;;
 $font-size-base: 1.4rem;
 
 
@@ -18,12 +18,6 @@ $third: #e21f26;
 $dark: #212529;
 $light: #e9ecef;
 
-
-
-// Variables
-//
-// Variables should follow the `$component-state-property-size` formula for
-// consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
 
 // Color system
 
@@ -131,5 +125,5 @@ $font-weight-light: 300;
 $font-weight-normal: 400;
 $font-weight-medium: 500;
 $font-weight-semibold: 600;
-$font-weight-bold: 700;
-$font-weight-bolder: 800;
+$font-weight-semibold: 700;
+$font-weight-semibolder: 800;

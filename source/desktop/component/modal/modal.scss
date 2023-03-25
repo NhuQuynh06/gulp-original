@@ -32,7 +32,7 @@
     left: 0;
     right: 0;
     margin: 0 auto;
-    padding: 16px;
+    padding: 50px;
     background: #fff;
     border-radius: 4px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
@@ -55,20 +55,20 @@
 
     .modal-header {
         min-height: 50px;
-        background: $primary;
+        background: #fff;
         display: flex;
         align-items: center;
-        justify-content: center;
-        margin: -16px -16px 0;
-        padding: 12px;
+        margin: -50px -50px 0;
+        padding: 20px 36px;
+        border: 1px solid #EEEEEE;
 
         .modal-title {
-
             font-weight: normal;
             font-size: 20px;
             line-height: 34px;
             text-transform: uppercase;
-            color: $white;
+            color: #343A40;
+            font-weight: $font-weight-semibold;
         }
     }
 
@@ -126,9 +126,11 @@
         margin-right: -10px;
         max-height: 400px;
         padding: 0 10px 0 0;
+        font-size: 16px;
 
         @media (min-width: 1024px) {
-            max-height: 650px;
+            max-height: 412px;
+            // max-height: 650px;
             max-width: 500px;
             width: 500px;
         }
@@ -158,17 +160,18 @@
             }
 
             label {
-                font-size: 14px;
+                font-size: 16px;
                 color: #444;
                 font-weight: 600;
             }
 
             input.form-control,
             .form-select {
-                border: 1px solid #ced4da;
-                border-radius: 0.25rem;
+                height: 50px;
+                background: #F3F5F7;
+                border-radius: 8px;
+                border: none;
                 transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-                height: 40px;
                 padding: 0 12px;
                 width: 100%;
                 font-size: 14px;
@@ -218,7 +221,7 @@
         .heading-body {
             color: #343a40;
             font-size: 18px;
-            font-weight: $font-weight-bold;
+            font-weight: $font-weight-semibold;
         }
 
         // style for table
@@ -248,11 +251,13 @@
         .form-check-label {
             display: flex;
             text-transform: uppercase;
+            margin-bottom: 0;
         }
 
         .text-notice {
             display: flex;
             font-size: 13px;
+            align-items: center;
 
             input {
                 margin-right: 8px;
@@ -361,7 +366,7 @@
 
         label {
 
-            font-weight: $font-weight-bold;
+            font-weight: $font-weight-semibold;
         }
     }
 }
@@ -402,8 +407,9 @@
             width: 35px;
             right: 0;
             cursor: pointer;
-            height: 40px;
+            height: 50px;
             bottom: 0;
+            background: url(../img/eye.svg) center center/18px no-repeat;
 
             &.slash {
                 &::after {
@@ -411,8 +417,8 @@
                     content: '';
                     width: 27px;
                     height: 1px;
-                    top: 19px;
-                    left: 6px;
+                    top: 24px;
+                    left: 4px;
                     background: black;
                     transform: rotate(32deg);
                 }
@@ -439,7 +445,7 @@
     .rank-1,
     .rank-2 {
         >* {
-            margin-top: 6px;
+            margin-top: 16px;
 
             &:first-child {
                 margin-top: 0;

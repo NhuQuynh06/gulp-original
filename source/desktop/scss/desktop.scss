@@ -21,6 +21,9 @@
 @import '../component/header/header.scss';
 @import '../component/footer/footer.scss';
 @import '../component/modal/modal.scss';
+@import '../component/breadcrumbs/breadcrumbs.scss';
+@import '../component/search-tags/search-tags.scss';
+@import '../component/error/error.scss';
 @import '../component/podcast/podcast.scss';
 
 // ----------------------------------
@@ -42,5 +45,10 @@
 // ----------------------------------
 @import '../component/box-style/box-default/box-default.scss';
 @import '../component/box-style/timeline/timeline.scss';
-@import '../component/box-style/error/error.scss';
-@import '../component/box-style/search-tags/search-tags.scss';
+@import '../component/box-style/abf-homepage/abf-homepage.scss';
+@import '../component/box-style/topics/topics.scss';
+@import '../component/box-style/multimedia/multimedia.scss';
+@import '../component/box-style/multi-pack/multi-pack.scss';
+@import '../component/box-style/story/story.scss';
+@import '../component/box-style/abf-cate/abf-cate.scss';
+@import '../component/box-style/suggest/suggest.scss';

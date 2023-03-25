@@ -30,8 +30,8 @@
 
             .story__heading a {
                 padding-top: 8px;
-                font-family: 'Merriweather';
-                font-weight: $font-weight-bold;
+                
+                font-weight: $font-weight-semibold;
                 font-size: 15px;
                 line-height: 24px;
                 color: #212529;
@@ -55,7 +55,7 @@
                 }
 
                 &__heading a {
-                    font-family: 'Merriweather';
+                    
                     font-weight: $font-weight-normal;
                     font-size: 15px;
                     line-height: 24px;

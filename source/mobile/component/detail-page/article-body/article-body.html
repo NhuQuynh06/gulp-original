@@ -7,19 +7,34 @@
     @@include('./content-body/_quote.html')
     @@include('./content-body/_notebox.html')
     @@include('./content-body/_poll.html')
+    @@include('./content-body/_article-relate.html')
+    @@include('./content-body/_relate-topic.html')
     <!-- live. interview -->
-    <!-- @@include('../live/live.html')
-    @@include('../interview/interview.html') -->
+    @@include('../interview/interview.html')
+    @@include('../live/live.html')
     <!-- end -->
-    @@include('./content-body/_relate-topic.html', {"box-name" : "Chủ đề: Công tử Bạc Liêu"})
     @@include('./content-body/_related-news.html')
+    <div class="article__source">
+        <div class="wrap-source">
+            <div class="avatar">
+                <img src="https://source.unsplash.com/random/100x100?sig=1" alt="100x100 (~1x1)">
+            </div>
+            <div class="info-author">
+                <a href="" class="name">Nguồn Công Thương</a>
+                <a href="" class="text">
+                    https://congthuong.vn/nhung-giam-doc-doanh-nghiep-nao-o-nghe-an-bi-tam-hoan-xuat-canh-245331.html</a>
+            </div>
+        </div>
+        <div class="wrap-source">
+            <div class="avatar">
+            </div>
+            <div class="info-author">
+                <a href="" class="name">Nguồn Công Thương</a>
+            </div>
+        </div>
+    </div>
+    @@include('./content-body/_author.html')
+
 </div>
 @@include('./content-body/_tags.html')
 @@include('../comment/comment.html')
-
-<!-- 
-trong bài chi tiết, longform có tất cả 7 case, support bài longform trước :
-2 case trái, phải : Class : align-left, align-right, att : align="left", align="right", align="center" 
-2 : class outset : outset-left, outset-right 
-3 case : class max-width, full-width, width = content
--->

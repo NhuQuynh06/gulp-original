@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>NAME</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../styles/css/desktop.css">
+</head>
+
+<body>
+    <!-- site header -->
+    @@include('../component/header/header.html')
+
+    <!-- site body -->
+    <div class="site-body">
+        <div class="social">
+            <a href="" class="fb">fb</a>
+            <a href="" class="yt">yt</a>
+            <a href="" class="zl">zl</a>
+            <a href="" class="tw">tw</a>
+        </div>
+        <div class="container category">
+            <div class="breadcrumbs">
+                <h2 class="main"><a href="">Chính trị-thời sự</a></h2>
+                <h1 class="main"><a class="active" href="">Đại hội Đảng bộ tỉnh lần thứ XVI</a></h1>
+                <div class="sub">
+                    <a href="#" class="active">Văn bản mới</a>
+                    <a href="#" class="">Giải Búa liềm vàng</a>
+                    <a href="#" class="">Đại hội Đảng bộ tỉnh lần thứ XVI</a>
+                </div>
+            </div>
+            @@include('../component/box-style/abf-cate/abf-cate.html')
+            <div class="col">
+                <div class="main-col">
+                    @@include('../component/box-style/timeline/timeline.html')
+                </div>
+                <div class="sub-col">
+                    <div class="banner">
+                        <div class="banner_show">
+                            <img src="https://source.unsplash.com/random/300x994?sig=1" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="back-to-top"></div>
+    <!-- site footer -->
+    @@include('../component/footer/footer.html')
+
+    <!-- JS Global Compulsory-->
+    <script src="../js/jquery-3.1.1.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <script src="../js/ui.js"></script>
+</body>

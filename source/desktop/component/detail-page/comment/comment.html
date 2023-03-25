@@ -1,94 +1,117 @@
-<div class="box-comment">
-    <h3 class="box-heading">
-        <a href="#" class="heading">Bình luận</a>
-    </h3>
-    <div class="box-content">
-        <div class="wrap-comment">
-            <textarea rows="5"
-                placeholder="Ý kiến của bạn sẽ được biên tập trước khi đăng. Xin vui lòng gõ Tiếng Việt có dấu*"></textarea>
-            <div class="w-100 mt-3 d-flex justify-content-end">
-                <button class="btnSubmit btn-modal" data-target="userInfoModal">Gửi
-                    bình luận</button>
+<div class="wrap-comment">
+    <div class="article__comment">
+        <h3 class="box-heading">
+            <a href="" class="title">Ý kiến bạn đọc</a>
+        </h3>
+        <div class="box-content">
+            <div class="input-comment">
+                <textarea placeholder="Nhập nội dung bình luận"></textarea>
+                <div class="note-btn">
+                    <button class="btn-submit" data-toggle="modal" data-target="#ModalComments">Gửi bình luận</button>
+                </div>
             </div>
-        </div>
-        <div class="user">
-            <div class="topic-comment">
-                <div class="content content-comment">
-                    <p class="name info-author">Phạm Thị Loan</p>
-                    <time class="time">4 giờ trước</time>
-                    <p class="text">Vậy ra ngân hàng rút tiền, chuyển tiền, đáo hạn, trả nợ
-                        có
-                        được ra đường không?</p>
-                    <p class="tool comment-actions action-comment">
-                        <a class="btnReply cmt-reply" href="#reply"><i class="ic-reply"></i> Trả lời</a>
-                        <a class="btnLike cmt-like" href="#like"><i class="ic-like"></i> <span class="count">20</span>
-                            Thích</a>
-                    </p>
-                    <div class="reply  action-comment-reply"><textarea rows="5" class="form-control"
-                            comment-parent="518158">@Phạm Thị Loan: </textarea>
-                        <div class="w-100 mt-3 d-flex">
-                            <button class="btn-Submit btn-modal" data-target="userInfoModal">Gửi
-                                bình
+            <div class="list-comment">
+                <div class="rank-1">
+                    <span class="avatar">
+                        <img src="https://source.unsplash.com/random/100x100?sig=1" alt="">
+                    </span>
+                    <div class="content">
+                        <div class="name">Nguyễn Văn Tuấn</div>
+                        <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. </div>
+                        <div class="action">
+                            <a href="#" class="like liked">5 Thích<span class="count">(1)</span></a>
+                            <a href="#" class="reply">Trả lời</a>
+                        </div>
+                        <div class="wrap-reply">
+                            <textarea placeholder="Nhập nội dung bình luận"></textarea>
+                            <button class="btn-submit" data-toggle="modal" data-target="#modalLogin">Gửi bình
                                 luận</button>
                         </div>
                     </div>
-                    <p></p>
                 </div>
-            </div>
-            <div class="comment inner-comment">
-                <div class="topic-comment">
-                    <div class="content content-comment">
-                        <p class="name info-author">Nguyễn Văn Tuấn</p>
-                        <time class="time">4 giờ trước</time>
-                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit,
-                            sed do eiusmod tempor incididunt ut labore et dolore magna
-                            aliqua.
-                        </p>
-                        <p class="tool comment-actions action-comment">
-                            <a class="btnReply cmt-reply" href="#reply"><i class="ic-reply"></i> Trả lời</a>
-                            <a class="btnLike cmt-like" href="#like"><i class="ic-like"></i> <span
-                                    class="count">20</span>
-                                Thích</a>
-                        </p>
+                <div class="wrap-outer">
+                    <div class="rank-1">
+                        <span class="avatar">
+                            <img src="https://source.unsplash.com/random/100x100?sig=1" alt="">
+                        </span>
+                        <div class="content">
+                            <div class="name">Nguyễn Văn Tuấn</div>
+                            <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. </div>
+                            <div class="action">
+                                <a href="#" class="like liked">5 Thích<span class="count">(1)</span></a>
+                                <a href="#" class="reply">Trả lời</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrap-inner">
+                        <div class="rank-2">
+                            <span class="avatar">
+                                <img src="https://source.unsplash.com/random/100x100?sig=1" alt="">
+                            </span>
+                            <div class="content">
+                                <div class="name">Nguyễn Văn Tuấn</div>
+                                <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+                                <div class="action">
+                                    <a href="#" class="like liked">5 Thích<span class="count">(1)</span></a>
+                                    <a href="#" class="reply">Trả lời</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rank-2">
+                            <span class="avatar">
+                                <img src="https://source.unsplash.com/random/100x100?sig=1" alt="">
+                            </span>
+                            <div class="content">
+                                <div class="name">Nguyễn Văn Tuấn</div>
+                                <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+                                <div class="action">
+                                    <a href="#" class="like liked">5 Thích<span class="count">(1)</span></a>
+                                    <a href="#" class="reply">Trả lời</a>
+                                </div>
+                                <div class="wrap-reply">
+                                    <textarea placeholder="Nhập nội dung bình luận"></textarea>
+                                    <button class="btn-submit" data-toggle="modal" data-target="#ModalVote">Gửi bình
+                                        luận</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="sub-comments sub-comment">
-                    <div class="content content-comment">
-                        <p class="name info-author">Chitien Nguyen</p>
-                        <time class="time">4 giờ trước</time>
-                        <p class="text">Lorem ipsum dolor sit amet, consectetur
-                            adipisicing
-                            elit, sed do eiusmod tempor incididunt ut labore et dolore
-                            magna
-                            aliqua.</p>
-                        <p class="tool comment-actions action-comment">
-                            <a class="btnReply cmt-reply" href="#reply"><i class="ic-reply"></i> Trả lời</a>
-                            <a class="btnLike cmt-like" href="#like"><i class="ic-like"></i> <span
-                                    class="count">20</span>
-                                Thích</a>
-                        </p>
+                <div class="wrap-outer">
+                    <div class="rank-1">
+                        <span class="avatar">
+                            <img src="https://source.unsplash.com/random/100x100?sig=1" alt="">
+                        </span>
+                        <div class="content">
+                            <div class="name">Nguyễn Văn Tuấn</div>
+                            <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. </div>
+                            <div class="action">
+                                <a href="#" class="like liked">5 Thích<span class="count">(1)</span></a>
+                                <a href="#" class="reply">Trả lời</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="sub-comments sub-comment">
-                    <div class="content content-comment">
-                        <p class="name info-author">Chitien Nguyen</p>
-                        <time class="time">4 giờ trước</time>
-                        <p class="text">Lorem ipsum dolor sit amet, consectetur
-                            adipisicing
-                            elit, sed do eiusmod tempor incididunt ut labore et dolore
-                            magna
-                            aliqua.</p>
-                        <div class="tool comment-actions action-comment">
-                            <a class="btnReply cmt-reply" href="#reply"><i class="ic-reply"></i> Trả lời</a>
-                            <a class="btnLike cmt-like" href="#like"><i class="ic-like"></i> <span
-                                    class="count">20</span>
-                                Thích</a>
-                            <div class="reply action-comment-reply">
-                                <textarea rows="5"></textarea>
-                                <div class="w-100 mt-3 d-flex">
-                                    <button class="btn-Submit btn-modal" data-target="userInfoModal">Gửi
-                                        bình
+                    <div class="wrap-inner">
+                        <div class="rank-2">
+                            <span class="avatar">
+                                <img src="https://source.unsplash.com/random/100x100?sig=1" alt="">
+                            </span>
+                            <div class="content">
+                                <div class="name">Nguyễn Văn Tuấn</div>
+                                <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+                                <div class="action">
+                                    <a href="#" class="like liked">5 Thích<span class="count">(1)</span></a>
+                                    <a href="#" class="reply">Trả lời</a>
+                                </div>
+                                <div class="wrap-reply">
+                                    <textarea placeholder="Nhập nội dung bình luận"></textarea>
+                                    <button class="btn-submit" data-toggle="modal" data-target="#ModalVote">Gửi bình
                                         luận</button>
                                 </div>
                             </div>
@@ -96,7 +119,8 @@
                     </div>
                 </div>
             </div>
+            <button type="button" class="show-more" data-toggle="modal" data-target="#ModalNoti">XEM THÊM BÌNH
+                LUẬN</button>
         </div>
-        <button type="button" class="btn btn-link btn-lg mt-3">XEM THÊM BÌNH LUẬN</button>
     </div>
 </div>

@@ -1,5 +1,5 @@
 // ----------------------------------
-// INFO : Js global
+// INFO : Unchangeable
 // ----------------------------------
 
 // INFOR : for header
@@ -24,20 +24,24 @@ $('.search-wrapper .mask').click(function () {
 
 $('.navigation .ic-down1').click(function (e) {
     e.preventDefault();
-    $(e.target).toggleClass("ic-up");
+    $(e.target).toggleClass("ic-up1");
     const parent = $(e.target).parent();
     const subMenu = parent.siblings()[0];
     $(subMenu).slideToggle("");
 });
 
+
+
 // INFO : for check gif img
 var img = $(".story .story__thumb img");
 $.each(img, function () {
     var dataSrc = this.dataset.src;
-    if (dataSrc.slice(-4) === ".gif") {
-        $(this).closest("figure").css(
-            "background", "#eee"
-        )
+    if (dataSrc) {
+        if (dataSrc.slice(-4) === ".gif") {
+            $(this).closest("figure").css(
+                "background", "#eee"
+            )
+        }
     }
 });
 
@@ -90,24 +94,69 @@ $('.modal-backdrop').on('click', function () {
     $('.modal').fadeOut();
 });
 
-// style header
-$("body").append("<div class='backdrop'></div>");
-$(".extend .ic-menu").click(function (e) {
-    e.preventDefault();
-    $(".big-menu").fadeToggle("show");
-    $("body").toggleClass("modal-open");
-    $('.backdrop').fadeToggle();
-    $(".navigation.sticky.fixed").toggleClass("w");
+// back to top
+var btn = $('.back-to-top');
+$(window).scroll(function () {
+    if ($(window).scrollTop() > 800) {
+        btn.addClass('show');
+    } else {
+        btn.removeClass('show');
+    }
 });
 
-$(".backdrop").on('click', function () {
-    setTimeout(() => {
-        $(".big-menu").fadeToggle("show");
-        $("body").toggleClass("modal-open");
-        $('.backdrop').fadeToggle();
-        $(".navigation.sticky.fixed").toggleClass("w");
-    }, 150);
+btn.on('click', function (e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: 0 }, '300');
 });
+
 // ----------------------------------
-// INFO : Js for project
+// INFO : Js for project, be changed
 // ----------------------------------
+// breadcrumbs
+$(".breadcrumbs .ic-down3").click(function (e) {
+    e.preventDefault();
+    $(".breadcrumbs .sub").slideToggle();
+});
+
+// footer bar
+$(".footer-bar .back").click(function (e) {
+    e.preventDefault();
+    $(".footer-bar .social").slideToggle();
+});
+
+$('.topics').slick({
+    dots: true,
+    infinite: true,
+    slidesToShow: 1,
+    centerMode: true,
+    speed: 1000,
+    autoplaySpeed: 8000,
+    arrows: false,
+    dots: false,
+});
+
+$('.half-slide .box-content').slick({
+    dots: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    speed: 1000,
+    autoplaySpeed: 8000,
+    arrows: false,
+    dots: false,
+});
+
+$('.slide .box-content').slick({
+    infinite: true,
+    variableWidth: true,
+    centerMode: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: false,
+    adaptiveHeight: true,
+    autoplay: true,
+    speed: 1000,
+    autoplaySpeed: 3000,
+});
+

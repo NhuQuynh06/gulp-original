@@ -23,14 +23,15 @@
     }
 }
 
-.site-body {
-    .container {
-        >* {
-            margin-top: 24px;
 
-            &:first-child {
-                margin-top: 0;
-            }
-        }
+.banner-wrap .banner {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    flex-direction: initial;
+    min-height: 50px;
+
+    .banner_show {
+        margin-bottom: 0;
     }
 }

@@ -1,9 +1,14 @@
 .site-footer {
+    margin-bottom: 10px;
+    border-top: 1px solid #ccc;
+
     >.row {
         justify-content: space-between;
         padding-top: 70px;
         margin-bottom: 30px;
         background: url(../img/top-decor.png) center top/1170px no-repeat;
+        position: relative;
+        z-index: -1;
 
         &:nth-child(2) {
             padding-top: 16px;

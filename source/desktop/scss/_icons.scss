@@ -1,40 +1,71 @@
 //  icon bài viết (dùng bằng ảnh)
 [class^=ic-type-] {
-    position: relative;
-    top: 4px;
-    margin-left: 5px;
-    width: 20px;
-    height: 20px;
     display: inline-block !important;
+    position: relative;
+    top: 2px;
 }
 
 .ic-type-img {
-    background: url(../img/ic-img.png) center center/20px no-repeat;
-}
 
-.ic-type-interview {
-    background: url(../img/ic-interview.png) center center/20px no-repeat;
+    &::before {
+        content: "\e91b";
+    }
 }
 
 .ic-type-video {
-    background: url(../img/ic-video.png) center center/20px no-repeat;
-}
 
-.ic-type-longform {
-    background: url(../img/ic-longform.png) center center/20px no-repeat;
-}
-
-.ic-type-info {
-    background: url(../img/ic-info.png) center center/20px no-repeat;
-}
-
-.ic-type-live {
-    background: url(../img/ic-live.png) center center/20px no-repeat;
+    &::before {
+        content: "\e923";
+    }
 }
 
 .ic-type-audio {
-    background: url(../img/ic-audio.png) center center/20px no-repeat;
+
+    &::before {
+        content: "\e922";
+    }
 }
+
+.ic-type-interview {
+    &::before {
+        content: "\e91c";
+    }
+}
+
+.ic-type-info {
+    &::before {
+        content: "\e900";
+    }
+}
+
+.ic-type-live,
+.ic-type-longform,
+.ic-type-emagazine {
+    position: relative;
+    top: 7px;
+}
+
+.ic-type-live {
+    background: url(../img/live.svg) center center no-repeat;
+    width: 60px;
+    height: 24px;
+    display: block;
+}
+
+.ic-type-longform {
+    background: url(../img/longform.svg) center center no-repeat;
+    width: 24px;
+    height: 24px;
+    display: block;
+}
+
+.ic-type-emagazine {
+    background: url(../img/e-ma.svg) center center no-repeat;
+    width: 28px;
+    height: 24px;
+    display: block;
+}
+
 
 // icomoon  
 @font-face {
@@ -76,23 +107,71 @@
     justify-content: center;
 }
 
+
+.ic-star:before {
+    content: "\e927";
+}
+
+.ic-print:before {
+    content: "\e926";
+    color: #fff;
+}
+
+.ic-mic:before {
+    content: "\e925";
+}
+
+.ic-back1:before {
+    content: "\e924";
+}
+
+.ic-chart:before {
+    content: "\e900";
+}
+
+.ic-gallery:before {
+    content: "\e91b";
+}
+
+.ic-messages:before {
+    content: "\e91c";
+}
+
+.ic-microphone:before {
+    content: "\e922";
+}
+
+.ic-play-circle:before {
+    content: "\e923";
+}
+
+.ic-location:before {
+    content: "\e921";
+}
+
+.ic-down1:before {
+    content: "\e919";
+    color: #495057;
+}
+
+.ic-up1:before {
+    content: "\e91e";
+    color: #495057;
+}
+
+.ic-eye:before {
+    content: "\e91f";
+}
+
+.ic-down3:before {
+    content: "\e920";
+}
+
 .ic-search:before {
     content: "\e91d";
 }
 
-.ic-photo:before {
-    content: "\e91b";
-}
-
-.ic-video:before {
-    content: "\e91c";
-}
-
-.ic-audio:before {
-    content: "\e900";
-}
-
-.ic-reply:before {
+.ic-back:before {
     content: "\e901";
 }
 
@@ -184,12 +263,8 @@
     content: "\e917";
 }
 
-.ic-top:before {
-    content: "\e918";
-}
-
 .ic-up:before {
-    content: "\e919";
+    content: "\e918";
 }
 
 .ic-wind:before {

@@ -2,7 +2,7 @@
     display: block;
 
     &:hover {
-        color: $third;
+        color: $primary;
     }
 }
 
@@ -14,9 +14,9 @@
     }
 
     &__thumb {
+        border-radius: 6px;
         overflow: hidden;
-        background: transparent url(../img/background.png) center center/ no-repeat;
-        background: #ccc;
+        background: #ddd;
 
         a {
             display: flex;
@@ -36,15 +36,37 @@
         display: block;
         transition: 0.5s;
         overflow: hidden;
+        font-weight: $font-weight-medium;
+        font-size: 18px;
+        line-height: 26px;
+        color: #212529;
 
         &:hover {
-            color: $third !important;
+            color: $primary !important;
+        }
+    }
+
+    &__meta {
+        margin-top: 6px;
+
+        time {
+            display: block;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 16px;
+            color: #adb5bd;
+        }
+
+        a {
+            &:hover {
+                color: $primary;
+            }
         }
     }
 
     &__summary {
         font-size: 14px;
-        font-weight: $font-weight-medium;
+        font-weight: $font-weight-normal;
         color: #343a40;
         display: block;
         overflow: hidden;
@@ -52,7 +74,7 @@
 
         >* {
             font-size: 14px;
-            font-weight: $font-weight-medium;
+            font-weight: $font-weight-normal;
             color: #343a40;
             display: block;
             overflow: hidden;
@@ -67,14 +89,14 @@
     &__meta {
         a {
             &:hover {
-                color: $third;
+                color: $primary;
             }
         }
     }
 
     &__sub-heading a {
         &:hover {
-            color: $third !important;
+            color: $primary !important;
         }
     }
 }

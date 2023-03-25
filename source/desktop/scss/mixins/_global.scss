@@ -1,20 +1,14 @@
-@mixin heading {
-    .heading {
-        font-family: "Oswald";
-        font-weight: $font-weight-medium;
-        font-size: 18px;
-        line-height: 27px;
-        text-transform: uppercase;
-        color: #000000;
-        display: flex;
-        align-items: center;
+@mixin title {
+    font-size: 25px;
+    line-height: 37px;
+    text-transform: uppercase;
+    color: #000000;
+    font-family: $font-family-branch;
+    font-weight: $font-weight-normal;
+    transition: all 0.3s;
 
-        i {
-            margin-right: 5px;
-
-            &::before {
-                font-size: 26px;
-            }
-        }
+    &:hover {
+        color: $primary;
     }
+
 }

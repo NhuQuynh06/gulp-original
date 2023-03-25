@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>NAME PROJECT</title>
+  <title>NAME</title>
   <!-- Meta -->
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,7 +19,8 @@
 
   <!-- site body -->
   <div class="site-body">
-    <div class="container">
+    <div class="container detail">
+      @@include('../component/breadcrumbs/breadcrumbs.html')
       <div class="col">
         <div class="main-col">
           <div class="article">
@@ -30,7 +31,46 @@
         <div class="sub-col">
           <div class="banner">
             <div class="banner_show">
-              <img src="https://source.unsplash.com/random/300x600?sig=1" alt="">
+              <img src="https://source.unsplash.com/random/300x200?sig=1" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      @@include('../component/box-style/suggest/suggest.html')
+      <div class="col">
+        <div class="main-col">
+          <div class="timeline">
+            <h3 class="box-heading">
+              <a href="" class="title">tin cùng chuyên mục</a>
+            </h3>
+            <div class="box-content">
+              @@for ( var i=0; i < 5; i++) { <article class="story">
+                <figure class="story__thumb">
+                  <a href="#" title=""> <img src="https://source.unsplash.com/random/330x220?sig=1"
+                      alt="330x220 (3x2)"></a>
+                </figure>
+                <h5 class="story__heading">
+                  <a href="#">
+                    10 điều nên thử khi du lịch Đài Loan vào mùa đông
+                    <i class="ic-type-img"></i>
+                  </a>
+                </h5>
+                <div class="story__summary">
+                  Đối với Liverpool, chiến thắng 7-0 trước đại kình địch là giấc mơ điên rồ nhất. Đối với Man.United,
+                  đây
+                  thực
+                  sự là cơn ác mộng tồi tệ nhất trong mùa giải đầu tiên đầy hứa hẹn dưới sự dẫn dắt của HLV Erik ten
+                  Hag.
+                </div>
+                </article>
+                }
+            </div>
+          </div>
+        </div>
+        <div class="sub-col">
+          <div class="banner">
+            <div class="banner_show">
+              <img src="https://source.unsplash.com/random/300x900?sig=1" alt="">
             </div>
           </div>
         </div>

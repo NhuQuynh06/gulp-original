@@ -91,6 +91,7 @@
         margin-right: 0px;
         cursor: pointer;
         transition: all .15s linear;
+        display: none;
 
         .volume-slider-handle {
             position: absolute;
@@ -300,13 +301,14 @@
 
 
 // > bm-player
+.tts-player,
 .audio {
     @include audio-player;
     height: 60px;
     font-size: 0;
-    background-color: #F7F7F7;
-    border: 1px solid #DEE2E6;
+    background-color: #F8F9FA;
     padding-left: 16px;
+    margin: 16px -16px;
 
     .play-button {
         min-width: 36px;

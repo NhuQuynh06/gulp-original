@@ -1,10 +1,21 @@
-.timeline,
-.zone-timeline {
+.timeline {
+    .box-heading {
+        margin-bottom: 16px;
+    }
+
+    .title {
+        font-weight: $font-weight-normal;
+        font-size: 25px;
+        line-height: 37px;
+        font-family: $font-family-branch;
+        text-transform: uppercase;
+        color: #000000;
+    }
+
     .story {
-        overflow: auto;
-        margin-top: 24px;
-        padding-top: 24px;
-        border-top: 1px solid $border-color;
+        margin-top: 30px;
+        padding-top: 30px;
+        border-top: 1px solid #E9ECEF;
 
         &:first-child {
             margin-top: 0;
@@ -14,69 +25,32 @@
 
         &__thumb {
             float: left;
-            margin-right: 16px;
-            width: 125px;
-            height: 84px;
+            margin-right: 30px;
+            width: 330px;
+            height: 220px;
 
-            @media (min-width:1366px) {
-                width: 240px;
-                margin-right: 20px;
-                height: 160px;
-            }
         }
 
         &__heading a {
-            font-weight: $font-weight-bold;
-            font-size: 17px;
-            line-height: 160%;
-            
+            font-size: 24px;
+            line-height: 35px;
         }
 
         &__meta {
-            margin-top: 8px;
-            display: flex;
-        }
+            margin-top: 10px;
 
-        .time {
-            display: block;
-            font-family: "Quicksand";
-
-            font-weight: $font-weight-normal;
-            font-size: 13px;
-            line-height: 16px;
-            color: #adb5bd;
-        }
-
-        .title-cate {
-            padding-right: 16px;
-            font-family: "Quicksand";
-            font-weight: $font-weight-bold;
-            font-size: 13px;
-            line-height: 16px;
-            text-transform: uppercase;
-            color: #DC3545;
-            position: relative;
-            white-space: nowrap;
-
-            &::before {
-                position: absolute;
-                content: "-";
-                right: 8px;
-                font-weight: $font-weight-normal;
-                width: 2px;
-                height: 1px;
+            .time {
+                font-weight: $font-weight-medium;
+                font-size: 13px;
+                line-height: 24px;
                 color: #ADB5BD;
             }
         }
 
         &__summary {
-            font-family: "Quicksand";
-
-            font-weight: $font-weight-normal;
-            font-size: 14px;
-            line-height: 20px;
-            color: #343a40;
-            margin-top: 8px;
+            margin-top: 10px;
+            font-size: 15px;
+            color: #6C757D;
         }
     }
 }

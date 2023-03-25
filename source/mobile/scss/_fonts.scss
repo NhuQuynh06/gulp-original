@@ -1,63 +1,25 @@
-// Merriweather : bold, regular
+// SF Compact Rounded : bold, regular, semibold
 @font-face {
-    font-family: "Merriweather";
-    src: url("../fonts/Merriweather/Merriweather-Bold.ttf");
-    font-weight: 700;
-}
-
-@font-face {
-    font-family: "Merriweather";
-    src: url("../fonts/Merriweather/Merriweather-Regular.ttf");
-    font-weight: 400;
-}
-
-// Quicksand : regular, semibold, medium, bold
-@font-face {
-    font-family: "Quicksand";
-    src: url("../fonts/Quicksand/Quicksand-Regular.ttf");
-    font-weight: 400;
-}
-
-@font-face {
-    font-family: "Quicksand";
-    src: url("../fonts/Quicksand/Quicksand-Medium.ttf");
-    font-weight: 500;
-}
-
-@font-face {
-    font-family: "Quicksand";
-    src: url("../fonts/Quicksand/Quicksand-SemiBold.ttf");
+    font-family: "SF";
+    src: url("../fonts/SFCompactRounded/SF-Pro-Rounded-Semibold.otf");
     font-weight: 600;
 }
 
 @font-face {
-    font-family: "Quicksand";
-    src: url("../fonts/Quicksand/Quicksand-Bold.ttf");
-    font-weight: 700;
-}
-
-// Oswald : medium. Regular
-@font-face {
-    font-family: "Oswald";
-    src: url("../fonts/Oswald/Oswald-Light.ttf");
-    font-weight: 300;
-}
-
-@font-face {
-    font-family: "Oswald";
-    src: url("../fonts/Oswald/Oswald-Regular.ttf");
-    font-weight: 400;
-}
-
-@font-face {
-    font-family: "Oswald";
-    src: url("../fonts/Oswald/Oswald-Medium.ttf");
+    font-family: "SF";
+    src: url("../fonts/SFCompactRounded/SF-Pro-Rounded-Medium.otf");
     font-weight: 500;
 }
 
-// Pattaya : regular
 @font-face {
-    font-family: "Pattaya";
-    src: url("../fonts/Pattaya/Pattaya-Regular.ttf");
+    font-family: "SF";
+    src: url("../fonts/SFCompactRounded/SF-Pro-Rounded-Regular.otf");
+    font-weight: 400;
+}
+
+// Oswald : regular
+@font-face {
+    font-family: "Oswald";
+    src: url("../fonts/Oswald/Oswald-Regular.ttf");
     font-weight: 400;
 }

@@ -2,7 +2,7 @@
     display: block;
 
     &:hover {
-        color: $third;
+        color: $primary;
     }
 }
 
@@ -14,9 +14,9 @@
     }
 
     &__thumb {
+        border-radius: 6px;
         overflow: hidden;
-        background: transparent url(../img/background.png) center center/ no-repeat;
-        background: #ccc;
+        background: #ddd;
 
         a {
             display: flex;
@@ -38,13 +38,21 @@
         overflow: hidden;
 
         &:hover {
-            color: $third !important;
+            color: $primary !important;
+        }
+
+        i {
+            font-size: inherit;
+
+            &::before {
+                font-size: inherit;
+            }
         }
     }
 
     &__summary {
         font-size: 14px;
-        font-weight: $font-weight-medium;
+        font-weight: $font-weight-normal;
         color: #343a40;
         display: block;
         overflow: hidden;
@@ -52,7 +60,7 @@
 
         >* {
             font-size: 14px;
-            font-weight: $font-weight-medium;
+            font-weight: $font-weight-normal;
             color: #343a40;
             display: block;
             overflow: hidden;
@@ -60,21 +68,28 @@
         }
     }
 
-    time {
-        display: block;
-    }
 
     &__meta {
+        margin-top: 8px;
+
+        time {
+            display: block;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 16px;
+            color: #adb5bd;
+        }
+
         a {
             &:hover {
-                color: $third;
+                color: $primary;
             }
         }
     }
 
     &__sub-heading a {
         &:hover {
-            color: $third !important;
+            color: $primary !important;
         }
     }
 }
