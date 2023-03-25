@@ -20,7 +20,7 @@
     <!-- site body -->
     <div class="site-body">
         <div class="container ">
-            <div class="breadcrumbs style1">
+            <div class="breadcrumbs">
                 <h2 class="main"><a href="">Chính trị-thời sự</a></h2>
                 <h1 class="main"><a class="active" href="">Đại hội Đảng bộ tỉnh lần thứ XVI</a></h1>
                 <div class="sub">
@@ -29,29 +29,7 @@
                     <a href="#" class="">Đại hội Đảng bộ tỉnh lần thứ XVI</a>
                 </div>
             </div>
-            <div class="list-epaper">
-                <div class="box-content">
-                    @@for (var i = 0; i < 20; i++) { 
-                        <article class="story">
-                            <figure class="story__thumb">
-                                <a href="" title=""> <img src="https://source.unsplash.com/random/270x390?sig=1"
-                                        alt="270x390 (2x3)"></a>
-                            </figure>
-                            <h5 class="story__heading">
-                                <a href="#">
-                                    BÁO SỐ 24592
-                                </a>
-                            </h5>
-                            <div class="story__meta">
-                                <span class="time">Ngày 04-03-2023</span>
-                            </div>
-                        </article>
-                    }
-                </div>
-                <button class="more-news">
-                    xem thêm ...
-                </button>
-            </div>
+            @@include('../component/box-style/list-epaper/list-epaper.html')
         </div>
     </div>
     <!-- site footer -->
