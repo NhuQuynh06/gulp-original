@@ -20,13 +20,13 @@ a:hover {
     opacity: 0;
     visibility: hidden;
     width: 40px;
+    background: url(../img/back-to-top.png) center center no-repeat;
     background: #E21F26;
     height: 40px;
     position: fixed;
     bottom: 30px;
     right: 30px;
     cursor: pointer;
-    background: url(../img/back-to-top.png) center center no-repeat;
 
     &.show {
         opacity: 1;

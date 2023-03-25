@@ -123,3 +123,14 @@ $(".footer-bar .back").click(function (e) {
     e.preventDefault();
     $(".footer-bar .social").slideToggle();
 });
+
+$('.topics').slick({
+    dots: true,
+    infinite: true,
+    slidesToShow: 1,
+    centerMode: true,
+    speed: 1000,
+    autoplaySpeed: 8000,
+    arrows: false,
+    dots: false,
+});
