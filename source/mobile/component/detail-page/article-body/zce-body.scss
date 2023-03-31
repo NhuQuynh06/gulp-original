@@ -177,6 +177,75 @@
     }
 }
 
+.zce-content-body {
+    table {
+
+        td,
+        th {
+            padding: 0;
+        }
+    }
+
+    img,
+    video {
+        max-width: 100%;
+        width: auto;
+        display: flex;
+        margin: 0 auto;
+    }
+
+    figcaption,
+    .caption {
+        font-size: 16px;
+        line-height: 21px;
+        color: #6C757D;
+        text-align: center;
+        margin-top: 8px;
+        display: block;
+        font-weight: $font-weight-normal;
+
+        >* {
+            margin-top: 0;
+        }
+    }
+
+    table:not([class]) {
+        width: 100%;
+
+        td,
+        th {
+            padding: 10px;
+            border: 1px solid #E9ECEF;
+        }
+    }
+
+    figure,
+    table,
+    blockquote,
+    .notebox,
+    .poll-box {
+        @include classLeftRight();
+        @include alignLeftRight();
+        @include maxWidth();
+    }
+
+    blockquote,
+    .notebox {
+        @include space();
+        @include table();
+    }
+
+    .live-zone,
+    .interview-zone {
+
+        table,
+        figure {
+            @include maxWidthFullWiwthDetail();
+            @include classOutsetLeftRightDetail();
+        }
+    }
+}
+
 
 .zce-content-body {
     table {
