@@ -11,8 +11,9 @@ var gulp = require('gulp'),
     imagemin = require('imagemin'),
     imageminJpegtran = require('imagemin-jpegtran'),
     imageminPngquant = require('imagemin-pngquant'),
-    removeEmptyLines = require('gulp-remove-empty-lines'),
     babel = require('gulp-babel');
+    strip = require('gulp-strip-comments');
+    
 
 
 concat = require('gulp-concat');
@@ -97,9 +98,7 @@ async function copy_html() {
             basepath: '@file'
         }))
         .pipe(formatHtml())
-        .pipe(removeEmptyLines({
-            removeComments: true,
-        }))
+        .pipe(strip())
         .pipe(dest(paths.html_dist));
 };
 
