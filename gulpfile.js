@@ -1,20 +1,15 @@
-const { src, dest, parallel, series, watch } = require('gulp');
+const { src, dest, series, watch } = require('gulp');
 
 var gulp = require('gulp'),
-    del = require('del'),
     browserSync = require('browser-sync').create(),
     cssmin = require('gulp-clean-css'),
-    rename = require("gulp-rename"),
     sass = require('gulp-sass'),
     sourcemaps = require('gulp-sourcemaps'),
-    inject = require('gulp-inject-string'),
     imagemin = require('imagemin'),
     imageminJpegtran = require('imagemin-jpegtran'),
     imageminPngquant = require('imagemin-pngquant'),
     babel = require('gulp-babel');
     strip = require('gulp-strip-comments');
-    
-
 
 concat = require('gulp-concat');
 const fileinclude = require('gulp-file-include');
@@ -26,9 +21,7 @@ var argv = require('yargs')
         env: 'dev'
     }).argv,
     project = argv.path,
-    file_style = argv.file,
-    link_static = argv.static,
-    env = argv.env;
+    file_style = argv.file
 
 if (!file_style) file_style = project;
 
@@ -60,8 +53,6 @@ const ignoreFiles = [
     "!source/" + project + "/component/script/*.scss"
 ]
 
-
-
 // > compile scss to css
 function compile_scss_dist() {
     return src([paths.scss_source, ignoreFiles.join()], { allowEmpty: true })
@@ -80,8 +71,6 @@ function compile_scss_component() {
         .pipe(sourcemaps.write('../maps'))
         .pipe(dest(paths.css_dist));
 };
-
-
 
 // > copy 
 async function copy_js() {
@@ -107,8 +96,6 @@ async function copy_font_dist() {
         .pipe(dest(paths.fonts_dist));
 };
 
-
-
 // > compress PNG
 async function compress_png_dist() {
     return imagemin([paths.img_source], {
@@ -121,14 +108,6 @@ async function compress_png_dist() {
         ]
     });
 };
-
-
-async function copy_img_dist() {
-    return src(paths.img_source)
-        .pipe(dest(paths.img_dist));
-};
-
-
 
 // > refresh on change
 async function refresh_on_change(cb) {
@@ -144,9 +123,6 @@ gulp.task('fileinclude', function () {
         }))
         .pipe(gulp.dest('dist'));
 });
-
-
-
 
 // Watch files
 async function watch_dev() {
@@ -174,7 +150,6 @@ exports.build = series(
     copy_html,
     copy_font_dist,
     compress_png_dist
-    // copy_img_dist
 ), watch_dev();
 
 
