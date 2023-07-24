@@ -320,7 +320,7 @@
     }
 
     a {
-        color: #DC3545;
+        color: $primary;
         text-decoration: none;
         background-color: transparent;
     }
@@ -636,43 +636,19 @@
 // INFO : style các box trong bài viết
 // ----------------------------------
 .zce-content-body {
+    >* {
+        font-size: 18px;
+        line-height: 30px;
+    }
 
     // style article-relate 
     .article-relate {
-        .story {
-            display: flex;
-            align-items: center;
-
-            .row {
-                display: block;
-            }
-
-            &__thumb {
-                min-width: 330px;
-                height: 220px;
-                border-radius: 6px;
-                margin-right: 30px;
-            }
-
-            &__heading a {
-                font-weight: $font-weight-medium;
-                font-size: 24px;
-                line-height: 35px;
-            }
-
-            &__summary {
-                margin-top: 10px;
-                font-weight: $font-weight-normal;
-                font-size: 15px;
-                line-height: 23px;
-                color: #6C757D;
-            }
-        }
+        @include title;
+        @include story;
     }
 
     // style related-topic
     .related-topic {
-        margin: 40px !important;
         padding: 20px;
         box-shadow: 1px 0px 50px rgba(0, 0, 0, 0.1);
 
@@ -688,7 +664,7 @@
             text-transform: uppercase;
             color: #212529;
             padding-bottom: 8px;
-            border-bottom: 1px solid #DC3545;
+            border-bottom: 1px solid $primary;
             margin-bottom: 15px;
 
             &:hover {
@@ -741,10 +717,8 @@
             font-size: 20px;
             line-height: 30px;
             text-transform: uppercase;
-            color: #212529;
+            color: $title;
             background: url(../img/bottom-decor_v2.png) bottom left no-repeat;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
         }
 
         .story {
@@ -761,6 +735,7 @@
                 color: #343A40;
                 position: relative;
                 padding-left: 20px;
+                padding-top: 0;
 
                 &::before {
                     position: absolute;
@@ -788,33 +763,31 @@
 
     // blockquote
     blockquote {
-        padding: 16px;
-        background: #ccc;
-        font-weight: $font-weight-semibold;
-        font-size: 22px;
-        line-height: 31px;
+        font-weight: 600;
+        padding: 50px 16px 16px;
+        line-height: 1.5;
+        position: relative;
+        background-color: rgba(var(--primary-rgba), 0.2);
+        border-radius: 0 30px 0 30px;
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 80px;
+            height: 40px;
+            left: 20px;
+            top: -12px;
+            background: url(../img/quote.png) center center/80px no-repeat;
+        }
 
         .author {
-            margin: 30px auto 0;
+            margin-left: auto;
             font-size: 14px;
             color: #343A40;
             font-weight: $font-weight-normal;
             display: block;
-            padding-left: 42px;
             text-align: center;
-            position: relative;
             width: fit-content;
-
-            &::before {
-                position: absolute;
-                content: "";
-                width: 30px;
-                height: 1px;
-                background: #212529;
-                right: calc(50% + 42px);
-                top: calc(50% - 1px);
-                left: 0;
-            }
         }
 
     }
@@ -880,7 +853,7 @@
             >* {
                 min-width: 127px;
                 height: 32px;
-                padding: 6px 32px;
+                padding: 6px 16px;
                 border-radius: 6px;
                 font-weight: $font-weight-medium;
                 font-size: 14px;
@@ -888,7 +861,7 @@
             }
 
             .btn-send {
-                background: #DC3545;
+                background: $primary;
                 color: #fff;
             }
 
@@ -896,6 +869,45 @@
                 background: #fff;
                 color: #000000;
             }
+        }
+    }
+
+    .share {
+        display: grid;
+        grid-template-columns: repeat(2, 150px);
+        gap: 16px;
+
+        >* {
+            height: 30px;
+            border-radius: 3px;
+            color: #fff;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .fb {
+            background: #306199;
+        }
+
+        .zalo {
+            background: #018fe5;
+        }
+
+        .ic-facebook {
+            margin-right: 2px;
+
+            &::before {
+                font-size: 16px;
+            }
+        }
+
+        .ic-zl {
+            background: url(../img/ic-zalo-white.png) center center no-repeat;
+            margin-right: 8px;
+            width: 16px;
+            height: 16px;
         }
     }
 

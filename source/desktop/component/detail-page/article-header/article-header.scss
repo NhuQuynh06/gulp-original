@@ -89,7 +89,7 @@
             }
 
             .print {
-                background: #DC3545;
+                background: $primary;
 
                 &::before {
                     content: "\e926";
@@ -100,7 +100,7 @@
             }
 
             .mail {
-                background: #DC3545;
+                background: $primary;
 
                 &::before {
                     content: "\e90d";

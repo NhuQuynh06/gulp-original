@@ -32,7 +32,11 @@
     }
 }
 
-// layout detail-page
+.row {
+    display: flex;
+    align-items: center;
+}
+
 .col {
     display: flex;
     justify-content: space-between;

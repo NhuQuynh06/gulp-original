@@ -1,14 +1,6 @@
 // ----------------------------------
 // INFO : style global
 // ----------------------------------
-.d-flex {
-    display: flex;
-}
-
-.row {
-    display: flex;
-    align-items: center;
-}
 
 a:hover {
     color: $primary;
@@ -34,35 +26,53 @@ a:hover {
     }
 }
 
-.site-body {
-    >.social {
-        position: fixed;
-        right: 30px;
-        top: 50%;
-        transform: translateY(-50%);
-        background: #FFFFFF;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        border-radius: 8px;
-        width: 60px;
-        height: 234px;
-        padding: 24px 12px;
-        z-index: 1;
+.social-pin {
+    >* {
+        background-color: $primary;
+        border-radius: 10px;
+        transition: all 0.3s;
+        background-position: center center;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0;
+        width: 38px;
+        height: 38px;
+        margin-top: 10px;
 
-        >* {
-            display: block;
-            margin: 0 auto;
-            margin-top: 30px;
-            width: 24px;
-            height: 24px;
-            background: #eee;
-            text-align: center;
-            font-size: 14px;
-
-            &:first-child {
-                margin-top: 0;
-            }
+        @media (min-width: $xl) {
+            width: 48px;
+            margin-top: 20px;
+            height: 48px;
         }
 
+        &:hover {
+            box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+        }
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        &::before {
+            font-family: "icomoon";
+            font-size: 24px;
+        }
+    }
+
+    &.sticky {
+        width: 46px;
+        position: sticky;
+        top: 190px;
+        z-index: 1;
+        display: block;
+        float: left;
+        margin-left: -55px;
+
+        @media (min-width: $xl) {
+            margin-left: -90px;
+        }
     }
 }
 
@@ -77,7 +87,7 @@ a:hover {
 }
 
 .more-news {
-    background: #DC3545;
+    background: $primary;
     border: 1px solid #E9ECEF;
     border-radius: 6px;
     padding: 12px 70px;
@@ -89,121 +99,4 @@ a:hover {
     display: flex;
     margin: 0 auto;
     margin-top: 50px
-}
-
-.podcast {
-
-    .wrap-comment,
-    .article__tag {
-        width: 810px;
-        margin: 40px auto 0;
-    }
-}
-
-
-// location
-.location {
-    display: flex;
-    flex-wrap: wrap;
-
-    .item {
-        width: calc(25% - 29px);
-        background: rgba(226, 31, 38, .05);
-        border: 1px solid rgba(226, 31, 38, .2);
-        box-sizing: border-box;
-        border-radius: 99px;
-        min-height: 50px;
-        padding: 13px 12px;
-        display: flex;
-        align-items: center;
-        font-size: 16px;
-        line-height: 26px;
-        color: #e21f26;
-        margin-right: 29px;
-        margin-top: 16px;
-        transition: .5s;
-
-        &:nth-child(-n+4) {
-            margin-top: 0;
-        }
-
-        &:hover {
-            background: #fff;
-        }
-    }
-
-    .ic-location {
-        &::before {
-            font-size: 28px;
-            margin-right: 4px;
-        }
-    }
-}
-
-// list-epaper
-.list-epaper {
-    .box-content {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .story {
-        width: 270px;
-        position: relative;
-        transition: all 0.5s;
-        margin-right: 30px;
-        margin-top: 30px;
-
-        &:nth-child(4n+4) {
-            margin-right: 0;
-        }
-
-        &:nth-child(-n+4) {
-            margin-top: 0;
-        }
-
-        &__thumb {
-            position: relative;
-            width: 270px;
-            height: 390px;
-            border-radius: 6px;
-
-            &::before {
-                position: absolute;
-                content: "";
-                width: 100%;
-                height: 100%;
-                background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
-            }
-        }
-
-        &__heading {
-            position: absolute;
-            bottom: 52px;
-            padding: 0 16px;
-            width: 100%;
-
-            a {
-                font-size: 17px;
-                text-transform: uppercase;
-                line-height: 23px;
-                color: #FFFFFF;
-                font-weight: $font-weight-medium;
-            }
-        }
-
-        &__meta {
-            position: absolute;
-            bottom: 20px;
-            padding: 0 16px;
-
-            .time {
-                font-weight: $font-weight-medium;
-                font-size: 13px;
-                line-height: 24px;
-                color: #ADB5BD;
-                display: block;
-            }
-        }
-    }
 }

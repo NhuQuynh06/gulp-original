@@ -1,25 +1,24 @@
 // html global
 html {
-  font-size: 14px !important;
+  font-size: 65.2% !important;
 }
 
 $body-bg: #fff;
 $body-color: #343A40;
 $font-family-sans-serif: "SF", Arial, Helvetica, sans-serif;
-;
 $font-family-serif: "SF", Arial, Helvetica, sans-serif;
-;
 $font-family-branch: "Oswald", Arial, Helvetica, sans-serif;
-;
 $font-size-base: 1.4rem;
 
 
 // add color to color maps
-$primary: #DC3545;
-$secondary: #FFC107;
-$third: #e21f26;
-$dark: #212529;
-$light: #e9ecef;
+$primary: #c31e40;
+$secondary: #ffdb4c;
+$third: #212529;
+$title: #212529;
+$summary : rgba(0, 0, 0, 0.86);
+$border-color: rgba(0, 0, 0, 0.05);
+$hover: $primary;
 
 
 // Color system
@@ -55,7 +54,7 @@ $blue: #007bff !default;
 $indigo: #6610f2 !default;
 $purple: #6f42c1 !default;
 $pink: #e83e8c !default;
-$red: #dc3545 !default;
+$red: $primary !default;
 $orange: #fd7e14 !default;
 $yellow: #ffc107 !default;
 $green: #28a745 !default;
@@ -134,8 +133,22 @@ $font-weight-light: 300;
 $font-weight-normal: 400;
 $font-weight-medium: 500;
 $font-weight-semibold: 600;
-$font-weight-semibold: 700;
+$font-weight-bold: 700;
 $font-weight-semibolder: 800;
 
-// reponsive
-$xl : 1170px
+// Breakpoint
+$lg :1024px;
+$xl: 1200px;
+
+:root {
+  --column-gap: 16px;
+  --container: 1000px;
+  --primary-rgba: 195, 30, 64;
+}
+
+@media (min-width: $xl) {
+  :root {
+    --column-gap: 20px;
+    --container: 1180px;
+  }
+}
