@@ -3,7 +3,7 @@
 // ----------------------------------
 .zce-content-body {
     >* {
-        margin-top: 16px !important;
+        margin-top: $gutter-body !important;
 
         &:first-child {
             margin-top: 0 !important;
@@ -19,6 +19,7 @@
         margin: 0 auto;
         width: 100%;
         border-collapse: collapse;
+        display: inline-table;
     }
 
     table[data-zce-type],
@@ -45,6 +46,7 @@
     }
 
     figure {
+        display: inline-block;
         text-align: center;
         width: 100%;
         margin: 0;
@@ -85,16 +87,24 @@
     /* căn outset trái, phải */
     .outset-left {
         width: 50%;
-        margin-left: -25%;
-        margin-right: 16px;
+        margin-left: -10%;
+        margin-right: $gutter-body;
         float: left;
+
+        @media (min-width: $lg) {
+            margin-left: -25%;
+        }
     }
 
     .outset-right {
         width: 50%;
-        margin-right: -25%;
-        margin-left: 16px;
+        margin-right: -10%;
+        margin-left: $gutter-body;
         float: right;
+
+        @media (min-width: $lg) {
+            margin-right: -25%;
+        }
     }
 
     blockquote {
@@ -102,19 +112,19 @@
             background: lightblue;
             width: 50%;
             float: left;
-            margin-right: 16px;
-            margin-bottom: 16px;
+            margin-right: $gutter-body;
+            margin-bottom: $gutter-body;
         }
 
         .outset-left {
             left: calc(25%);
             margin: initial;
-            margin-right: 16px;
+            margin-right: $gutter-body;
         }
 
         .outset-right {
             margin: initial;
-            margin-left: 16px;
+            margin-left: $gutter-body;
             transform: translateX(0);
             left: 0;
         }
@@ -128,12 +138,12 @@
         .outset-left {
             left: calc(25%);
             margin: initial;
-            margin-right: 16px;
+            margin-right: $gutter-body;
         }
 
         .outset-right {
             margin: initial;
-            margin-left: 16px;
+            margin-left: $gutter-body;
             transform: translateX(0);
             left: 0;
         }
@@ -293,8 +303,8 @@
         background: 0 0;
         border: none;
         text-align: left;
-        margin-top: 16px;
-        margin-bottom: 16px;
+        margin-top: $gutter-body;
+        margin-bottom: $gutter-body;
         height: 10px;
     }
 
@@ -327,7 +337,7 @@
 }
 
 .zce-content-body>* {
-    margin-top: 16px;
+    margin-top: $gutter-body;
 }
 
 // layout img
@@ -440,7 +450,7 @@
 
 @mixin space() {
     >* {
-        margin-top: 16px;
+        margin-top: $gutter-body !important;
 
         &:first-child {
             margin-top: 0;
@@ -464,15 +474,13 @@
     &.align-left {
         width: 50%;
         float: left;
-        margin-right: 16px;
-        margin-bottom: 16px;
+        margin-right: $gutter-body;
     }
 
     &.align-right {
         width: 50%;
         float: right;
-        margin-left: 16px;
-        margin-bottom: 16px;
+        margin-left: $gutter-body;
     }
 
 }
@@ -497,20 +505,19 @@
     &[align="left"] {
         width: 50%;
         float: left;
-        margin-right: 16px;
-        margin-bottom: 16px;
-        @include tableNotBorder();
+        margin-right: $gutter-body;
         text-align: left;
+        @include tableNotBorder();
     }
 
     &[align="right"] {
         width: 50%;
         float: right;
-        margin-left: 16px;
-        margin-bottom: 16px;
-        @include tableNotBorder();
+        margin-left: $gutter-body;
         text-align: left;
+        @include tableNotBorder();
     }
+
 }
 
 @mixin w1300() {
@@ -611,7 +618,7 @@
 
 // for detail-page
 .site-body {
-    >.container:not(.longform) {
+    >.container:not(.longform-page) {
         .zce-content-body {
 
             figure,
@@ -672,8 +679,8 @@
         }
 
         .story {
-            margin-top: 16px;
-            padding-top: 16px;
+            margin-top: $gutter-body;
+            padding-top: $gutter-body;
             border-top: 1px solid #E9ECEF;
 
             &:first-child {
@@ -763,7 +770,7 @@
     // blockquote
     blockquote {
         font-weight: 600;
-        padding: 50px 16px 16px;
+        padding: 50px $gutter-body $gutter-body;
         line-height: 1.5;
         position: relative;
         background-color: rgba(var(--primary-rgba), 0.2);
@@ -874,7 +881,7 @@
     .share {
         display: grid;
         grid-template-columns: repeat(2, 150px);
-        gap: 16px;
+        gap: var(--gutter);
 
         >* {
             height: 30px;

@@ -1,22 +1,22 @@
-.title {
-    display: block;
-
-    &:hover {
-        color: $primary;
-    }
-}
-
 .story {
-    overflow: auto;
+    &::after {
+        display: block;
+        clear: both;
+        content: "";
+    }
+
 
     figure {
         margin: 0;
     }
 
     &__thumb {
+        background: $gray-200;
         border-radius: 6px;
-        overflow: hidden;
-        background: #ddd;
+
+        @media (max-width: $lg) {
+            height: inherit;
+        }
 
         a {
             display: flex;
@@ -35,36 +35,25 @@
     &__heading a {
         display: block;
         transition: 0.5s;
-        overflow: hidden;
 
         &:hover {
             color: $primary !important;
         }
-
-        i {
-            font-size: inherit;
-
-            &::before {
-                font-size: inherit;
-            }
-        }
     }
 
     &__summary {
-        font-size: 14px;
-        font-weight: $font-weight-normal;
-        color: #343a40;
         display: block;
-        overflow: hidden;
-        margin-bottom: 0;
+        font-weight: $font-weight-normal;
+        color: $summary;
+        font-size: 14px;
 
         >* {
-            font-size: 14px;
-            font-weight: $font-weight-normal;
-            color: #343a40;
             display: block;
             overflow: hidden;
             margin-bottom: 0;
+            font-weight: $font-weight-normal;
+            font-size: 14px;
+            color: $summary;
         }
     }
 
@@ -74,10 +63,10 @@
 
         time {
             display: block;
-            font-weight: 400;
+            font-weight: $font-weight-normal;
             font-size: 13px;
             line-height: 16px;
-            color: #adb5bd;
+            color: $summary;
         }
 
         a {

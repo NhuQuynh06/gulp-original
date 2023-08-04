@@ -116,7 +116,7 @@ icExtend.click(function (e) {
   e.preventDefault();
   menu.fadeToggle();
   icExtend.toggleClass("ic-close");
-  $("body").toggleClass("hidden");
+  $("body").toggleClass("show-menu");
   $(".navigation.sticky.fixed").toggleClass("w");
   backdrop.fadeToggle();
 });
@@ -124,7 +124,7 @@ backdrop.click(function (e) {
   e.preventDefault();
   menu.fadeToggle();
   icExtend.toggleClass("ic-close");
-  $("body").toggleClass("hidden");
+  $("body").toggleClass("show-menu");
   backdrop.fadeToggle();
   $(".navigation.sticky").removeClass("w");
 });
@@ -132,7 +132,7 @@ $(".big-menu-vertical .close .ic-close").click(function (e) {
   e.preventDefault();
   menu.fadeToggle();
   icExtend.toggleClass("ic-close");
-  $("body").toggleClass("hidden");
+  $("body").toggleClass("show-menu");
   backdrop.fadeToggle();
 });
 $(".big-menu-vertical .ic-down").click(function (e) {

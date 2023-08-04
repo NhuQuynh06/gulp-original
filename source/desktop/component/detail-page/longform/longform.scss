@@ -1,7 +1,13 @@
-.longform {
-    width: 822px;
-    min-width: 822px;
+.longform-page {
+    width: 70%;
+    min-width: 70%;
     margin: 50px auto 0 !important;
+
+    @media (min-width: $lg) {
+        width: 800px;
+        min-width: 800px;
+    }
+
 
     .article {
         >* {
@@ -90,6 +96,12 @@
                 margin-top: 20px;
                 border-top: none;
             }
+        }
+    }
+
+    .zce-content-body {
+        table {
+            display: table;
         }
     }
 

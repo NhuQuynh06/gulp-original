@@ -1,28 +1,18 @@
 // list-epaper
 .list-epaper {
     .box-content {
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--gutter);
     }
 
     .story {
-        width: 270px;
         position: relative;
         transition: all 0.5s;
-        margin-right: 30px;
-        margin-top: 30px;
-
-        &:nth-child(4n+4) {
-            margin-right: 0;
-        }
-
-        &:nth-child(-n+4) {
-            margin-top: 0;
-        }
 
         &__thumb {
             position: relative;
-            width: 270px;
+            width: 100%;
             height: 390px;
             border-radius: 6px;
 

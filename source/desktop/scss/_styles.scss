@@ -6,6 +6,17 @@ a:hover {
     color: $primary;
 }
 
+.box-heading {
+    .title {
+        transition: all 0.3s;
+        display: block;
+
+        &:hover {
+            color: $primary !important;
+        }
+    }
+}
+
 .back-to-top {
     transition: background-color .3s,
         opacity .5s, visibility .5s;
@@ -76,26 +87,18 @@ a:hover {
     }
 }
 
-.box-heading {
-    .title {
-        transition: all 0.3s;
 
-        &:hover {
-            color: $primary !important;
-        }
-    }
-}
 
 .more-news {
     background: $primary;
-    border: 1px solid #E9ECEF;
+    border: 1px solid $border-color;
     border-radius: 6px;
     padding: 12px 70px;
     font-weight: $font-weight-medium;
     font-size: 18px;
     line-height: 26px;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: $white;
     display: flex;
     margin: 0 auto;
     margin-top: 50px

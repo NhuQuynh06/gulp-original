@@ -14,12 +14,12 @@
 .modal-open {
     overflow: hidden;
 
-    @media (min-width: 1024px) {
+    @media (min-width: $lg) {
         padding-right: 17px;
     }
 
     .site-header .region-menu.fixed {
-        @media (min-width: 1024px) {
+        @media (min-width: $lg) {
             width: calc(100% - 17px);
         }
     }
@@ -32,7 +32,7 @@
     left: 0;
     right: 0;
     margin: 0 auto;
-    padding: 50px;
+    padding: var(--gutter);
     background: #fff;
     border-radius: 4px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
@@ -40,7 +40,11 @@
     max-width: calc(100% - 30px);
     height: fit-content;
 
-    @media (min-width: 1024px) {
+    @media (min-width: $lg) {
+        padding: 50px;
+    }
+
+    @media (min-width: $lg) {
         max-width: fit-content;
     }
 
@@ -58,9 +62,14 @@
         background: #fff;
         display: flex;
         align-items: center;
-        margin: -50px -50px 0;
-        padding: 20px 36px;
+        margin: -20px -20px 0;
+        padding: var(--gutter);
         border: 1px solid #EEEEEE;
+
+        @media (min-width: $lg) {
+            padding: 20px 36px;
+            margin: -50px -50px 0;
+        }
 
         .modal-title {
             font-weight: normal;
@@ -128,7 +137,7 @@
         padding: 0 10px 0 0;
         font-size: 16px;
 
-        @media (min-width: 1024px) {
+        @media (min-width: $lg) {
             max-height: 412px;
             // max-height: 650px;
             max-width: 500px;
