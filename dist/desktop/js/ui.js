@@ -1,5 +1,3 @@
-"use strict";
-
 // ----------------------------------
 // INFO : Unchangeable
 // ----------------------------------
@@ -9,7 +7,8 @@ var stickyOffset = $(".sticky").offset().top;
 $(window).scroll(function () {
   var sticky = $(".sticky"),
     scroll = $(window).scrollTop();
-  if (scroll >= stickyOffset) sticky.addClass("fixed");else sticky.removeClass("fixed");
+  if (scroll >= stickyOffset) sticky.addClass("fixed");
+  else sticky.removeClass("fixed");
 });
 
 // INFO : for check gif img
@@ -28,14 +27,17 @@ $(".audio .right .select-voice").click(function (e) {
   e.preventDefault();
   $(".audio .right .voice-board").toggle();
 });
+
 $(".audio .play-button").click(function (e) {
   e.preventDefault();
   $(".audio .ic-audio-pause").toggleClass("ic-audio-play");
 });
+
 $(".audio .mute-button").click(function (e) {
   e.preventDefault();
   $(".audio .ic-audio-volume").toggleClass("ic-audio-volume-slash");
 });
+
 $(".modal-body .ic-eye").click(function (e) {
   e.preventDefault();
   $(this).toggleClass("slash");
@@ -50,16 +52,18 @@ $(".btn-modal").on("click", function () {
   $('.modal[data-target="' + id + '"]').fadeIn();
   $(".navigation.sticky.fixed").addClass("show-modal");
 });
+
 $(".btn-close").on("click", function () {
-  setTimeout(function () {
+  setTimeout(() => {
     $("body").removeClass("modal-open");
     $(".navigation.sticky.fixed").removeClass("show-modal");
   }, 400);
   $(".modal-backdrop").fadeOut();
   $(".modal").fadeOut();
 });
+
 $(".modal-backdrop").on("click", function () {
-  setTimeout(function () {
+  setTimeout(() => {
     $("body").removeClass("modal-open");
     $(".navigation.sticky.fixed").removeClass("show-modal");
   }, 400);
@@ -76,11 +80,10 @@ $(window).scroll(function () {
     btn.removeClass("show");
   }
 });
+
 btn.on("click", function (e) {
   e.preventDefault();
-  $("html, body").animate({
-    scrollTop: 0
-  }, "300");
+  $("html, body").animate({ scrollTop: 0 }, "300");
 });
 
 // ----------------------------------
@@ -120,6 +123,7 @@ icExtend.click(function (e) {
   $(".navigation.sticky.fixed").toggleClass("w");
   backdrop.fadeToggle();
 });
+
 backdrop.click(function (e) {
   e.preventDefault();
   menu.fadeToggle();
@@ -128,6 +132,7 @@ backdrop.click(function (e) {
   backdrop.fadeToggle();
   $(".navigation.sticky").removeClass("w");
 });
+
 $(".big-menu-vertical .close .ic-close").click(function (e) {
   e.preventDefault();
   menu.fadeToggle();
@@ -135,6 +140,7 @@ $(".big-menu-vertical .close .ic-close").click(function (e) {
   $("body").toggleClass("show-menu");
   backdrop.fadeToggle();
 });
+
 $(".big-menu-vertical .ic-down").click(function (e) {
   e.preventDefault();
   $(this).next().slideToggle();

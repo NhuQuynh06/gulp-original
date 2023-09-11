@@ -1,55 +1,30 @@
 {
-  "name": "baomoi-v2",
+  "name": "sggp-latest",
   "version": "1.0.0",
-  "description": "this framework for baomoi.com",
+  "description": "",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/tatuan142/baomoi-core.git"
-  },
-  "keywords": [
-    "news",
-    "framework"
-  ],
-  "author": "Trần Anh Tuấn (tatuan142@gmail.com)",
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/tatuan142/baomoi-core/issues"
-  },
-  "homepage": "https://github.com/tatuan142/baomoi-core#readme",
   "devDependencies": {
-    "@babel/core": "^7.21.0",
-    "@babel/preset-env": "^7.20.2",
     "gulp": "^4.0.2",
-    "gulp-babel": "^8.0.0",
-    "gulp-clean-css": "^4.2.0",
-    "gulp-concat": "^2.6.1",
-    "gulp-if": "^3.0.0",
-    "gulp-inject-string": "^1.1.2",
-    "gulp-rename": "^1.4.0",
-    "gulp-sass": "^4.0.2",
-    "gulp-sourcemaps": "^2.6.5"
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.62.1"
   },
   "dependencies": {
-    "bootstrap": "^5.2.0",
-    "browser-sync": "^2.26.7",
-    "del": "^5.1.0",
+    "browser-sync": "^2.29.3",
+    "gulp-clean-css": "^4.2.0",
     "gulp-file-include": "^2.3.0",
     "gulp-format-html": "^1.5.1",
-    "gulp-remove-empty-lines": "^0.1.0",
-    "gulp-strip-comments": "^2.5.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-strip-comments": "^2.4.0",
     "imagemin": "^7.0.0",
     "imagemin-jpegtran": "^6.0.0",
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-keep-folder": "^5.3.2",
     "imagemin-pngquant": "^8.0.0",
-    "sass": "^1.63.6",
     "yargs": "^14.2.0"
-  },
-  "babel": {
-    "presets": [
-      "@babel/env"
-    ]
   }
 }

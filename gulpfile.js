@@ -1,27 +1,28 @@
-const { src, dest, series, watch } = require('gulp');
+const { src, dest, parallel, series, watch } = require('gulp');
 
 var gulp = require('gulp'),
     browserSync = require('browser-sync').create(),
     cssmin = require('gulp-clean-css'),
-    sass = require('gulp-sass'),
+    sass = require('gulp-sass')(require('sass')),
     sourcemaps = require('gulp-sourcemaps'),
-    imagemin = require('imagemin'),
+    imagemin = require('imagemin-keep-folder'),
+    imageminMozjpeg = require('imagemin-mozjpeg'),
     imageminJpegtran = require('imagemin-jpegtran'),
-    imageminPngquant = require('imagemin-pngquant'),
-    babel = require('gulp-babel');
-    strip = require('gulp-strip-comments');
+    imageminPngquant = require('imagemin-pngquant');
+// removeEmptyLines = require('gulp-remove-empty-lines');
+// strip = require('gulp-strip-comments');
 
-concat = require('gulp-concat');
 const fileinclude = require('gulp-file-include');
 const formatHtml = require('gulp-format-html')
-
 
 var argv = require('yargs')
     .default({
         env: 'dev'
     }).argv,
     project = argv.path,
-    file_style = argv.file
+    file_style = argv.file,
+    link_static = argv.static,
+    env = argv.env;
 
 if (!file_style) file_style = project;
 
@@ -33,7 +34,7 @@ var paths = {
     scss_source: './source/' + project + '/scss/**/*.scss',
     css_dist: './dist/' + project + '/styles/css',
 
-    js_source: './source/' + project + '/js/**/*.js',
+    js_source: './source/' + project + '/js/**/*',
     js_dist: './dist/' + project + '/js',
 
     html_source: "./source/" + project + '/html/**/*.html',
@@ -45,13 +46,14 @@ var paths = {
     fonts_dist: "./dist/" + project + '/styles/fonts',
 
     img_source: "./source/" + project + '/img/**/*',
-    img_dist: "./dist/" + project + '/styles/img',
+    img_dist: "./dist/" + project + '/styles/img/',
 };
 
 const ignoreFiles = [
     "!source/" + project + '/component/*.html',
     "!source/" + project + "/component/script/*.scss"
 ]
+
 
 // > compile scss to css
 function compile_scss_dist() {
@@ -61,6 +63,7 @@ function compile_scss_dist() {
         .pipe(cssmin())
         .pipe(sourcemaps.write('../maps'))
         .pipe(dest(paths.css_dist));
+
 };
 
 function compile_scss_component() {
@@ -75,7 +78,6 @@ function compile_scss_component() {
 // > copy 
 async function copy_js() {
     return src(paths.js_source)
-        .pipe(babel())
         .pipe(dest(paths.js_dist));
 };
 
@@ -87,7 +89,7 @@ async function copy_html() {
             basepath: '@file'
         }))
         .pipe(formatHtml())
-        .pipe(strip())
+        // .pipe(strip())
         .pipe(dest(paths.html_dist));
 };
 
@@ -96,21 +98,29 @@ async function copy_font_dist() {
         .pipe(dest(paths.fonts_dist));
 };
 
-// > compress PNG
-async function compress_png_dist() {
-    return imagemin([paths.img_source], {
-        destination: paths.img_dist,
-        plugins: [
-            imageminJpegtran(),
+// compress and copy img
+function compress_png_dist() {
+    return imagemin([paths.img_dist + '**/*'], {
+        use: [
+            // imageminMozjpeg({ quality: 80 }),
+            // imageminJpegtran(),
+            imageminMozjpeg(),
             imageminPngquant({
-                quality: [0.6, 0.8]
+                speed : 1,
+                quality: [0.4, 1],
+                dithering: .5,
             })
         ]
     });
 };
 
+function copy_img_dist() {
+    return src(paths.img_source)
+        .pipe(dest(paths.img_dist));
+};
+
 // > refresh on change
-async function refresh_on_change(cb) {
+function refresh_on_change(cb) {
     browserSync.reload();
     cb()
 };
@@ -128,7 +138,7 @@ gulp.task('fileinclude', function () {
 async function watch_dev() {
     browserSync.init({
         server: "./",
-        startPath: "dist/mobile/html/index.html",
+        startPath: "dist/desktop/html/01-homepage.html",
         browser: 'chrome',
         host: 'localhost',
         port: 3000,
@@ -139,17 +149,17 @@ async function watch_dev() {
     watch(paths.js_source, series(copy_js, refresh_on_change));
     watch(paths.html_component, series(copy_html, refresh_on_change));
     watch(paths.html_source, series(copy_html, refresh_on_change));
-    watch(paths.img_source, series(refresh_on_change));
+    watch(paths.img_source, series(copy_img_dist, compress_png_dist));
 }
 
 // ===========
-exports.build = series(
+exports.build = parallel(
+    series(copy_img_dist, compress_png_dist),
     compile_scss_dist,
     compile_scss_component,
     copy_js,
     copy_html,
     copy_font_dist,
-    compress_png_dist
 ), watch_dev();
 
 
