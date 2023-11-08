@@ -1,0 +1,22 @@
+@mixin title-decor {
+    .box-heading {
+        font-family: $font-family-sans-serif;
+        color: var(--white);
+        position: relative;
+        padding: 10px 30px;
+        background: url(../img/title-decor.png?021123) center center/100% no-repeat;
+        margin-bottom: 4px;
+        width: fit-content;
+
+        .title {
+            color: var(--white);
+            font-size: 18px;
+            font-weight: $font-weight-semibolder;
+            text-transform: uppercase;
+
+            &:hover {
+                color: var(--white) !important;
+            }
+        }
+    }
+}

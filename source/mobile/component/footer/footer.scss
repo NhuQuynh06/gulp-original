@@ -1,0 +1,88 @@
+.site-footer {
+
+
+    >.container {
+        padding: 30px 16px;
+        border-top: 5px solid var(--primary);
+
+        background: var(--white);
+
+        >* {
+            margin-bottom: 16px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid var(--border-color);
+
+            &:last-child {
+                margin-bottom: 0;
+                padding-bottom: 0;
+                border-bottom: none;
+            }
+        }
+    }
+
+    .content {
+        >* {
+            margin-bottom: 4px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        .upper {
+            margin-bottom: 16px;
+            color: var(--title-footer);
+            font-size: 12px;
+        }
+
+        .logo {
+            font-size: 0;
+            width: 270px;
+            height: 45px;
+            display: block;
+            background: url(../img/logo.png?021123) center center/270px no-repeat;
+            margin-bottom: 8px;
+        }
+
+        >* {
+            color: var(--title-footer);
+            font-size: 18px;
+            font-weight: $font-weight-medium;
+            line-height: 150%;
+            font-family: "URW Geometric";
+        }
+    }
+
+    .upper {
+        text-transform: uppercase;
+    }
+
+    .menu {
+        margin-bottom: 16px;
+        padding-bottom: 16px !important;
+        border-bottom: 1px solid var(--border-color);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px 16px;
+
+        a {
+            color: var(--title-footer);
+            font-size: 18px;
+            font-weight: $font-weight-normal;
+        }
+    }
+
+    .info {
+        >* {
+            color: var(--title-footer);
+            font-size: 14px;
+            font-weight: $font-weight-normal;
+            line-height: 150%;
+            padding-bottom: 5px;
+
+            &:last-child {
+                padding-bottom: 0;
+            }
+        }
+    }
+}

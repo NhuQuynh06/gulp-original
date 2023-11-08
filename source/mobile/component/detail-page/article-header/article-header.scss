@@ -1,0 +1,104 @@
+.article {
+    .article__sub-title {
+        font-size: 18px;
+        font-weight: $font-weight-bold;
+        line-height: 145%;
+        text-transform: uppercase;
+    }
+
+    .article__title {
+        color: var(--gray-900, #212529);
+        font-family: $font-family-second;
+        font-size: 46px;
+        font-weight: $font-weight-medium;
+        line-height: 130%;
+    }
+
+    .article__meta {
+        display: flex;
+        gap: 16px;
+
+        .author {
+            color: var(--gray-800, #343A40);
+            font-size: 16px;
+            font-weight: $font-weight-normal;
+            line-height: 150%;
+        }
+
+        .time {
+            color: var(--gray-600, #6c757d);
+            font-size: 14px;
+            font-weight: $font-weight-normal;
+            line-height: 150%;
+            padding-top: 3px;
+        }
+
+        .author+.time {
+            position: relative;
+
+            &::before {
+                position: absolute;
+                content: "";
+                width: 4px;
+                height: 1px;
+                background: var(--black, #000);
+                left: -12px;
+                top: calc(50% + 2px);
+                transform: translateY(-50%);
+            }
+        }
+    }
+
+    .article__sapo {
+        color: var(--gray-800, #343A40);
+        font-size: 22px;
+        font-weight: $font-weight-semibold;
+        line-height: 140%;
+    }
+
+    .article__avatar {
+        text-align: center;
+        left: 50%;
+        position: relative;
+        transform: translateX(-50%);
+        right: auto;
+
+        img {
+            max-width: 100%;
+            border-radius: 6px;
+            max-width: 100%;
+        }
+
+        figcaption,
+        .caption {
+            font-style: italic;
+            position: relative;
+            margin-top: 10px;
+            padding-bottom: 8px !important;
+            text-align: center;
+            font-size: 16px;
+
+            &::after {
+                position: absolute;
+                content: "";
+                width: 60px;
+                height: 1px;
+                background: #CED4DA;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+
+    .article__sub-title,
+    .article__title,
+    .article__meta,
+    .article__sapo {
+        margin-bottom: 12px;
+    }
+
+    [class*="article__"]+.col {
+        margin-top: 20px;
+    }
+}

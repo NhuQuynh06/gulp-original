@@ -1,0 +1,68 @@
+<div class="banner banner-top">
+  <div class="banner_show">
+    <img src="https://source.unsplash.com/featured/960x94?sig=1" alt="" />
+  </div>
+</div>
+<header class="site-header">
+  <a href="index.html" class="logo">logo</a>
+  <i class="ic-profile"></i>
+  <i class="ic-bell active"></i>
+  <i class="ic-menu"></i>
+  <div class="pick-news">
+    <h3 class="box-heading">
+      <a href="#" class="title">đọc nhiều</a>
+    </h3>
+    <div class="box-content">
+      @@for (var i = 0; i < 5; i++) {
+      <article class="story">
+        <h2 class="story__heading">
+          <a href="#">
+            Official Gazette issues Nos 09-12/2022 Lorem ipsum dolor sit.
+          </a>
+        </h2>
+        <div class="story__meta">
+          <time class="time">17/04/2023 12:23</time>
+          <a href="#" class="title-cate" title="">cate</a>
+        </div>
+      </article>
+      }
+    </div>
+  </div>
+</header>
+<div class="navigation">
+  <div class="region-search">
+    <input type="text" placeholder="Tìm kiếm thông tin" />
+    <i class="ic-search"></i>
+  </div>
+  <ul class="menu">
+    <li><a href="./index.html">Trang chủ</a></li>
+    <li>
+      <a href="https://www.google.com/">Chính trị</a>
+      <i class="ic-down"></i>
+      <ul class="sub-menu">
+        @@for (var i = 0; i < 5; i++) {
+        <li><a href="https://www.google.com/">Giáo dục</a></li>
+        }
+      </ul>
+    </li>
+    <li>
+      <a href="https://www.google.com/">Chính trị</a>
+      <i class="ic-down"></i>
+      <ul class="sub-menu">
+        @@for (var i = 0; i < 5; i++) {
+        <li><a href="https://www.google.com/">Giáo dục</a></li>
+        }
+      </ul>
+    </li>
+    <li class="media-center">
+      <a href="">Media Center</a>
+      <ul class="sub-menu media">
+        @@for (var i = 0; i < 5; i++) {
+        <li><a href="">Giáo dục</a></li>
+        }
+      </ul>
+    </li>
+    <li><a href="">end</a></li>
+  </ul>
+  <div class="backdrop"></div>
+</div>

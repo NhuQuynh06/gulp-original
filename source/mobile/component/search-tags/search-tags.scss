@@ -1,0 +1,92 @@
+.search-tags {
+    .region-text {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 32px;
+        padding-top: 20px;
+
+        >* {
+            margin-bottom: 0;
+        }
+    }
+
+    .keywords {
+        font-weight: $font-weight-normal;
+        font-size: 32px;
+        line-height: 47px;
+        text-transform: uppercase;
+
+        @media (min-width: 1366px) {
+            font-size: 32px;
+        }
+
+        span {
+            color: #BD1723;
+        }
+    }
+
+    .result {
+        font-size: 19px;
+        line-height: 28px;
+        color: var(--gray-800, #343a40);
+    }
+
+    .region-search {
+        position: relative;
+        margin: 0 auto;
+        display: flex;
+        height: 90px;
+        padding: 0px 20px;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        border-radius: 6px;
+        border: 1px solid var(--gray-500, #ADB5BD);
+        background: var(--white, #fff);
+        box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.15);
+
+        input {
+            border: 1px solid #E9ECEF;
+            border-radius: 6px;
+            padding: 4px 4px 4px 20px;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            outline: none;
+            color: var(--gray-900, #212529);
+            font-size: 22px;
+            font-weight: 500;
+
+            &::placeholder {
+                font-weight: $font-weight-normal;
+                font-size: 22px;
+                line-height: 19px;
+                display: flex;
+                align-items: center;
+                color: #ADB5BD;
+            }
+        }
+
+        i {
+            position: absolute;
+            right: 9px;
+            top: 9px;
+            width: 70px;
+            height: 70px;
+            background: var(--primary, #980700);
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            color: var(--white, #fff);
+            cursor: pointer;
+        }
+    }
+
+    & + .timeline{
+        width: 960px;
+        margin: 0 auto;
+    }
+}
