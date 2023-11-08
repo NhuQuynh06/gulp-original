@@ -1,0 +1,40 @@
+// global
+.banner {
+    justify-content: center;
+    display: grid;
+    gap: var(--gutter) 0;
+    margin-bottom: 0 !important;
+
+    img {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .banner_show{
+        margin-bottom: var(--gutter);
+    }
+    .banner_show:not(:last-child) {
+        margin-bottom: var(--gutter);
+    }
+}
+
+// chứa banner ngang, một hoặc nhiều banner trên 1 dòng
+.banner-wrap .banner {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: initial;
+    min-height: 90px;
+    gap: 30px;
+    .banner_show {
+        margin-bottom: 0;
+    }
+}
+
+// class trong sidebar, format khoảng cách giữa các box
+.fyi-position {
+    margin-bottom: $gutter-zone-v;
+
+    &+div {
+        margin-bottom: var(--gutter);
+    }
+}

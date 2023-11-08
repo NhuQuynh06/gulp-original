@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vietnam+ (VietnamPlus)</title>
+    <!-- Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" />
+    @@include('../component/box-style/global/css.html')
+  </head>
+
+  <body class="longform-page">
+    <!-- site header -->
+     @@include('../component/header/header.html')
+
+    <!-- site body -->
+    <div class="site-body">
+      <div class="container">
+        <div class="article">
+          <figure class="article__avatar">
+            <img
+              src="https://source.unsplash.com/random/1400x394?sig=1"
+              alt=""
+            />
+            <figcaption>caption</figcaption>
+          </figure>
+          <table class="article__avatar">
+            <tbody>
+              <tr>
+                <td class="img">
+                  <img
+                    src="https://source.unsplash.com/random/3000x900?sig=1"
+                    alt=""
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td class="caption">
+                  Khói bốc lên từ khu công nghiệp Kaesong, được cho là hệ quả
+                  khi Triều Tiên cho nổ văn phòng liên lạc liên Triều. Ảnh: NK
+                  News.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          @@include('../component/breadcrumb/breadcrumb2.html')
+          @@include('../component/detail-page/article-header/article-header.html')
+          @@include('../component/detail-page/article-body/article-body.html')
+        </div>
+      </div>
+    </div>
+
+    <!-- site footer -->
+     @@include('../component/footer/footer.html')
+    <!-- JS Global Compulsory-->
+    @@include('../component/box-style/global/js.html')
+  </body>
+</html>

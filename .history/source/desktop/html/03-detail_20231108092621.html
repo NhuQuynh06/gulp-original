@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NAME</title>
+    <!-- Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../styles/css/desktop.css" />
+  </head>
+
+  <body>
+    <!-- site header -->
+    @@include('../component/header/header.html')
+
+    <!-- site body -->
+    <div class="site-body">
+      <div class="container detail-page">
+        @@include('../component/breadcrumbs/breadcrumbs.html')
+        <div class="col">
+          <div class="main-col">
+            <div class="article">
+              <div class="social-pin sticky">
+                <a href="" class="fb">fb</a>
+                <a href="" class="yt">yt</a>
+                <a href="" class="zl">zl</a>
+                <a href="" class="tw">tw</a>
+              </div>
+              @@include('../component/detail-page/article-header/article-header.html')
+              @@include('../component/detail-page/article-body/article-body.html')
+            </div>
+          </div>
+          <div class="sub-col">
+            <div class="banner">
+              <div class="banner_show">
+                <img
+                  src="https://source.unsplash.com/random/300x200?sig=1"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- site footer -->
+    @@include('../component/footer/footer.html')
+
+    <!-- JS Global Compulsory-->
+    <script src="../js/jquery-3.1.1.js"></script>
+    <script src="../js/ui.js"></script>
+  </body>
+</html>

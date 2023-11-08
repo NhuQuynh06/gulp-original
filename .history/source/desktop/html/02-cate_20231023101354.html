@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vietnam+ (VietnamPlus)</title>
+    <!-- Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" />
+    @@include('../component/box-style/global/css.html')
+  </head>
+
+  <body>
+    <!-- site header -->
+     @@include('../component/header/header.html')
+
+    <!-- site body -->
+    <div class="site-body">
+      <div class="container">
+        @@include('../component/breadcrumb/breadcrumb.html')
+        <div class="col zone-3">
+          <div class="main-col">
+            @@include('../component/box-style/abf-cate/abf-cate.html')
+          </div>
+          <div class="sub-col">
+            @@include('../component/box-style/hot-news/hot-news.html',{"box-name":"đời sống"})
+          </div>
+        </div>
+            @@include('../component/box-style/event/event2.html')
+            <div class="col">
+              <div class="main-col">
+                @@include('../component/box-style/timeline/timeline2.html',{"box-name":"tin mới nhất"})
+              </div>
+              <div class="sub-col">
+                @@include('../component/box-style/infographic/infographic.html')
+                @@include('../component/box-style/video/video.html')
+                @@include('../component/box-style/podcast/podcast.html')
+                @@include('../component/banner/banner2.html')
+                @@include('../component/banner/banner2.html')
+              </div>
+            </div>
+      </div>
+    </div>
+    <div class="back-to-top"></div>
+    <!-- site footer -->
+     @@include('../component/footer/footer.html')
+
+    <!-- JS Global Compulsory-->
+    @@include('../component/box-style/global/js.html')
+  </body>
+</html>

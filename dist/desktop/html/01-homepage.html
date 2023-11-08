@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="vie">
 
 <head>
   <title>NAME</title>
@@ -10,229 +10,362 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <!-- Favicon -->
   <link rel="shortcut icon" href="favicon.ico" />
+  <!-- audio -->
+  <link rel="preload" href="../styles/fonts/audio/icomoon.woff" as="font" type="woff" crossorigin="">
+  <link rel="preload" href="../styles/fonts/icomoon/icomoon.woff" as="font" type="woff" crossorigin="">
+  <!-- NotoSerif -->
+  <link rel="preload" href="../styles/fonts/NotoSerif/NotoSerif-SemiBold.woff2" as="font" type="woff2" crossorigin="">
+  <link rel="preload" href="../styles/fonts/NotoSerif/NotoSerif-Regular.woff2" as="font" type="woff2" crossorigin="">
+  <link rel="preload" href="../styles/fonts/NotoSerif/NotoSerif-Italic.woff2" as="font" type="woff2" crossorigin="">
+  <!-- playfair display -->
+  <link rel="preload" href="../styles/fonts/PlayfairDisplay/PlayfairDisplay-SemiBold.woff2" as="font" type="woff2" crossorigin="">
+  <link rel="preload" href="../styles/fonts/PlayfairDisplay/PlayfairDisplay-Medium.woff2" as="font" type="woff2" crossorigin="">
+  <!-- URWGeometric -->
+  <link rel="preload" href="../styles/fonts/URWGeometric/urwFixlineheight-ExtraBold.woff" as="font" type="woff" crossorigin="">
+  <link rel="preload" href="../styles/fonts/URWGeometric/urwFixlineheight-SemiBold.woff" as="font" type="woff" crossorigin="">
+  <link rel="preload" href="../styles/fonts/URWGeometric/urwFixlineheight-Regular.woff" as="font" type="woff" crossorigin="">
+  <link rel="preload" href="../styles/fonts/URWGeometric/urwFixlineheight-Italic.woff" as="font" type="woff2" crossorigin="">
+  <!-- css -->
   <link rel="stylesheet" type="text/css" href="../styles/css/desktop.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 </head>
 
-<body>
+<body class="home-page">
   <!-- site header -->
-  <header class="site-header ">
-    <div class="container">
-      <div class="top-header">
-        top content
-      </div>
-      <div class="content-header">
-        <a href="index.html" class="logo">logo</a>
+  <div class="banner">
+    <div class="banner_show">
+      <img src="https://source.unsplash.com/featured/960x94?sig=1" alt="" />
+    </div>
+  </div>
+  <header class="header-home site-header">
+    <div class="sticky">
+      <div class="container">
+        <i class="ic-menu"></i>
+        <i class="ic-bell"></i>
+        <a href="index.html" class="small-logo">logo</a>
+        <ul class="menu">
+          <li>
+            <a href="">Tiếng việt</a>
+          </li>
+          <li>
+            <a href="">English</a>
+          </li>
+          <li>
+            <a href="">Français</a>
+          </li>
+          <li>
+            <a href="">Español</a>
+          </li>
+          <li>
+            <a href="">中文</a>
+          </li>
+          <li>
+            <a href="">Русский</a>
+          </li>
+        </ul>
+        <div class="search-wrapper">
+          <i class="ic-search"></i>
+          <input type="text" class="search" placeholder="Tìm kiếm" />
+        </div>
+        <i class="ic-profile"></i>
       </div>
     </div>
-    <div class="navigation sticky">
-      <ul class="menu">
-        <li>
-          <a href="" class="ic-home">home</a>
-        </li>
-        <li>
-          <a href="" class="active">chính trị</a>
-        </li>
-        <li>
-          <a href="">kinh tế</a>
-        </li>
-        <li>
-          <a href="">xã hội</a>
-          <ul class="sub-menu">
-            <li>
-              <a href="#">Sub-menu 1</a>
-            </li>
-            <li>
-              <a href="#" class="active">Sub-menu 2</a>
-            </li>
-            <li>
-              <a href="#">Sub-menu 3</a>
-            </li>
-            <li>
-              <a href="#">Sub-menu 4</a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="">văn hóa</a>
-        </li>
-        <li>
-          <a href="">du lịch</a>
-        </li>
+    <h1>
+      <a href="index.html" class="logo">logo</a>
+    </h1>
+  </header>
+  <div class="navigation">
+    <ul class="menu">
+      <li>
+        <a href="">Trang chủ</a>
+      </li>
 
-        <li>
-          <a href="">thể thao</a>
-          <ul class="sub-menu">
-            <li>
-              <a href="#">Lorem ipsum dolor sit amet.</a>
-            </li>
-            <li>
-              <a href="#" class="active">Sub-menu 2</a>
-            </li>
-            <li>
-              <a href="#">Sub-menu 3</a>
-            </li>
-            <li>
-              <a href="#">Sub-menu 4</a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="">địa phương</a>
-        </li>
-        <li>
-          <a href="">đọc báo in</a>
-        </li>
-        <li class="extend">
-          <a href="" class="ic-menu">extend</a>
-          <div class="big-menu-horizontal">
-            <div class="content">
-              <ul class="item">
-                <li>
-                  <a href="" class="title">chính trị</a>
-                </li>
-                <li>
-                  <a href="">Xây dựng đảng</a>
-                </li>
-                <li>
-                  <a href="">Lorem, ipsum dolor.</a>
-                </li>
-                <li>
-                  <a href="">Lorem, ipsum dolor.</a>
-                </li>
-                <li>
-                  <a href="">Lorem, ipsum</a>
-                </li>
-                <li>
-                  <a href="">Lorem, ipsum</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </div>
-    <ul class="big-menu-vertical">
-      <li class="close">
-        <i class="ic-close"></i>
-      </li>
       <li>
-        <a href="">Thương hiệu</a>
-      </li>
-      <li>
-        <a href="">Trải nghiệm</a>
-      </li>
-      <li>
-        <a href="">Thời trang</a>
-      </li>
-      <li>
-        <a href="#">Thế giới thương gia</a>
-        <i class="ic-down"></i>
+        <a href="">Chính trị</a>
+        <i class="ic-right"></i>
         <ul class="sub-menu">
+
           <li>
-            <a href="#">Dòng chảy</a>
+            <a href="">Giáo dục</a>
           </li>
+
           <li>
-            <a href="#">Diễn đàn</a>
+            <a href="">Giáo dục</a>
           </li>
+
           <li>
-            <a href="#">Nghe-Đọc-Xem</a>
+            <a href="">Giáo dục</a>
           </li>
+
           <li>
-            <a href="#">Di sản</a>
+            <a href="">Giáo dục</a>
           </li>
+
           <li>
-            <a href="#">Chân dung</a>
+            <a href="">Giáo dục</a>
           </li>
+
+        </ul>
+      </li>
+
+      <li>
+        <a href="">Chính trị</a>
+        <i class="ic-right"></i>
+        <ul class="sub-menu">
+
+          <li>
+            <a href="">Giáo dục</a>
+          </li>
+
+          <li>
+            <a href="">Giáo dục</a>
+          </li>
+
+          <li>
+            <a href="">Giáo dục</a>
+          </li>
+
+          <li>
+            <a href="">Giáo dục</a>
+          </li>
+
+          <li>
+            <a href="">Giáo dục</a>
+          </li>
+
+        </ul>
+      </li>
+
+      <li>
+        <a href="">Chính trị</a>
+        <i class="ic-right"></i>
+        <ul class="sub-menu">
+
+          <li>
+            <a href="">Giáo dục</a>
+          </li>
+
+          <li>
+            <a href="">Giáo dục</a>
+          </li>
+
+          <li>
+            <a href="">Giáo dục</a>
+          </li>
+
+          <li>
+            <a href="">Giáo dục</a>
+          </li>
+
+          <li>
+            <a href="">Giáo dục</a>
+          </li>
+
+        </ul>
+      </li>
+
+      <li>
+        <a href="">Chính trị</a>
+        <i class="ic-right"></i>
+        <ul class="sub-menu">
+
+          <li>
+            <a href="">Giáo dục</a>
+          </li>
+
+          <li>
+            <a href="">Giáo dục</a>
+          </li>
+
+          <li>
+            <a href="">Giáo dục</a>
+          </li>
+
+          <li>
+            <a href="">Giáo dục</a>
+          </li>
+
+          <li>
+            <a href="">Giáo dục</a>
+          </li>
+
+        </ul>
+      </li>
+
+      <li>
+        <a href="">Chính trị</a>
+        <i class="ic-right"></i>
+        <ul class="sub-menu">
+
+          <li>
+            <a href="">Giáo dục</a>
+          </li>
+
+          <li>
+            <a href="">Giáo dục</a>
+          </li>
+
+          <li>
+            <a href="">Giáo dục</a>
+          </li>
+
+          <li>
+            <a href="">Giáo dục</a>
+          </li>
+
+          <li>
+            <a href="">Giáo dục</a>
+          </li>
+
+        </ul>
+      </li>
+
+      <li>
+        <a href="">Chính trị</a>
+      </li>
+
+      <li>
+        <a href="">Chính trị</a>
+      </li>
+
+      <li>
+        <a href="">Chính trị</a>
+      </li>
+
+      <li>
+        <a href="">Chính trị</a>
+      </li>
+
+      <li>
+        <a href="">Chính trị</a>
+      </li>
+
+      <li>
+        <a href="">Chính trị</a>
+      </li>
+
+      <li>
+        <a href="">Chính trị</a>
+      </li>
+
+      <li>
+        <a href="">Chính trị</a>
+      </li>
+
+      <li>
+        <a href="">Chính trị</a>
+      </li>
+
+      <li>
+        <a href="">Chính trị</a>
+      </li>
+
+      <li class="media-center">
+        <a href="">Media Center</a>
+        <ul class="sub-menu media">
+
+          <li>
+            <a href="">Giáo dục</a>
+          </li>
+
+          <li>
+            <a href="">Giáo dục</a>
+          </li>
+
+          <li>
+            <a href="">Giáo dục</a>
+          </li>
+
+          <li>
+            <a href="">Giáo dục</a>
+          </li>
+
+          <li>
+            <a href="">Giáo dục</a>
+          </li>
+
         </ul>
       </li>
       <li>
-        <a href="#">Thế giới thương gia</a>
-        <i class="ic-down"></i>
-        <ul class="sub-menu">
-          <li>
-            <a href="#">Dòng chảy</a>
-          </li>
-          <li>
-            <a href="#">Diễn đàn</a>
-          </li>
-          <li>
-            <a href="#">Nghe-Đọc-Xem</a>
-          </li>
-          <li>
-            <a href="#">Di sản</a>
-          </li>
-          <li>
-            <a href="#">Chân dung</a>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <a href="#">Thế giới thương gia</a>
-        <i class="ic-down"></i>
-        <ul class="sub-menu">
-          <li>
-            <a href="#">Dòng chảy</a>
-          </li>
-          <li>
-            <a href="#">Diễn đàn</a>
-          </li>
-          <li>
-            <a href="#">Nghe-Đọc-Xem</a>
-          </li>
-          <li>
-            <a href="#">Di sản</a>
-          </li>
-          <li>
-            <a href="#">Chân dung</a>
-          </li>
-        </ul>
+        <a href="">end</a>
       </li>
     </ul>
-  </header>
+  </div>
+
 
   <!-- site body -->
   <div class="site-body">
-    <div class="container"></div>
+    <div class="container">homepage</div>
   </div>
   <div class="back-to-top"></div>
   <!-- site footer -->
-  <footer class="site-footer container">
-    <div class="row">
-      <div class="row">
-        <a href="" class="logo"></a>
-        <div class="info">
-          <p>
-            <span class="bold">Tổng Biên tập</span> :
-          </p>
-          <p>
-            <span class="bold">Phó Tổng Biên tập</span> :
-          </p>
-          <p>
-            <span class="bold">Điện thoại </span> : <span class="bold">- Fax </span> :
-          </p>
-          <p>
-            <span class="bold">Email </span> : dientu@gmail.com
-          </p>
-
+  <footer class="site-footer">
+    <div class="networks">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <img src="https://image-vnp.epi.vn/Uploaded/2023/firns/2023_10_25/item6-1446.png" alt="" class="swiper-slide item" />
+          <img src="https://image-vnp.epi.vn/Uploaded/2023/firns/2023_10_25/item7-4707.png" alt="" class="swiper-slide item" />
+          <img src="https://image-vnp.epi.vn/Uploaded/2023/firns/2023_10_25/item8-4458.png" alt="" class="swiper-slide item" />
+          <img src="https://image-vnp.epi.vn/Uploaded/2023/firns/2023_10_25/item11-5966.png" alt="" class="swiper-slide item" />
+          <img src="https://image-vnp.epi.vn/Uploaded/2023/firns/2023_10_25/item2-9530.png" alt="" class="swiper-slide item" />
+          <img src="https://image-vnp.epi.vn/Uploaded/2023/firns/2023_10_24/item1-8091.png" alt="" class="swiper-slide item" />
+          <img src="https://image-vnp.epi.vn/Uploaded/2023/firns/2023_10_25/item3-7732.png" alt="" class="swiper-slide item" />
+          <img src="https://image-vnp.epi.vn/Uploaded/2023/firns/2023_10_25/item4-5670.png" alt="" class="swiper-slide item" />
+          <img src="https://image-vnp.epi.vn/Uploaded/2023/firns/2023_10_25/item5-3792.png" alt="" class="swiper-slide item" />
+          <img src="https://image-vnp.epi.vn/Uploaded/2023/firns/2023_10_25/item6-1446.png" alt="" class="swiper-slide item" />
         </div>
       </div>
-      <div class="info align-left">
-        <p>
-          <span class="bold">Trụ sở</span>
-        </p>
-        <p>Giấy phép xuất bản số :<span class="bold">BTTTT</span>
-        </p>
-        <p>Bộ Thông tin và Truyền thông cấp ngày 22/03/2022</p>
-        <p>Powered by ePi Technologies</p>
-      </div>
     </div>
-    <div class="row">
-      <p class="text">Ghi rõ nguồn “Báo điện tử” khi sử dụng thông tin trang này.</p>
+    <div class="container">
+      <div class="content">
+        <a href="#" class="logo">logo</a>
+        <p class="upper">Cơ quan chủ quản: THÔNG TẤN XÃ VIỆT NAM</p>
+        <p>Tổng Biên tập TRẦN TIẾN DUẨN</p>
+        <p>Phó Tổng Biên tập : ĐOÀN NGỌC THU</p>
+      </div>
+      <div class="info">
+        <ul class="menu">
+          <li>
+            <a href="#">Sở hữu trí tuệ</a>
+          </li>
+          <li>
+            <a href="#">Quy định sử dụng</a>
+          </li>
+          <li>
+            <a href="#">RSS</a>
+          </li>
+          <li>
+            <a href="#">Hỗ trợ</a>
+          </li>
+          <li>
+            <a href="#">Ngôn ngữ</a>
+          </li>
+          <li>
+            <a href="#">TTXVN</a>
+          </li>
+          <li>
+            <a href="#">Dịch vụ tin</a>
+          </li>
+          <li>
+            <a href="#">Quảng cáo</a>
+          </li>
+          <li>
+            <a href="#">Liên hệ</a>
+          </li>
+        </ul>
+        <p>Giấy phép số: 1374/GP-BTTTT do Bộ Thông tin và Truyền thông cấp ngày 11/9/2008.</p>
+        <p>Quảng cáo: Phó TBT Đoàn Ngọc Thu: 098.320.8989, Email: thudoanngoc@gmail.com</p>
+        <p>Điện thoại: (024) 39411349 - (024) 39411348, Fax: (024) 39411348</p>
+        <p>Email: vietnamplus2008@gmail.com</p>
+        <p>© Bản quyền thuộc về VietnamPlus, TTXVN. Cấm sao chép dưới mọi hình thức nếu không có sự chấp thuận bằng văn bản.</p>
+      </div>
     </div>
   </footer>
 
   <!-- JS Global Compulsory-->
   <script src="../js/jquery-3.1.1.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="../js/ui.js"></script>
 </body>
 

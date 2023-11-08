@@ -1,0 +1,83 @@
+@import "variables";
+@import "./mixins/global";
+
+// ----------------------------------
+// INFO : style for global
+// ----------------------------------
+
+@import "./reboot";
+@import "fonts";
+@import "icons";
+@import "layout";
+@import "fyi";
+@import "story";
+@import "styles";
+
+
+// ----------------------------------
+// INFO : style for fixed component 
+// ----------------------------------
+
+@import '../component/header/header.scss';
+@import '../component/footer/footer.scss';
+
+@import '../component/breadcrumb/breadcrumb.scss';
+@import '../component/search-tags/search-tags.scss';
+@import '../component/modal/modal.scss';
+@import '../component/error/error.scss';
+
+// ----------------------------------
+// INFO : style for detail-page
+// ----------------------------------
+@import '../component/detail-page/article-header/article-header.scss';
+@import '../component/detail-page/article-body/article-body.scss';
+@import '../component/detail-page/audio/audio.scss';
+@import '../component/detail-page/comment/comment.scss';
+@import '../component/detail-page/interview/interview.scss';
+@import '../component/detail-page/live/live.scss';
+@import '../component/detail-page/longform/longform.scss';
+@import '../component/detail-page/timeline/timeline-detail.scss';
+@import '../component/detail-page/old-style/old-style.scss';
+
+// ----------------------------------
+// INFO : style for box-style
+// ----------------------------------
+
+// @import '../component/box-style/abf-homepage/abf-homepage.scss';
+// @import '../component/box-style/abf-cate/abf-cate.scss';
+// @import '../component/box-style/box-default/box-default.scss';
+// @import '../component/box-style/abf-cate/abf-cate-second.scss';
+// @import '../component/box-style/latest/latest.scss';
+// @import '../component/box-style/webstory/webstory.scss';
+// @import '../component/box-style/timeline/timeline.scss';
+// @import '../component/box-style/infographic/infographic.scss';
+// @import '../component/box-style/video/video.scss';
+// @import '../component/box-style/podcast/podcast.scss';
+// @import '../component/box-style/most-viewed/most-viewed.scss';
+// @import '../component/box-style/weather/weather.scss';
+// @import '../component/box-style/exchange-rate/exchange-rate.scss';
+// @import '../component/box-style/small-multipack/small-multipack.scss';
+// @import '../component/box-style/local-news/local-news.scss';
+// @import '../component/box-style/onemain-multisub/onemain-multisub.scss';
+// @import '../component/box-style/four-pack/four-pack.scss';
+// @import '../component/box-style/mega-story/mega-story.scss';
+// @import '../component/box-style/news-photo/news-photo.scss';
+// @import '../component/box-style/short-video/short-video.scss';
+// @import '../component/box-style/multi-news/multi-news.scss';
+// @import '../component/box-style/hot-news/hot-news.scss';
+// @import '../component/box-style/pick-news/pick-news.scss';
+// @import '../component/box-style/event/event.scss';
+// @import '../component/box-style/related-news/related-news.scss';
+// @import '../component/box-style/topic/topic.scss';
+// @import '../component/box-style/topic-list/topic-list.scss';
+// @import '../component/box-style/subject/subject.scss';
+// @import '../component/box-style/abf-media/abf-media.scss';
+// @import '../component/box-style/cate/cate.scss';
+// @import '../component/box-style/list-media/list-videos.scss';
+// @import '../component/box-style/multi-video/multi-video.scss';
+// @import '../component/box-style/multi-podcast/multi-podcast.scss';
+// @import '../component/box-style/podcast-series/podcast-series.scss';
+// @import '../component/box-style/abf-podcast/abf-podcast.scss';
+// @import '../component/box-style/podcast-categories/podcast-categories.scs';
+// @import '../component/box-style/search/search.scss';
+

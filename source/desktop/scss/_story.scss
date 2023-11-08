@@ -5,80 +5,89 @@
         content: "";
     }
 
-
-    figure {
-        margin: 0;
-    }
-
     &__thumb {
-        background: $gray-200;
         border-radius: 6px;
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 10px;
 
         @media (max-width: $lg) {
             height: inherit;
         }
 
         a {
-            display: flex;
             width: 100%;
-            transition: transform 0.5s ease-out 0.1s;
-            transition: 0.5s;
+            height: 100%;
+            position: relative;
+            display: flex;
+
         }
 
         img {
             width: 100%;
-            transition: transform 0.5s;
-            text-indent: -9999px;
+            height: 100%;
+            position: relative;
+            display: flex;
         }
     }
 
-    &__heading a {
-        display: block;
-        transition: 0.5s;
+    &__heading {
+        display: flex;
 
-        &:hover {
-            color: $primary !important;
+        a {
+            display: block;
+            transition: 0.5s;
+            color: var(--gray-900, #212529);
+            font-family: $font-family-second;
+            line-height: 150%;
+            font-weight: $font-weight-medium;
+
+            &:hover {
+                color: var(--primary, #980700) !important;
+            }
         }
     }
+
 
     &__summary {
-        display: block;
+        display: flex;
         font-weight: $font-weight-normal;
-        color: $summary;
-        font-size: 14px;
+        color: var(--summary);
+        font-size: 16px;
 
         >* {
             display: block;
             overflow: hidden;
             margin-bottom: 0;
             font-weight: $font-weight-normal;
-            font-size: 14px;
-            color: $summary;
+            color: var(--summary);
         }
     }
 
+    .time {
+        color: var(--gray-600, #6c757d);
+        font-size: 12px;
+        display: block;
+        line-height: 150%;
+        font-weight: $font-weight-normal;
+    }
 
-    &__meta {
-        margin-top: 8px;
+    .title-cate {
+        color: var(--primary, #980700);
+        font-weight: $font-weight-semibold;
+        line-height: 150%;
+        text-transform: uppercase;
+    }
 
-        time {
+    &__relate {
+        >* {
             display: block;
-            font-weight: $font-weight-normal;
-            font-size: 13px;
-            line-height: 16px;
-            color: $summary;
-        }
-
-        a {
-            &:hover {
-                color: $primary;
-            }
         }
     }
 
     &__sub-heading a {
         &:hover {
-            color: $primary !important;
+            color: var(--primary, #980700) !important;
         }
     }
 }

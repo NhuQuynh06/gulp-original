@@ -2,15 +2,33 @@
 <html>
 
 <head>
-  <title>NAME</title>
+  <title>Vietnam+ (VietnamPlus)</title>
   <!-- Meta -->
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <!-- Favicon -->
-  <link rel="shortcut icon" href="favicon.ico">
-  <link rel="stylesheet" type="text/css" href="../styles/css/desktop.css">
+  <link rel="shortcut icon" href="favicon.ico" />
+  <!-- audio -->
+  <link rel="preload" href="../styles/fonts/audio/icomoon.woff" as="font" type="woff" crossorigin="">
+  <link rel="preload" href="../styles/fonts/icomoon/icomoon.woff" as="font" type="woff" crossorigin="">
+  <!-- NotoSerif -->
+  <link rel="preload" href="../styles/fonts/NotoSerif/NotoSerif-SemiBold.woff2" as="font" type="woff2" crossorigin="">
+  <link rel="preload" href="../styles/fonts/NotoSerif/NotoSerif-Regular.woff2" as="font" type="woff2" crossorigin="">
+  <link rel="preload" href="../styles/fonts/NotoSerif/NotoSerif-Italic.woff2" as="font" type="woff2" crossorigin="">
+  <!-- playfair display -->
+  <link rel="preload" href="../styles/fonts/PlayfairDisplay/PlayfairDisplay-SemiBold.woff2" as="font" type="woff2" crossorigin="">
+  <link rel="preload" href="../styles/fonts/PlayfairDisplay/PlayfairDisplay-Medium.woff2" as="font" type="woff2" crossorigin="">
+  <!-- URWGeometric -->
+  <link rel="preload" href="../styles/fonts/URWGeometric/urwFixlineheight-ExtraBold.woff" as="font" type="woff" crossorigin="">
+  <link rel="preload" href="../styles/fonts/URWGeometric/urwFixlineheight-SemiBold.woff" as="font" type="woff" crossorigin="">
+  <link rel="preload" href="../styles/fonts/URWGeometric/urwFixlineheight-Regular.woff" as="font" type="woff" crossorigin="">
+  <link rel="preload" href="../styles/fonts/URWGeometric/urwFixlineheight-Italic.woff" as="font" type="woff2" crossorigin="">
+  <!-- css -->
+  <link rel="stylesheet" type="text/css" href="../styles/css/desktop.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 </head>
 
 <style>
@@ -26,288 +44,442 @@
 
 <body>
   <!-- site header -->
-  <header class="site-header ">
-    <div class="container">
-      <div class="top-header">
-        top content
-      </div>
-      <div class="content-header">
-        <a href="index.html" class="logo">logo</a>
+  <div class="banner">
+    <div class="banner_show">
+      <img src="https://source.unsplash.com/featured/960x94?sig=1" alt="" />
+    </div>
+  </div>
+  <header class="header-home site-header">
+    <div class="sticky">
+      <div class="container">
+        <i class="ic-menu"></i>
+        <i class="ic-bell"></i>
+        <a href="index.html" class="small-logo">logo</a>
+        <ul class="menu">
+          <li>
+            <a href="">Tiếng việt</a>
+          </li>
+          <li>
+            <a href="">English</a>
+          </li>
+          <li>
+            <a href="">Français</a>
+          </li>
+          <li>
+            <a href="">Español</a>
+          </li>
+          <li>
+            <a href="">中文</a>
+          </li>
+          <li>
+            <a href="">Русский</a>
+          </li>
+        </ul>
+        <div class="search-wrapper">
+          <i class="ic-search"></i>
+          <input type="text" class="search" placeholder="Tìm kiếm" />
+        </div>
+        <i class="ic-profile"></i>
       </div>
     </div>
-    <div class="navigation sticky">
-      <ul class="menu">
-        <li>
-          <a href="" class="ic-home">home</a>
-        </li>
-        <li>
-          <a href="" class="active">chính trị</a>
-        </li>
-        <li>
-          <a href="">kinh tế</a>
-        </li>
-        <li>
-          <a href="">xã hội</a>
-          <ul class="sub-menu">
-            <li>
-              <a href="#">Sub-menu 1</a>
-            </li>
-            <li>
-              <a href="#" class="active">Sub-menu 2</a>
-            </li>
-            <li>
-              <a href="#">Sub-menu 3</a>
-            </li>
-            <li>
-              <a href="#">Sub-menu 4</a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="">văn hóa</a>
-        </li>
-        <li>
-          <a href="">du lịch</a>
-        </li>
+    <h1>
+      <a href="index.html" class="logo">logo</a>
+    </h1>
+  </header>
+  <div class="navigation">
+    <ul class="menu">
+      <li>
+        <a href="">Trang chủ</a>
+      </li>
 
-        <li>
-          <a href="">thể thao</a>
-          <ul class="sub-menu">
-            <li>
-              <a href="#">Lorem ipsum dolor sit amet.</a>
-            </li>
-            <li>
-              <a href="#" class="active">Sub-menu 2</a>
-            </li>
-            <li>
-              <a href="#">Sub-menu 3</a>
-            </li>
-            <li>
-              <a href="#">Sub-menu 4</a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="">địa phương</a>
-        </li>
-        <li>
-          <a href="">đọc báo in</a>
-        </li>
-        <li class="extend">
-          <a href="" class="ic-menu">extend</a>
-          <div class="big-menu-horizontal">
-            <div class="content">
-              <ul class="item">
-                <li>
-                  <a href="" class="title">chính trị</a>
-                </li>
-                <li>
-                  <a href="">Xây dựng đảng</a>
-                </li>
-                <li>
-                  <a href="">Lorem, ipsum dolor.</a>
-                </li>
-                <li>
-                  <a href="">Lorem, ipsum dolor.</a>
-                </li>
-                <li>
-                  <a href="">Lorem, ipsum</a>
-                </li>
-                <li>
-                  <a href="">Lorem, ipsum</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </div>
-    <ul class="big-menu-vertical">
-      <li class="close">
-        <i class="ic-close"></i>
-      </li>
       <li>
-        <a href="">Thương hiệu</a>
-      </li>
-      <li>
-        <a href="">Trải nghiệm</a>
-      </li>
-      <li>
-        <a href="">Thời trang</a>
-      </li>
-      <li>
-        <a href="#">Thế giới thương gia</a>
-        <i class="ic-down"></i>
+        <a href="">Chính trị</a>
+        <i class="ic-right"></i>
         <ul class="sub-menu">
+
           <li>
-            <a href="#">Dòng chảy</a>
+            <a href="">Giáo dục</a>
           </li>
+
           <li>
-            <a href="#">Diễn đàn</a>
+            <a href="">Giáo dục</a>
           </li>
+
           <li>
-            <a href="#">Nghe-Đọc-Xem</a>
+            <a href="">Giáo dục</a>
           </li>
+
           <li>
-            <a href="#">Di sản</a>
+            <a href="">Giáo dục</a>
           </li>
+
           <li>
-            <a href="#">Chân dung</a>
+            <a href="">Giáo dục</a>
           </li>
+
+        </ul>
+      </li>
+
+      <li>
+        <a href="">Chính trị</a>
+        <i class="ic-right"></i>
+        <ul class="sub-menu">
+
+          <li>
+            <a href="">Giáo dục</a>
+          </li>
+
+          <li>
+            <a href="">Giáo dục</a>
+          </li>
+
+          <li>
+            <a href="">Giáo dục</a>
+          </li>
+
+          <li>
+            <a href="">Giáo dục</a>
+          </li>
+
+          <li>
+            <a href="">Giáo dục</a>
+          </li>
+
+        </ul>
+      </li>
+
+      <li>
+        <a href="">Chính trị</a>
+        <i class="ic-right"></i>
+        <ul class="sub-menu">
+
+          <li>
+            <a href="">Giáo dục</a>
+          </li>
+
+          <li>
+            <a href="">Giáo dục</a>
+          </li>
+
+          <li>
+            <a href="">Giáo dục</a>
+          </li>
+
+          <li>
+            <a href="">Giáo dục</a>
+          </li>
+
+          <li>
+            <a href="">Giáo dục</a>
+          </li>
+
+        </ul>
+      </li>
+
+      <li>
+        <a href="">Chính trị</a>
+        <i class="ic-right"></i>
+        <ul class="sub-menu">
+
+          <li>
+            <a href="">Giáo dục</a>
+          </li>
+
+          <li>
+            <a href="">Giáo dục</a>
+          </li>
+
+          <li>
+            <a href="">Giáo dục</a>
+          </li>
+
+          <li>
+            <a href="">Giáo dục</a>
+          </li>
+
+          <li>
+            <a href="">Giáo dục</a>
+          </li>
+
+        </ul>
+      </li>
+
+      <li>
+        <a href="">Chính trị</a>
+        <i class="ic-right"></i>
+        <ul class="sub-menu">
+
+          <li>
+            <a href="">Giáo dục</a>
+          </li>
+
+          <li>
+            <a href="">Giáo dục</a>
+          </li>
+
+          <li>
+            <a href="">Giáo dục</a>
+          </li>
+
+          <li>
+            <a href="">Giáo dục</a>
+          </li>
+
+          <li>
+            <a href="">Giáo dục</a>
+          </li>
+
+        </ul>
+      </li>
+
+      <li>
+        <a href="">Chính trị</a>
+      </li>
+
+      <li>
+        <a href="">Chính trị</a>
+      </li>
+
+      <li>
+        <a href="">Chính trị</a>
+      </li>
+
+      <li>
+        <a href="">Chính trị</a>
+      </li>
+
+      <li>
+        <a href="">Chính trị</a>
+      </li>
+
+      <li>
+        <a href="">Chính trị</a>
+      </li>
+
+      <li>
+        <a href="">Chính trị</a>
+      </li>
+
+      <li>
+        <a href="">Chính trị</a>
+      </li>
+
+      <li>
+        <a href="">Chính trị</a>
+      </li>
+
+      <li>
+        <a href="">Chính trị</a>
+      </li>
+
+      <li class="media-center">
+        <a href="">Media Center</a>
+        <ul class="sub-menu media">
+
+          <li>
+            <a href="">Giáo dục</a>
+          </li>
+
+          <li>
+            <a href="">Giáo dục</a>
+          </li>
+
+          <li>
+            <a href="">Giáo dục</a>
+          </li>
+
+          <li>
+            <a href="">Giáo dục</a>
+          </li>
+
+          <li>
+            <a href="">Giáo dục</a>
+          </li>
+
         </ul>
       </li>
       <li>
-        <a href="#">Thế giới thương gia</a>
-        <i class="ic-down"></i>
-        <ul class="sub-menu">
-          <li>
-            <a href="#">Dòng chảy</a>
-          </li>
-          <li>
-            <a href="#">Diễn đàn</a>
-          </li>
-          <li>
-            <a href="#">Nghe-Đọc-Xem</a>
-          </li>
-          <li>
-            <a href="#">Di sản</a>
-          </li>
-          <li>
-            <a href="#">Chân dung</a>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <a href="#">Thế giới thương gia</a>
-        <i class="ic-down"></i>
-        <ul class="sub-menu">
-          <li>
-            <a href="#">Dòng chảy</a>
-          </li>
-          <li>
-            <a href="#">Diễn đàn</a>
-          </li>
-          <li>
-            <a href="#">Nghe-Đọc-Xem</a>
-          </li>
-          <li>
-            <a href="#">Di sản</a>
-          </li>
-          <li>
-            <a href="#">Chân dung</a>
-          </li>
-        </ul>
+        <a href="">end</a>
       </li>
     </ul>
-  </header>
+  </div>
+
 
   <!-- site body -->
   <div class="site-body">
     <div class="container modal-wraper">
-      <button class="btn-modal" data-target="globalModal">modal global</button>
       <button class="btn-modal" data-target="loginModal">login</button>
       <button class="btn-modal" data-target="registerModal">register</button>
-      <button class="btn-modal" data-target="forgetPassModal">forget password</button>
+      <button class="btn-modal" data-target="forgetPassModal">
+        forget password
+      </button>
       <button class="btn-modal" data-target="commentModal">comment</button>
       <button class="btn-modal" data-target="voteModal">vote</button>
+      <button class="btn-modal" data-target="globalModal">
+        modal global
+      </button>
     </div>
   </div>
 
   <!-- site footer -->
-  <footer class="site-footer container">
-    <div class="row">
-      <div class="row">
-        <a href="" class="logo"></a>
-        <div class="info">
-          <p>
-            <span class="bold">Tổng Biên tập</span> :
-          </p>
-          <p>
-            <span class="bold">Phó Tổng Biên tập</span> :
-          </p>
-          <p>
-            <span class="bold">Điện thoại </span> : <span class="bold">- Fax </span> :
-          </p>
-          <p>
-            <span class="bold">Email </span> : dientu@gmail.com
-          </p>
-
+  <footer class="site-footer">
+    <div class="networks">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <img src="https://image-vnp.epi.vn/Uploaded/2023/firns/2023_10_25/item6-1446.png" alt="" class="swiper-slide item" />
+          <img src="https://image-vnp.epi.vn/Uploaded/2023/firns/2023_10_25/item7-4707.png" alt="" class="swiper-slide item" />
+          <img src="https://image-vnp.epi.vn/Uploaded/2023/firns/2023_10_25/item8-4458.png" alt="" class="swiper-slide item" />
+          <img src="https://image-vnp.epi.vn/Uploaded/2023/firns/2023_10_25/item11-5966.png" alt="" class="swiper-slide item" />
+          <img src="https://image-vnp.epi.vn/Uploaded/2023/firns/2023_10_25/item2-9530.png" alt="" class="swiper-slide item" />
+          <img src="https://image-vnp.epi.vn/Uploaded/2023/firns/2023_10_24/item1-8091.png" alt="" class="swiper-slide item" />
+          <img src="https://image-vnp.epi.vn/Uploaded/2023/firns/2023_10_25/item3-7732.png" alt="" class="swiper-slide item" />
+          <img src="https://image-vnp.epi.vn/Uploaded/2023/firns/2023_10_25/item4-5670.png" alt="" class="swiper-slide item" />
+          <img src="https://image-vnp.epi.vn/Uploaded/2023/firns/2023_10_25/item5-3792.png" alt="" class="swiper-slide item" />
+          <img src="https://image-vnp.epi.vn/Uploaded/2023/firns/2023_10_25/item6-1446.png" alt="" class="swiper-slide item" />
         </div>
       </div>
-      <div class="info align-left">
-        <p>
-          <span class="bold">Trụ sở</span>
-        </p>
-        <p>Giấy phép xuất bản số :<span class="bold">BTTTT</span>
-        </p>
-        <p>Bộ Thông tin và Truyền thông cấp ngày 22/03/2022</p>
-        <p>Powered by ePi Technologies</p>
-      </div>
     </div>
-    <div class="row">
-      <p class="text">Ghi rõ nguồn “Báo điện tử” khi sử dụng thông tin trang này.</p>
+    <div class="container">
+      <div class="content">
+        <a href="#" class="logo">logo</a>
+        <p class="upper">Cơ quan chủ quản: THÔNG TẤN XÃ VIỆT NAM</p>
+        <p>Tổng Biên tập TRẦN TIẾN DUẨN</p>
+        <p>Phó Tổng Biên tập : ĐOÀN NGỌC THU</p>
+      </div>
+      <div class="info">
+        <ul class="menu">
+          <li>
+            <a href="#">Sở hữu trí tuệ</a>
+          </li>
+          <li>
+            <a href="#">Quy định sử dụng</a>
+          </li>
+          <li>
+            <a href="#">RSS</a>
+          </li>
+          <li>
+            <a href="#">Hỗ trợ</a>
+          </li>
+          <li>
+            <a href="#">Ngôn ngữ</a>
+          </li>
+          <li>
+            <a href="#">TTXVN</a>
+          </li>
+          <li>
+            <a href="#">Dịch vụ tin</a>
+          </li>
+          <li>
+            <a href="#">Quảng cáo</a>
+          </li>
+          <li>
+            <a href="#">Liên hệ</a>
+          </li>
+        </ul>
+        <p>Giấy phép số: 1374/GP-BTTTT do Bộ Thông tin và Truyền thông cấp ngày 11/9/2008.</p>
+        <p>Quảng cáo: Phó TBT Đoàn Ngọc Thu: 098.320.8989, Email: thudoanngoc@gmail.com</p>
+        <p>Điện thoại: (024) 39411349 - (024) 39411348, Fax: (024) 39411348</p>
+        <p>Email: vietnamplus2008@gmail.com</p>
+        <p>© Bản quyền thuộc về VietnamPlus, TTXVN. Cấm sao chép dưới mọi hình thức nếu không có sự chấp thuận bằng văn bản.</p>
+      </div>
     </div>
   </footer>
-  <div class="modal " data-target="loginModal">
+  <!-- modal login -->
+  <div class="modal" data-target="loginModal">
     <div class="modal-header">
-      <h5 class="modal-title">Kết quả</h5>
+      <h5 class="modal-title">Đăng nhập</h5>
+      <button type="button" class="btn-close">Đóng</button>
     </div>
-    <div class="modal-body scroll ">
-      <div class="d-flex w-650">
-        <div class="rank-1">
-          <div class="text-center">Đăng nhập bằng tài khoản </div>
-          <div class="form-group">
-            <label for="">Tên tài khoản (email đã đăng ký với )</label>
-            <input type="email" class="form-control" placeholder="Nhập email">
-            <small class="feedback">Bạn chưa nhập email.</small>
-          </div>
-          <div class="form-group">
-            <label for="">Mật khẩu tài khoản</label>
-            <div class="d-flex">
-              <input type="password" class="form-control" placeholder="Nhập mật khẩu">
-              <i class="ic-eye slash"></i>
-            </div>
-          </div>
-          <p>Bạn quên mật khẩu? <a href="#" class="forgot-password">Lấy lại mật khẩu</a>
-          </p>
+    <div class="modal-body scroll">
+      <div class="form-group">
+        <label for="">Email đã đăng ký với VietnamPlus</label>
+        <input type="email" class="form-control" />
+        <small class="feedback">Bạn chưa nhập email.</small>
+      </div>
+      <div class="form-group">
+        <label for="">Mật khẩu tài khoản</label>
+        <div class="d-flex">
+          <input type="password" class="form-control" />
+          <i class="ic-eye slash"></i>
         </div>
-        <div class="rank-2">
-          <div class="text-center">Đăng nhập nhanh bằng tài khoản mạng xã hội</div>
-          <div class="social">
-            <a href="#" class="fb" title="Facebook">
-              <i class="ic-square-facebook"></i>Facebook
-            </a>
-            <a href="#" class="zl" title="Zalo">
-              <i class="ic-zalo"></i>Zalo
-            </a>
-            <a href="#" class="gg" title="Google">
-              <i class="ic-google"></i>Google
-            </a>
-          </div>
-        </div>
-
+        <small class="feedback">Bạn chưa nhập email.</small>
+      </div>
+      <div class="text-notice">
+        <input type="checkbox" />
+        <label class="form-check-label">Lưu mật khẩu </label>
+        <a href="#" class="forget-password">Quên mật khẩu</a>
+      </div>
+      <button type="button" class="btn-submit">Đăng nhập</button>
+      <p class="text-decor">hoặc tiếp tục với</p>
+      <div class="social-group">
+        <a href="#" class="fb">fb</a>
+        <a href="#" class="zl">zl</a>
+        <a href="#" class="gg">gg</a>
+      </div>
+      <div class="text-notice text-center">
+        <label class="form-check-label">Chưa có tài khoản?</label>
+        <a href="#">Đăng ký ngay</a>
       </div>
     </div>
-    <div class="modal-footer">
-      <button type="button" class="btn-close">Đóng</button>
-      <button type="button" class="btn-submit">Đăng nhập</button>
-    </div>
-  </div> <!-- modal login -->
+  </div>
 
+  <!-- modal register -->
+  <div class="modal" data-target="registerModal">
+    <div class="modal-header">
+      <h5 class="modal-title">Đăng ký</h5>
+      <button type="button" class="btn-close">Đóng</button>
+    </div>
+    <div class="modal-body scroll">
+      <div class="form-group">
+        <label for="">Email đã đăng ký với VietnamPlus</label>
+        <input type="email" class="form-control" />
+        <small class="feedback">Bạn chưa nhập email.</small>
+      </div>
+      <div class="form-group">
+        <label for="">Mật khẩu tài khoản</label>
+        <div class="d-flex">
+          <input type="password" class="form-control" />
+          <i class="ic-eye slash"></i>
+        </div>
+        <small class="feedback">Bạn chưa nhập email.</small>
+      </div>
+      <div class="form-group">
+        <label for="">Xác nhận mật khẩu</label>
+        <div class="d-flex">
+          <input type="password" class="form-control" />
+          <i class="ic-eye slash"></i>
+        </div>
+        <small class="feedback">Bạn chưa nhập email.</small>
+      </div>
+      <div class="recaptcha">
+        <img src="https://www.dstny.se/app/uploads/captcha-norobot.png" alt="" />
+      </div>
+      <p class="text-notice">
+        <input type="email" class="form-control" />
+        <label for="">Đồng ý với <a href="#">Quy Định</a> của toà soạn</label>
+      </p>
+      <button type="button" class="btn-submit">Đăng ký</button>
+    </div>
+  </div>
+
+  <!-- modal vote -->
   <div class="modal" data-target="voteModal">
     <div class="modal-header">
       <h5 class="modal-title">Kết quả</h5>
+      <button type="button" class="btn-close">Đóng</button>
     </div>
     <div class="modal-body scroll">
-      <h4 class="heading-body">Liệu có nên phạt nặng các học sinh đánh nhau, tổ chức đánh người trong môi trường
-        giáo dục không ?</h4>
+      <h4 class="heading-body">
+        Liệu có nên phạt nặng các học sinh đánh nhau, tổ chức đánh người trong môi
+        trường giáo dục không ?
+      </h4>
       <div class="modal-vote">
         <ul class="">
           <li>
             <div class="info-result">
               <div class="text">Tăng cường giáo dục</div>
               <div class="color-bar">
-                <span percent="91" class="color-result" style="width:91%;">
+                <span percent="91" class="color-result" style="width: 91%">
                   <label class="text-result">91%</label>
                 </span>
               </div>
@@ -321,7 +493,7 @@
             <div class="info-result">
               <div class="text">Đình chỉ học tập</div>
               <div class="color-bar">
-                <span percent="91" class="color-result" style="width:9%;">
+                <span percent="91" class="color-result" style="width: 9%">
                   <label class="text-result">9%</label>
                 </span>
               </div>
@@ -335,7 +507,7 @@
             <div class="info-result">
               <div class="text">Tăng cường giáo dục</div>
               <div class="color-bar">
-                <span percent="91" class="color-result" style="width:9%;">
+                <span percent="91" class="color-result" style="width: 9%">
                   <label class="text-result">9%</label>
                 </span>
               </div>
@@ -352,23 +524,22 @@
         </div>
       </div>
     </div>
-    <div class="modal-footer">
-      <button type="button" class="btn-close">Đóng</button>
-    </div>
-  </div> <!-- modal vote -->
+  </div>
 
+  <!-- modal comment -->
   <div class="modal" data-target="commentModal">
     <div class="modal-header">
       <h5 class="modal-title">Kết quả</h5>
+      <button type="button" class="btn-close">Đóng</button>
     </div>
     <div class="modal-body scroll">
       <div class="form-group">
         <label for="">Email của bạn</label>
-        <input type="email" class="form-control" placeholder="Nhập email">
+        <input type="email" class="form-control" />
       </div>
       <div class="form-group">
         <label for="">Tên hiển thị khi bình luận</label>
-        <input type="type" class="form-control" placeholder="Nhập tên hiển thị">
+        <input type="type" class="form-control" />
         <small class="form-text">Bạn chưa nhập tên hiển thị.</small>
       </div>
       <div class="form-group">
@@ -376,79 +547,39 @@
         <textarea rows="3" class="form-control"></textarea>
       </div>
     </div>
-    <div class="modal-footer">
-      <button type="button" class="btn-close">Đóng</button>
-      <button type="button" class="btn-submit">Tạo tài khoản</button>
-    </div>
-  </div> <!-- modal comment -->
 
+  </div>
+
+  <!-- modal forget password -->
   <div class="modal" data-target="forgetPassModal">
     <div class="modal-header">
       <h5 class="modal-title">Quên mật khẩu</h5>
+      <button type="button" class="btn-close">Đóng</button>
     </div>
     <div class="modal-body scroll">
       <div class="heading-body">Nhập email của bạn để lấy lại mật khẩu</div>
       <div class="form-group">
-        <input type="email" class="form-control" placeholder="Nhập email của bạn">
+        <input type="email" class="form-control" />
       </div>
       <div class="recaptcha">
-        <img src="https://www.dstny.se/app/uploads/captcha-norobot.png" alt="">
+        <img src="https://www.dstny.se/app/uploads/captcha-norobot.png" alt="" />
       </div>
+      <button type="button" class="btn-submit">lấy lại mật khẩu</button>
     </div>
-    <div class="modal-footer">
-      <button type="button" class="btn-close">Đóng</button>
-      <button type="button" class="btn-submit">Xác nhận</button>
-    </div>
-  </div> <!-- modal forget password -->
+  </div>
 
-  <div class="modal" data-target="registerModal">
-    <div class="modal-header">
-      <h5 class="modal-title">Đăng ký</h5>
-    </div>
-    <div class="modal-body scroll">
-      <h4 class="heading-body">Tạo tài khoản để sử dụng đầy đủ tiện ích và tham gia bình luận bài viết
-      </h4>
-      <div class="form-group">
-        <label for="">Tên tài khoản (là địa chỉ email của bạn)</label>
-        <input type="email" class="form-control" placeholder="Nhập email">
-        <small class="feedback">Bạn chưa nhập email.</small>
-      </div>
-      <div class="form-group">
-        <label for="">Mật khẩu của tài khoản </label>
-        <div class="d-flex">
-          <input type="password" class="form-control" placeholder="Nhập mật khẩu">
-          <i class="ic-eye slash"></i>
-        </div>
-      </div>
-      <div class="form-group">
-        <label for="">Tên hiển thị khi bình luận</label>
-        <input type="type" class="form-control" placeholder="Nhập tên hiển thị">
-      </div>
-      <div class="recaptcha">
-        <img src="https://www.dstny.se/app/uploads/captcha-norobot.png" alt="">
-      </div>
-      <div class="text-notice">
-        <input type="checkbox">
-        <label class="form-check-label">Đồng ý với <a href="https://policies.google.com/privacy" rel="nofollow" target="_blank">quy định</a> của tòa soạn</label>
-      </div>
-    </div>
-    <div class="modal-footer">
-      <button type="button" class="btn-close">Đóng</button>
-      <button type="button" class="btn-submit">Tạo tài khoản</button>
-    </div>
-  </div> <!-- modal register -->
-
+  <!-- modal global -->
   <div class="modal" data-target="globalModal">
     <div class="modal-header">
       <h5 class="modal-title">Đây là tên của modal</h5>
+      <button type="button" class="btn-close" data-dismiss="modal">Đóng</button>
     </div>
     <div class="modal-body scroll w-650">
-      <h4 class="heading-body">Đây là headingggg... của modal
-      </h4>
+      <h4 class="heading-body">Đây là headingggg... của modal</h4>
       <p class="text-center">đây là text căn giữa</p>
       <p class="text-left">đây là text căn trái</p>
       <p class="text-right">đây là text căn phải</p>
-      <p class="inline-block">đây là text có thẻ <a> aaaaaaaa</a> ở trong </p>
+      <p class="inline-block">đây là text có thẻ <a> aaaaaaaa</a> ở trong</p>
       <div class="inline-block">đây là text có thẻ <a> aaaaaaaa</a> ở trong</div>
       <table>
         <tr>
@@ -478,13 +609,13 @@
       </div>
       <div class="form-group">
         <label for="">Đây là tên của input</label>
-        <input type="email" class="form-control" placeholder="Nhập email">
+        <input type="email" class="form-control" />
         <small class="feedback">Bạn chưa nhập email.</small>
       </div>
       <div class="form-group">
         <label for="">Đây là tên của input</label>
         <div class="d-flex">
-          <input type="password" class="form-control" placeholder="Nhập mật khẩu">
+          <input type="password" class="form-control" />
           <i class="ic-eye slash"></i>
         </div>
       </div>
@@ -493,21 +624,24 @@
         <textarea rows="3" class="form-control"></textarea>
       </div>
       <div class="recaptcha">
-        <img src="https://www.dstny.se/app/uploads/captcha-norobot.png" alt="">
+        <img src="https://www.dstny.se/app/uploads/captcha-norobot.png" alt="" />
       </div>
       <div class="text-notice">
-        <input type="checkbox">
-        <label class="form-check-label">Đồng ý với <a href="https://policies.google.com/privacy" rel="nofollow" target="_blank">quy định</a> của tòa soạn</label>
+        <input type="checkbox" />
+        <label class="form-check-label">Đồng ý với
+          <a href="https://policies.google.com/privacy" rel="nofollow" target="_blank">Quy Định</a>
+          của tòa soạn
+        </label>
       </div>
+      <button type="button" class="btn-submit">submit</button>
     </div>
-    <div class="modal-footer">
-      <button type="button" class="btn-close">Đóng</button>
-      <button type="button" class="btn-submit">Next</button>
-    </div>
-  </div> <!-- modal global -->
+  </div>
+
 
   <!-- JS Global Compulsory-->
   <script src="../js/jquery-3.1.1.js"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="../js/ui.js"></script>
 </body>
+
+</html>

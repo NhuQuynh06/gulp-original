@@ -1,0 +1,638 @@
+// ----------------------------------
+// INFO : style layout 
+// có 7 dạng hiển thị : left, right, center, outset-left, outset-right, full-width, max-width
+// bỏ mixin w1300, w100 nếu ảnh default = nội dung bài viết
+// ----------------------------------
+@mixin classOutsetLeftRightDetail() {
+    &.outset-left {
+        margin-left: auto;
+    }
+
+    &.outset-right {
+        margin-right: auto;
+    }
+}
+
+@mixin maxWidthFullWiwthDetail() {
+
+    &.full-width,
+    &.max-width {
+        width: 100%;
+    }
+}
+
+// style table in side blockquote, notebox
+@mixin table() {
+    table {
+
+        &.full-width,
+        &.max-width {
+            width: 100%;
+        }
+    }
+
+    @include tableNotBorder();
+}
+
+@mixin space() {
+    >* {
+        margin-top: $gutter-body !important;
+
+        &:first-child {
+            margin-top: 0 !important;
+        }
+    }
+}
+
+@mixin tableNotBorder() {
+
+    td,
+    th {
+        padding: 0 !important;
+        border: none !important;
+        display: block;
+        align-items: center;
+    }
+}
+
+@mixin classLeftRight() {
+    &.align-left {
+        width: 50%;
+        float: left;
+        margin-right: $gutter-body;
+    }
+
+    &.align-right {
+        width: 50%;
+        float: right;
+        margin-left: $gutter-body;
+    }
+}
+
+@mixin maxWidth() {
+    &.max-width {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        width: calc(100vw - 17px);
+        max-width: 1300px;
+    }
+}
+
+@mixin alignLeftRight() {
+    &[align="center"] {
+        @include tableNotBorder();
+        text-align: left;
+        width: 100%;
+    }
+
+    &[align="left"] {
+        width: 50%;
+        float: left;
+        margin-right: $gutter-body;
+        text-align: left;
+        @include tableNotBorder();
+    }
+
+    &[align="right"] {
+        width: 50%;
+        float: right;
+        margin-left: $gutter-body;
+        text-align: left;
+        @include tableNotBorder();
+    }
+}
+
+@mixin w1300() {
+    &[align="center"] {
+        position: relative;
+        width: 1300px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@mixin w100() {
+    &[align="center"] {
+        width: 100%;
+    }
+}
+
+// ----------------------------------
+// Format cho các thành phần cơ bản trong bài chi tiết
+// ----------------------------------
+.zce-content-body {
+    >* {
+        font-family: $font-family-serif;
+        font-size: 18px;
+        line-height: 160%;
+    }
+
+    table {
+
+        td,
+        th {
+            padding: 0;
+        }
+    }
+
+    img,
+    video {
+        max-width: 100%;
+        width: auto;
+        display: flex;
+        margin: 0 auto;
+    }
+
+    figure.audio{
+        display: contents;
+        audio{
+            width: 100%;
+            margin-bottom: 16px;
+        }
+    }
+
+    figcaption,
+    .caption {
+        font-size: 16px;
+        font-weight: $font-weight-normal;
+        font-style: italic;
+        font-family: $font-family-sans-serif;
+        color: #6C757D;
+        text-align: center;
+        display: block;
+        margin-top: 8px;
+        position: relative;
+        padding-bottom: 8px !important;
+
+        &::after {
+            position: absolute;
+            content: "";
+            width: 60px;
+            height: 1px;
+            background: #CED4DA;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        >* {
+            margin-top: 0;
+        }
+    }
+
+    table:not([class]) {
+        width: 100%;
+
+        td,
+        th {
+            padding: 10px;
+            border: 1px solid #E9ECEF;
+        }
+    }
+
+    // figure, // comment dòng này vì common đã có
+    table,
+    blockquote,
+    .notebox,
+    .poll-box {
+        @include classLeftRight();
+        @include alignLeftRight();
+        // @include maxWidth(); // comment dòng này vì common đã có
+    }
+
+    // figure, // comment dòng này vì figure không có align left right
+    table {
+        // @include w1300(); 
+    }
+
+    blockquote,
+    .notebox {
+        @include space();
+        @include table();
+
+        table {
+        // figure { // comment dòng này vì figure không có align left right
+            @include w100(); 
+        }
+    }
+
+    .live-zone,
+    .interview-zone {
+
+        table,
+        figure {
+            @include maxWidthFullWiwthDetail();
+            @include classOutsetLeftRightDetail();
+            @include w100();
+        }
+    }
+}
+
+// for normal detail page
+body:not(.longform-page):not(.infographic-page) {
+    .zce-content-body {
+
+        figure,
+        table,
+        blockquote,
+        .notebox,
+        .poll-box {
+            @include classOutsetLeftRightDetail();
+        }
+
+        figure,
+        table {
+            @include maxWidthFullWiwthDetail();
+            @include w100();
+        }
+    }
+}
+
+// ----------------------------------
+// style cho các box trong zce-body
+// ----------------------------------
+.zce-content-body {
+    blockquote {
+        padding-top: 26px;
+        padding-left: 50px;
+        border-left: 2px solid var(--primary, #980700);
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: "";
+            background: url(../img/quote.png?021123) center center no-repeat;
+            width: 57px;
+            height: 50px;
+            top: 0;
+            left: 24px;
+        }
+
+        >* {
+            font-family: $font-family-second;
+            font-size: 22px;
+            font-weight: $font-weight-medium;
+            line-height: 160%;
+        }
+
+        .author {
+            color: var(--gray-600, #6c757d);
+            font-size: 16px;
+            font-weight: $font-weight-normal;
+            line-height: 150%;
+            font-family: $font-family-sans-serif;
+            position: relative;
+            justify-content: end;
+            align-items: center;
+            display: flex;
+            gap: 12px;
+            font-style: italic;
+
+            &::before {
+                position: relative;
+                content: "";
+                width: 60px;
+                height: 1px;
+                background: #CED4DA;
+            }
+        }
+    }
+
+    .notebox {
+        border-radius: 6px;
+        border: 1px dashed #FFC107;
+        background: rgba(255, 193, 7, 0.20);
+        padding: 20px;
+        position: relative;
+
+        >* {
+            font-size: 18px;
+        }
+
+        &::before {
+            position: absolute;
+            content: "";
+            top: -13px;
+            right: 24px;
+            z-index: 1;
+            background: url(../img/note.png?021123) center center no-repeat;
+            width: 20px;
+            height: 58px;
+        }
+    }
+
+    .article__picture{
+        .photo-detail-img{
+            margin-bottom: 20px;
+        }
+        .swiper-button-next,
+        .swiper-button-prev {
+            &:after {
+                color: var(--white, #fff);
+                text-shadow: 0px 0px 4px rgba(0, 0, 0, .5);
+            }
+        }
+
+        .swiper-button-next {
+            right: calc(50% - 315px);
+        }
+
+        .swiper-button-prev {
+            left: calc(50% - 315px);
+        }
+
+        .photo-detail-img,
+        .photo-detail-thumb{
+            img{
+                border-radius: 6px;
+            }
+        }
+
+        .photo-detail-thumb {
+            margin-top: 20px;
+            width: 100%;
+            height: 20%;
+            box-sizing: border-box;
+            padding: 10px 0;
+            margin-left: auto;
+            margin-right: auto;
+
+            .swiper-slide {
+                text-align: center;
+                width: 94px !important;
+                border: 2px solid var(--white);
+                width: 25%;
+                height: 100%;
+                opacity: 0.4;
+                border-radius: 6px;
+
+                &.swiper-slide-thumb-active {
+                    border: 2px solid rgba(255, 255, 255, .7);
+                    opacity: 1;
+                }
+
+                &:hover {
+                    opacity: 1;
+                }
+
+                img {
+                    width: 90px;
+                    height: 90px;
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 6px;
+                    cursor: pointer;
+                }
+            }
+        }
+
+    }
+}
+
+.poll-box {
+    padding: 15px 20px 20px 20px;
+    border-radius: 6px;
+    border: 1px dashed var(--black, #000);
+    background: var(--gray-100, #f8f9fa);
+
+    .box-heading {
+        font-family: $font-family-sans-serif;
+        color: var(--white, #fff);
+        font-size: 18px;
+        font-weight: $font-weight-semibolder;
+        text-transform: uppercase;
+        position: relative;
+        padding: 10px 30px;
+        background: url(../img/title-decor.png?021123) center center/178px no-repeat;
+        margin-bottom: 4px;
+        width: fit-content;
+    }
+
+    .desc {
+        font-size: 18px;
+        font-weight: $font-weight-semibold;
+        line-height: 150%;
+        margin-bottom: 16px;
+    }
+
+    label {
+        font-family: $font-family-sans-serif;
+        font-size: 18px;
+        font-weight: $font-weight-normal;
+        line-height: 150%;
+        margin-bottom: 10px;
+        display: flex;
+        gap: 8px;
+    }
+
+    .wrap-button {
+        display: flex;
+        gap: 16px;
+
+        >* {
+            color: var(--gray-600, #6c757d);
+            font-family: $font-family-sans-serif;
+            font-weight: $font-weight-semibold;
+            line-height: 150%;
+            text-transform: uppercase;
+        }
+    }
+
+    .btn-send {
+        width: 105px;
+        text-align: center;
+        padding: 8px 16px;
+        border-radius: 6px;
+        background: var(--gray-200, #e9ecef);
+        color: var(--primary, #980700);
+    }
+}
+
+.article-relate {
+    border-radius: 6px;
+    border: 1px dashed var(--black, #000);
+    background: var(--gray-100, #f8f9fa);
+    padding: 15px 20px 20px 20px;
+    gap: 20px;
+    line-height: 140%;
+
+    .story {
+        &__thumb {
+            width: 100px;
+            height: 100px;
+            margin-left: 20px;
+            float: right;
+        }
+
+        &__heading a {
+            font-size: 22px;
+            padding-bottom: 4px;
+            color: var(--title);
+        }
+
+        &__summary {
+            font-family: $font-family-sans-serif;
+        }
+
+    }
+}
+
+related-content {
+    border-radius: 6px;
+    border: 1px dashed var(--black, #000);
+    background: var(--gray-100, #f8f9fa);
+    padding: 15px 20px 20px 20px;
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 20px;
+    line-height: 140%;
+    direction : rtl;
+
+    .img {
+        float: right;
+
+        @media (min-width: $md) {
+            width: 100px;
+            height: 100px;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+    }
+
+    .info {
+        text-align: left;
+        a {
+            font-size: 22px;
+            line-height: 1.4;
+            color: #000;
+            display: block;
+            margin: 0 0 6px;
+            font-family: $font-family-second;
+
+
+            &:hover {
+                color: var(--primary);
+                text-decoration: none;
+            }
+        }
+
+        .date {
+            font-size: 13px;
+            color: #888;
+        }
+    }
+}
+
+.related-news {
+    border-radius: 6px;
+    border: 1px dashed var(--primary, #980700);
+    background: var(--gray-100, #f8f9fa);
+    padding: 15px 25px 25px 25px;
+    @include title-decor;
+
+    .box-heading {
+        margin-bottom: 4px;
+    }
+
+    .box-content {
+        display: grid;
+        gap: 10px;
+    }
+
+    .story {
+        &__heading a {
+            color: var(--gray-800, #343A40);
+            font-family: $font-family-sans-serif;
+            font-size: 18px;
+            position: relative;
+            padding-left: 18px;
+
+            &::before {
+                position: absolute;
+                content: "";
+                width: 10px;
+                height: 10px;
+                display: block;
+                left: 0;
+                top: 6px;
+                background: url(../img/plus.png?021123) center center no-repeat;
+            }
+        }
+    }
+}
+
+.related-topic {
+    padding: 15px 20px 20px 20px;
+    border-radius: 6px;
+    border: 1px dashed var(--black, #000);
+    background: var(--gray-100, #f8f9fa);
+
+    .title {
+        color: var(--title, #212529);
+        font-size: 18px;
+        font-weight: $font-weight-semibold;
+        line-height: 150%;
+        display: flex;
+        gap: 16px;
+        align-items: center;
+        &:before{
+            content: "Chủ đề";
+            padding: 8px 20px;
+            color: var(--white, #fff);
+            font-size: 18px;
+            font-weight: $font-weight-semibold;
+            text-transform: uppercase;
+            background: url(../img/title-decor.png?021123) center center/100% 100% no-repeat;
+        }
+
+    }
+
+    .box-heading {
+        margin-bottom: 10px;
+    }
+
+    .box-content {
+        display: grid;
+        gap: 10px;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 1px;
+            background: var(--gray-200, #e9ecef);
+            left: 3px;
+            top: 20px;
+            height: calc(100% - 30px);
+        }
+    }
+
+    .story {
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 7px;
+            height: 7px;
+            background: var(--primary, #980700);
+            left: 0;
+            border-radius: 50%;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        &__heading a {
+            color: var(--gray-900, #212529);
+            font-size: 18px;
+            font-weight: $font-weight-semibold;
+            line-height: 150%;
+            padding-left: 23px;
+            font-family: $font-family-sans-serif;
+        }
+    }
+}
+

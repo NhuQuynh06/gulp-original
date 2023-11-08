@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vietnam+ (VietnamPlus)</title>
+    <!-- Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" />
+    @@include('../component/box-style/global/css.html')
+  </head>
+
+  <body class="infographic-page">
+    <!-- site header -->
+    @@include('../component/header/vie/header2.html')
+
+    <!-- site body -->
+    <div class="site-body">
+      <div class="container">
+        <div class="article">
+          <figure class="article__avatar">
+            <img
+              src="https://source.unsplash.com/random/1400x394?sig=1"
+              alt=""
+            />
+            <figcaption>caption</figcaption>
+          </figure>
+          @@include('../component/breadcrumb/breadcrumb2.html')
+          @@include('../component/detail-page/article-header/article-header.html')
+
+          <div class="article__body zce-content-body">
+            <figure>
+              <img src="https://source.unsplash.com/featured/1960x640?sig=1" alt="">
+              <figcaption>size image default 1300px</figcaption>
+              <figcaption>Note : page chỉ có duy nhất ảnh dạng này, nếu có dạng khác sẽ hỏng page</figcaption>
+            </figure>
+          </div>
+          @@include('../component/detail-page/article-body/content-body/_tags.html')
+          <div class="wrap-social">
+            @@include("../component/detail-page/article-body/content-body/_social-normal.html")
+            <a href="#" class="google-news">
+              Theo dõi Báo Việt Nam+
+            </a>
+          </div>
+          @@include('../component/detail-page/article-body/content-body/_relate-topic.html')
+
+        </div>
+        <div class="col">
+          <div class="main-col">
+            @@include('../component/box-style/related-news/related-news.html',{"box-name":"Tin liên quan"})
+            @@include('../component/box-style/timeline/timeline2.html',{"box-name":"Tin cùng chuyên mục "})
+          </div>
+          <div class="sub-col">
+            @@include('../component/banner/banner2.html')
+            @@include('../component/banner/banner2.html')
+          </div> 
+        </div>
+      </div>
+    </div>
+
+    <!-- site footer -->
+     @@include('../component/footer/footer.html')
+    <!-- JS Global Compulsory-->
+    @@include('../component/box-style/global/js.html')
+  </body>
+</html>
