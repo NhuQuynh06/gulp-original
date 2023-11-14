@@ -145,3 +145,40 @@ if (
 ) {
   $("html").addClass("dark-theme");
 }
+
+// test langue
+var en = "Many detop over the years, somimes by adent by accent".split(" ");
+var phap = "útkomt, et hoe't moatte. dy't  om't it pine pine is,".split(" ");
+var tbn = "Explicaré lo dicho sobre la verdad y comoa feliprecia ni".split(" ");
+var cn = "真 理 的 主 要 建造 者沒有 人 人會 遭遇";
+var nga = "о для того, чбы вы моли виеть, оствие и вхвяет боль".split(" ");
+var content = "о для того, чбы вы моли виеть, оствие и вхвяет боль".split(" ");
+
+function textNodesUnder(el) {
+  const children = []; // Type: Node[]
+  const walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT);
+  while (walker.nextNode()) {
+    children.push(walker.currentNode);
+  }
+  return children;
+}
+const textNodes = textNodesUnder(document.body);
+console.log(textNodes);
+textNodes.forEach((textNode) => {
+  const text = textNode.textContent.trim();
+  if (text) {
+    console.log(text);
+    const replaceText = text
+      .split(" ")
+      .map(() => content[Math.floor(Math.random() * 10)])
+      .join(" ");
+    console.log(replaceText);
+    textNode.textContent = replaceText;
+    zz;
+  }
+});
+
+var time = ".story .time";
+$(time).each(function () {
+  console.log($(this).text("14/11/2023 09:11"));
+});
