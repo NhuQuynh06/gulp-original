@@ -146,14 +146,41 @@ if (
   $("html").addClass("dark-theme");
 }
 
-// test langue
-var en = "Many detop over the years, somimes by adent by accent".split(" ");
-var phap = "útkomt, et hoe't moatte. dy't  om't it pine pine is,".split(" ");
-var tbn = "Explicaré lo dicho sobre la verdad y comoa feliprecia ni".split(" ");
-var cn = "真 理 的 主 要 建造 者沒有 人 人會 遭遇";
-var nga = "о для того, чбы вы моли виеть, оствие и вхвяет боль".split(" ");
-var content = "о для того, чбы вы моли виеть, оствие и вхвяет боль".split(" ");
+// INFO : for test language
+if ($("html.en").length) {
+  var langue =
+    "Lorem ipsum dolor sit amet consetur adicing elit Illo offiis quia nemo sed animi eum deleniti vero prodent maxime obcaecati".split(
+      " "
+    );
+}
+// phap
+if ($("html.fr").length) {
+  var langue =
+    "Jeroesk wynen is sawol it deakste as kostste Eueske wynszoen op rekord. It meast opfade syeem fan it seizoen wie ".split(
+      " "
+    );
+}
+// tbn
+if ($("html.es").length) {
+  var langue =
+    "La 30ª reunión del jefe del IPEF tendrá lugar antes de Reión de Líderes Econcos de APEC en San Francisco.".split(
+      " "
+    );
+}
 
+if ($("html.china").length) {
+  var langue =
+    "参 保 持 了 APEC 在  亚   太   地 区 领 先的  经 济  联 动机 制。在 积 极实 施".split(
+      " "
+    );
+}
+// nga
+if ($("html.ru").length) {
+  var langue =
+    "Британский медиарегулятор Ofcom потребовал от технологических компаний сосредоточиться на защите детей от жестокого обращения, груминга и суицидального контента в киберпространстве.".split(
+      " "
+    );
+}
 function textNodesUnder(el) {
   const children = []; // Type: Node[]
   const walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT);
@@ -163,22 +190,18 @@ function textNodesUnder(el) {
   return children;
 }
 const textNodes = textNodesUnder(document.body);
-console.log(textNodes);
 textNodes.forEach((textNode) => {
   const text = textNode.textContent.trim();
   if (text) {
-    console.log(text);
     const replaceText = text
       .split(" ")
-      .map(() => content[Math.floor(Math.random() * 10)])
+      .map(() => langue[Math.floor(Math.random() * 20)])
       .join(" ");
-    console.log(replaceText);
     textNode.textContent = replaceText;
-    zz;
   }
 });
 
 var time = ".story .time";
 $(time).each(function () {
-  console.log($(this).text("14/11/2023 09:11"));
+  $(this).text("14/11/2023 09:11");
 });
