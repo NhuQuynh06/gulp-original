@@ -462,15 +462,3 @@ $spaceAmounts: (10, 20, 30, 40, 50);
 
     }
 }
-
-/*
-== log : 
-13/9 : Xoá style height : auto ở embed,img,object,video{} lý do làm ngắn video
-18/9 : 
-    ++ bỏ figure {display:  inline-block}; lý do làm tràn width của image
-    ++ thay margin-top thành margin-bottom cho các thành phần
-    ++ update các spacing ultility Đấu request 
-    ++ Đưa grid ảnh vô.
-28/10 : Comment dòng 346 vì trùng với dòng 11
-06/11 : thêm style figcation cho các ảnh dạng lưới
-*/
