@@ -27,3 +27,14 @@
 @import './content-body/related-news/related-news.scss';
 @import './content-body/tags/tags.scss';
 @import './content-body/comment/comment.scss';
+
+// longform
+.longform-page {
+    .article {
+        box-shadow: 0 0 10px 10px #ccc;
+        width: 825px;
+        min-width: 825px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

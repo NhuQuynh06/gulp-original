@@ -1,3 +1,27 @@
 <script src="../js/jquery-3.1.1.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="../js/ui.js"></script>
+<!-- twentytwenty -->
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/mhayes-twentytwenty/1.0.0/js/jquery.event.move.min.js"
+  integrity="sha512-LbipuILGe2LAzpjWmMA+B++LsvW1nAL5IQXvpmidOmJmei0p/odo6ewzxX8YHGc51DGIwcUDa6LxQxOEf7G1EA=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/mhayes-twentytwenty/1.0.0/js/jquery.twentytwenty.min.js"
+  integrity="sha512-GPLeok4pmABjbz8dF6i4cqao9fhF9LE5X4rI0ORBe2YqbZmaqdSiM7g4oO+CEy99SxZV6memnoKANwopFr6Z6g=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+></script>
+<script>
+  $(function () {
+    $(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({
+      default_offset_pct: 0.7,
+    });
+    $(".twentytwenty-container[data-orientation='vertical']").twentytwenty({
+      default_offset_pct: 0.3,
+      orientation: "vertical",
+    });
+  });
+</script>

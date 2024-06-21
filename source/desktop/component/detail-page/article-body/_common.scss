@@ -175,6 +175,19 @@ $xl : 1280px;
             }
         }
     }
+
+    img,
+    video {
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .caption,
+    figcaption {
+        text-align: center;
+        font-size: 16px;
+        margin: 0 auto;
+    }
 }
 
 // style khoảng cách 
@@ -228,13 +241,8 @@ $spaceAmounts: (
     }
 }
 
-.article__footer {
-    display: grid;
-    gap: $gutter-body;
-}
-
 // ----------------------------------
-// INFO : 8 layout : max-width, full-width, center, left, right, outset-left, outset-right, grid-image
+// INFO : 7 layout : max-width, full-width, center, left, right, outset-left, outset-right
 // ----------------------------------
 .zce-content-body {
     display: grid;
@@ -242,94 +250,42 @@ $spaceAmounts: (
     font-size: 16px;
 
     // max-width
+    .max-width {
+        // position: relative;
+        // transform: translateX(-50%);
+        // left: 50%;
+        // width: 100vw;
+        // max-width: 1300px;
+    }
 
     // full-width
+    .full-width {}
 
     // center
+    .center {}
 
     // left
+    .left {}
+
+    // align="left"
+    [align="left"] {}
 
     // right
+    .right {}
+
+    // align="right"
+    &[align="right"] {}
 
     // outset-left
+    .outset-left {}
 
     // outset-right
+    .outset-right {}
+}
 
-    // grid-image
-    [class^="layout-image-"] {
-        display: grid;
-        gap: 2px;
-
-        figure {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-    }
-
-    .layout-image-2 {
-        grid-template-columns: 1fr 1fr;
-
-        figcaption {
-            grid-column: 1/3;
-        }
-    }
-
-    .layout-image-3 {
-        grid-template-columns: repeat(2, 1fr);
-
-        figure {
-            &:first-child {
-                grid-row: 1/2;
-                grid-column: 1 / 3;
-            }
-
-            &:nth-child(2) {
-                grid-row: 2/3;
-                grid-column: 1 / 2;
-            }
-
-            &:nth-child(3) {
-                grid-row: 2/3;
-                grid-column: 2 / 3;
-            }
-        }
-
-        figcaption {
-            grid-column: 1/3;
-        }
-    }
-
-    .layout-image-3-horizontal {
-        grid-template-columns: repeat(3, 1fr);
-
-        figcaption {
-            grid-column: 1/4;
-        }
-    }
-
-    .layout-image-4 {
-        grid-template-columns: repeat(2, 1fr);
-
-        figcaption {
-            grid-column: 1/3;
-        }
-    }
-
-    .layout-image-horizontal {
-        grid-template-columns: repeat(4, 1fr);
-
-        figcaption {
-            grid-column: 1/5;
-        }
-    }
-
-    [class^="row layout-image-"] {
-        display: grid !important;
-        gap: 2px;
-    }
-
-    [class^="row layout-image-"]+[class^="layout-image-"] {
-        margin-top: 2px !important;
-    }
+// other style
+.article,
+.article__footer {
+    display: grid;
+    gap: $gutter-body;
 }

@@ -311,8 +311,20 @@
           <!-- Avatar -->
           <figure class="article__avatar">
             <img src="https://placehold.co/1600x900" alt="" />
-            <figcaption>avatar</figcaption>
+            <figcaption>article__avatar</figcaption>
           </figure>
+          <table class="picture">
+            <tbody>
+              <tr>
+                <td class="img">
+                  <img src="https://placehold.co/3000x1200" alt="" />
+                </td>
+              </tr>
+              <tr>
+                <td class="caption">article__avatar</td>
+              </tr>
+            </tbody>
+          </table>
 
           <!-- <h1> to <h6> tags -->
           <h1>Tiêu đề h1 trong bài viết Lorem ipsum dolor sit amet consectetur.</h1>
@@ -332,17 +344,6 @@
             cho biết về đóng góp của <s>tiểu thương</s> trong sự phát triển nền kinh tế
             quốc gia.
           </p>
-          <p>
-            Tuy tiểu thương chiếm tỷ trọng lớn về số lượng doanh nghiệp ở Việt Nam và có
-            vai trò quan trọng trong nền kinh tế nhưng chưa nhận được sự quan tâm đúng mực
-            từ các tổ chức tài chính, họ dần bị bỏ lại phía sau khi xã hội đang phát triển
-            và công nghệ hóa từng ngày.
-          </p>
-          <h1>Tiêu đề h1 trong bài viết Lorem ipsum dolor sit amet consectetur.</h1>
-          <h2>Tiêu đề h2 trong bài viết Lorem ipsum dolor sit amet consectetur.</h2>
-          <h3>Tiêu đề h3 trong bài viết Lorem ipsum dolor sit amet consectetur.</h3>
-          <h4>Tiêu đề h4 trong bài viết Lorem ipsum dolor sit amet consectetur.</h4>
-          <h5>Tiêu đề h5 trong bài viết Lorem ipsum dolor sit amet consectetur.</h5>
           <p>
             <a href="#">Link &#706;a&#707; trong bài viết</a>
           </p>
@@ -450,7 +451,6 @@
             <img src="https://image.nhandan.vn/w2000/Uploaded/2023/wbgagznrxggzhvdatga/2023_11_17/img-8867-8536.jpg.webp" />
           </div>
 
-          <!-- table -->
           <table class="picture" align="center">
             <tbody>
               <tr>
@@ -472,7 +472,7 @@
               </tr>
             </tbody>
           </table>
-          <table class="max-width picture" align="center">
+          <table class="picture max-width" align="center">
             <tbody>
               <tr>
                 <td class="pic">
@@ -493,7 +493,7 @@
               </tr>
             </tbody>
           </table>
-          <table class="full-width picture" align="center">
+          <table class="picture full-width" align="center">
             <tbody>
               <tr>
                 <td class="pic">
@@ -515,7 +515,6 @@
             </tbody>
           </table>
 
-          <!-- figure -->
           <div class="picture twentytwenty">
             <div class="twentytwenty-container">
               <figure>
@@ -528,7 +527,7 @@
             <figcaption>w = content</figcaption>
           </div>
 
-          <div class="max-width picture twentytwenty">
+          <div class="picture twentytwenty max-width">
             <div class="twentytwenty-container">
               <figure>
                 <img src="https://image.nhandan.vn/w2000/Uploaded/2023/wpyslebflyr/2023_11_18/ndo_br_a351cc4e-b89c-4f1a-91de-69404de3ae17-5300.jpeg.webp" />
@@ -540,7 +539,7 @@
             <figcaption>max-width</figcaption>
           </div>
 
-          <div class="full-width picture twentytwenty">
+          <div class="picture twentytwenty full-width">
             <div class="twentytwenty-container">
               <figure>
                 <img src="https://image.nhandan.vn/w2000/Uploaded/2023/wpyslebflyr/2023_11_18/ndo_br_a351cc4e-b89c-4f1a-91de-69404de3ae17-5300.jpeg.webp" />
@@ -582,7 +581,7 @@
             <div class="swiper-pagination"></div>
           </div>
 
-          <div class="max-width article__slider swiper">
+          <div class="article__slider swiper max-width">
             <div class="swiper-wrapper">
               <figure class="swiper-slide">
                 <img class="lazyloaded" src="https://placehold.co/1960x940" />
@@ -618,7 +617,7 @@
             <div class="swiper-pagination"></div>
           </div>
 
-          <div class="full-width article__slider swiper">
+          <div class="article__slider swiper full-width">
             <div class="swiper-wrapper">
               <figure class="swiper-slide">
                 <img src="https://placehold.co/2960x840" />
@@ -655,7 +654,7 @@
           </div>
 
           <!-- Grid image -->
-          <p>layout-image-2</p>
+          <!-- layout-image-2 -->
           <div class="layout-image-2 max-width">
             <figure>
               <img src="https://placehold.co/476x320" alt="476x320 (3x2)" />
@@ -668,7 +667,7 @@
             <figcaption>Lorem ipsum dolor sit.</figcaption>
           </div>
 
-          <p>layout-image-3</p>
+          <!-- layout-image-3 -->
           <div class="layout-image-3 full-width">
             <figure>
               <img src="https://placehold.co/954x400" alt="" />
@@ -685,7 +684,7 @@
             <figcaption>Lorem ipsum dolor sit.</figcaption>
           </div>
 
-          <p>layout-image-4</p>
+          <!-- layout-image-4 -->
           <div class="layout-image-4">
             <figure>
               <img src="https://placehold.co/476x320" alt="476x320 (3x2)" />
@@ -706,70 +705,69 @@
             <figcaption>Lorem ipsum dolor sit.</figcaption>
           </div>
 
-          <p>layout-image-3-horizontal</p>
+          <!-- layout-image-3-horizontal -->
           <div class="layout-image-3-horizontal">
             <figure>
-              <img src="https://placehold.co/300x4007" alt="" />
+              <img src="https://placehold.co/300x400" alt="" />
               <figcaption>Lorem ipsum dolor sit.</figcaption>
             </figure>
             <figure>
-              <img src="https://placehold.co/300x4004" alt="" />
+              <img src="https://placehold.co/300x400" alt="" />
               <figcaption>Lorem ipsum dolor sit.</figcaption>
             </figure>
             <figure>
-              <img src="https://placehold.co/300x4002" alt="" />
+              <img src="https://placehold.co/300x400" alt="" />
               <figcaption>Lorem ipsum dolor sit.</figcaption>
             </figure>
             <figcaption>Lorem ipsum dolor sit.</figcaption>
           </div>
 
-          <p>layout-image-horizontal</p>
+          <!-- layout-image-horizontal -->
           <div class="layout-image-horizontal full-width">
             <figure>
-              <img src="https://placehold.co/300x4003" alt="" />
+              <img src="https://placehold.co/300x400" alt="" />
               <figcaption>Lorem ipsum dolor sit.</figcaption>
             </figure>
             <figure>
-              <img src="https://placehold.co/300x4008" alt="" />
+              <img src="https://placehold.co/300x400" alt="" />
               <figcaption>Lorem ipsum dolor sit.</figcaption>
             </figure>
             <figure>
-              <img src="https://placehold.co/300x4009" alt="" />
+              <img src="https://placehold.co/300x400" alt="" />
               <figcaption>Lorem ipsum dolor sit.</figcaption>
             </figure>
             <figure>
-              <img src="https://placehold.co/300x4000" alt="" />
+              <img src="https://placehold.co/300x400" alt="" />
               <figcaption>Lorem ipsum dolor sit.</figcaption>
             </figure>
             <figcaption>Lorem ipsum dolor sit.</figcaption>
           </div>
 
-          <p>layout-image-horizontal</p>
-          <div class="layout-image-horizontal max-width">
+          <!-- layout-image-horizontal -->
+          <div class="layout-image-horizontal max-width" <figure>
+            <img src="https://placehold.co/300x400" alt="" />
+            <figcaption>Lorem ipsum dolor sit.</figcaption>
+            </figure>
             <figure>
-              <img src="https://placehold.co/300x4001" alt="" />
+              <img src="https://placehold.co/300x400" alt="" />
               <figcaption>Lorem ipsum dolor sit.</figcaption>
             </figure>
             <figure>
-              <img src="https://placehold.co/300x4004" alt="" />
+              <img src="https://placehold.co/300x400" alt="" />
               <figcaption>Lorem ipsum dolor sit.</figcaption>
             </figure>
             <figure>
-              <img src="https://placehold.co/300x4003" alt="" />
+              <img src="https://placehold.co/300x400" alt="" />
               <figcaption>Lorem ipsum dolor sit.</figcaption>
             </figure>
             <figure>
-              <img src="https://placehold.co/300x4007" alt="" />
-              <figcaption>Lorem ipsum dolor sit.</figcaption>
-            </figure>
-            <figure>
-              <img src="https://placehold.co/300x4002" alt="" />
+              <img src="https://placehold.co/300x400" alt="" />
               <figcaption>Lorem ipsum dolor sit.</figcaption>
             </figure>
             <figcaption>Lorem ipsum dolor sit.</figcaption>
           </div>
 
-          <p>layout custom có caption</p>
+          <!-- layout custom có caption -->
           <div class="layout-image-2">
             <figure>
               <img src="https://placehold.co/476x320" alt="476x320 (3x2)" />
@@ -783,20 +781,21 @@
           </div>
           <div class="layout-image-3-horizontal">
             <figure>
-              <img src="https://placehold.co/300x4007" alt="" />
+              <img src="https://placehold.co/300x400" alt="" />
               <figcaption>Lorem ipsum dolor sit.</figcaption>
             </figure>
             <figure>
-              <img src="https://placehold.co/300x4004" alt="" />
+              <img src="https://placehold.co/300x400" alt="" />
               <figcaption>Lorem ipsum dolor sit.</figcaption>
             </figure>
             <figure>
-              <img src="https://placehold.co/300x4002" alt="" />
+              <img src="https://placehold.co/300x400" alt="" />
               <figcaption>Lorem ipsum dolor sit.</figcaption>
             </figure>
             <figcaption>Lorem ipsum dolor sit.</figcaption>
           </div>
-          <p>layout custom không có caption</p>
+
+          <!-- layout custom không có caption -->
           <div class="layout-image-2">
             <figure>
               <img src="https://placehold.co/476x320" alt="476x320 (3x2)" />
@@ -809,15 +808,15 @@
           </div>
           <div class="layout-image-3-horizontal">
             <figure>
-              <img src="https://placehold.co/300x4007" alt="" />
+              <img src="https://placehold.co/300x400" alt="" />
               <figcaption>Lorem ipsum dolor sit.</figcaption>
             </figure>
             <figure>
-              <img src="https://placehold.co/300x4004" alt="" />
+              <img src="https://placehold.co/300x400" alt="" />
               <figcaption>Lorem ipsum dolor sit.</figcaption>
             </figure>
             <figure>
-              <img src="https://placehold.co/300x4002" alt="" />
+              <img src="https://placehold.co/300x400" alt="" />
               <figcaption>Lorem ipsum dolor sit.</figcaption>
             </figure>
             <figcaption>Lorem ipsum dolor sit.</figcaption>
