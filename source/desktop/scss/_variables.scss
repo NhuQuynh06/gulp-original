@@ -47,22 +47,40 @@ $font-weight-extraBold: 900;
   --black: #000;
 }
 
-:root.dark-theme {}
-
-// Breakpoint for responsive
+// INFO: Breakpoint for responsive
+$sm : 576px;
 $md :768px;
 $lg :1024px;
 $xl: 1280px;
+$xxl: 1700px;
+$grid-breakpoints: (
+  ) !default;
+$grid-breakpoints: map-merge((sm: 576px,
+      md: 768px,
+      lg: 1024px,
+      xl: 1310px,
+      xxl: 1700px,
+    ),
+    $grid-breakpoints
+);
+@import "./mixins/breakpoints";
 
-// 1024px
-@media (min-width: $lg) {
+// 768
+@include media-breakpoint-up(md) {
+  :root {
+    --container: 730px;
+  }
+}
+
+// 1024
+@include media-breakpoint-up(lg) {
   :root {
     --container: 980px;
   }
 }
 
-// 1280px
-@media (min-width: $xl) {
+//1280
+@include media-breakpoint-up(xl) {
   :root {
     --container: 1170px;
   }

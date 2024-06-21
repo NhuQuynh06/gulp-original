@@ -1,0 +1,62 @@
+  .related-topic {
+      border: 1px solid #DDD;
+      background: #FFF;
+      padding: var(--gutter-default);
+      padding-top: 0;
+
+      .title {
+          display: inline-flex;
+          padding: 8px 20px;
+          align-items: flex-start;
+          gap: 10px;
+          background: var(--primary);
+          color: #FFF;
+          font-family: Roboto;
+          font-size: 16px;
+          line-height: 150%;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          text-transform: uppercase;
+          margin-bottom: 0px;
+
+          &:hover {
+              text-decoration: underline;
+          }
+      }
+
+      .box-content {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 20px;
+      }
+
+      .story {
+          &::before {
+              position: absolute;
+              content: "\e971";
+              font-family: "icomoon";
+              left: 0;
+              font-size: 8px;
+              top: -3px;
+              color: var(--primary);
+              font-weight: $font-weight-semibold;
+          }
+
+          &__heading a {
+              color: var(--gray-800);
+              font-family: Roboto;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: 150%;
+              padding-left: 16px;
+              /* 125% */
+          }
+      }
+
+      .box-content {
+          display: grid;
+      }
+  }

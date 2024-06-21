@@ -1,1 +1,23 @@
-  
+  .feature {
+      position: sticky;
+      float: left;
+      margin-left: -100%;
+      left: 0;
+      top: 100px;
+      margin-top: 5px;
+      padding: 6px 0;
+      border-radius: 0px 3px 3px 0px;
+      background: #F7F7F7;
+      display: grid;
+      width: 50px;
+      z-index: 1;
+
+      >* {
+          width: 50px;
+          height: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 10px;
+      }
+  }
