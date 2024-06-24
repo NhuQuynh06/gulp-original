@@ -106,15 +106,6 @@ $xl : 1280px;
         height: 10px;
     }
 
-    p {
-        margin: 0;
-    }
-
-    blockquote {
-        margin-left: 0;
-        margin-right: 0;
-    }
-
     hr:before {
         content: "";
         position: absolute;
@@ -147,7 +138,8 @@ $xl : 1280px;
     }
 
     table {
-        margin: 0 auto;
+        margin-left: auto;
+        margin-right: auto;
         width: 100%;
         border-collapse: collapse;
         display: table;
@@ -245,42 +237,113 @@ $spaceAmounts: (
 // INFO : 7 layout : max-width, full-width, center, left, right, outset-left, outset-right
 // ----------------------------------
 .zce-content-body {
-    display: grid;
-    gap: $gutter-body;
     font-size: 16px;
+
+    >* {
+        margin-bottom: $gutter-body;
+
+        &:first-child {
+            margin-bottom: 0;
+        }
+    }
+
+    // full-width
+    .full-width {
+        // left: 50%;
+        // position: relative;
+        // transform: translateX(-50%);
+        // right: auto;
+        // display: table;
+        // width: 100vw;
+    }
 
     // max-width
     .max-width {
         // position: relative;
         // transform: translateX(-50%);
         // left: 50%;
-        // width: 100vw;
+        // width: calc(100vw - var(--widthScroll));
         // max-width: 1300px;
     }
-
-    // full-width
-    .full-width {}
 
     // center
     .center {}
 
     // left
-    .left {}
+    .align-left {
+        width: 50%;
+        float: left;
+        margin-right: $gutter-body;
+    }
 
     // align="left"
-    [align="left"] {}
+    [align="left"] {
+        width: 50%;
+        float: left;
+        margin-right: $gutter-body;
+    }
 
     // right
-    .right {}
+    .align-right {
+        width: 50%;
+        float: right;
+        margin-left: $gutter-body;
+    }
 
     // align="right"
-    &[align="right"] {}
+    [align="right"] {
+        width: 50%;
+        float: right;
+        margin-left: $gutter-body;
+    }
 
     // outset-left
-    .outset-left {}
+    .outset-left {
+        width: 50%;
+        float: left;
+        margin-right: $gutter-body;
+
+        //1280
+        @include media-breakpoint-up(xl) {
+            margin-left: -25%;
+        }
+    }
 
     // outset-right
-    .outset-right {}
+    .outset-right {
+        width: 50%;
+        float: right;
+        margin-left: $gutter-body;
+
+        //1280
+        @include media-breakpoint-up(xl) {
+            margin-right: -25%;
+        }
+    }
+}
+
+.detail-page {
+    .zce-content-body {
+
+        // outset-left
+        .outset-left {
+
+            //1280
+            @include media-breakpoint-up(xl) {
+                margin-left: 0;
+            }
+        }
+
+        // outset-right
+        .outset-right {
+
+            //1280
+            @include media-breakpoint-up(xl) {
+                margin-right: 0;
+            }
+        }
+    }
+
 }
 
 // other style

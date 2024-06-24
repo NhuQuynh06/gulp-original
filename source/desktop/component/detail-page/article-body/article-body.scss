@@ -31,10 +31,15 @@
 // longform
 .longform-page {
     .article {
-        box-shadow: 0 0 10px 10px #ccc;
-        width: 825px;
-        min-width: 825px;
+        // box-shadow: 0 0 10px 10px #ccc;
+        background: #fff3cd;
         margin-left: auto;
         margin-right: auto;
+
+        //1280
+        @include media-breakpoint-up(xl) {
+            width: 825px;
+            min-width: 825px;
+        }
     }
 }

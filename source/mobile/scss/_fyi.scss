@@ -32,7 +32,7 @@
 
 // class trong sidebar, format khoảng cách giữa các box
 .fyi-position {
-    margin-bottom: $gutter;
+    margin-bottom: var(--gutter);
 
     &+div {
         margin-bottom: var(--gutter);

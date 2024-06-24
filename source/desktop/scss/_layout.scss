@@ -11,7 +11,7 @@
 
     .container {
         >* {
-            margin-bottom: $gutter;
+            margin-bottom: var(--gutter);
 
             &:last-child {
                 margin-bottom: 0;
@@ -42,7 +42,7 @@
         display: none;
 
         >* {
-            margin-bottom: $gutter;
+            margin-bottom: var(--gutter);
 
             &:last-child {
                 margin-bottom: 0;

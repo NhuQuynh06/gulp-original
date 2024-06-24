@@ -2,11 +2,16 @@ blockquote {
     padding-left: 16px;
     color: var(--primary, #CD5600);
     font-family: "PlayfairDisplay";
-    font-size: 22px;
+    font-size: 16px;
     font-weight: 500;
     line-height: 150%;
     padding-top: 50px;
     position: relative;
+
+    //1280
+    @include media-breakpoint-up(xl) {
+        font-size: 22px;
+    }
 
     &::before {
         width: 52px;
@@ -16,6 +21,14 @@ blockquote {
         top: 0;
         left: 0;
         background: url(../img/quote.png) center center/100% no-repeat;
+    }
+
+    >* {
+        margin-bottom: var(--gutter-body);
+
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 
     .author {

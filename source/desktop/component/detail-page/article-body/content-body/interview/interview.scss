@@ -240,7 +240,7 @@
           .item {
               display: grid;
               grid-template-columns: 44px 1fr;
-              gap: $gutter-body;
+              gap: var(--gutter-body);
 
               // @media (min-width: $lg) {
               //     grid-template-columns: 120px 1fr;
@@ -260,7 +260,7 @@
 
           .wrap-content {
               border-radius: 12px;
-              padding: $gutter-body;
+              padding: var(--gutter-body);
 
               >* {
                   margin-bottom: 12px;

@@ -1,16 +1,16 @@
-@import "variables";
+@import "../../desktop/scss/variables";
 @import "./mixins/global";
 
 // ----------------------------------
 // INFO : style for global
 // ----------------------------------
 
-@import "./reboot";
-@import "fonts";
-@import "icons";
-@import "layout";
-@import "fyi";
+@import "../../desktop/scss/reboot";
+@import "../../desktop/scss/fonts";
+@import "../../desktop/scss/icons";
+@import "../../desktop/scss/fyi";
 @import "story";
+@import "layout";
 @import "styles";
 
 
@@ -29,4 +29,4 @@
 // INFO : style for detail-page
 // ----------------------------------
 @import '../../desktop/component/detail-page/article-header/article-header.scss';
-@import '../../desktop/component/detail-page/article-body/article-body.html';
+@import '../../desktop/component/detail-page/article-body/article-body.scss';

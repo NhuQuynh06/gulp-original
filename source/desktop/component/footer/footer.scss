@@ -15,14 +15,9 @@
         }
 
         .swiper {
-            width: 1170px;
+            width: 730px;
             height: 40px;
             margin: 0 auto;
-
-            // 1400
-            @media (min-width: $xl) {
-                max-width: 1170px;
-            }
 
         }
 
