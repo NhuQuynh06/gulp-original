@@ -248,26 +248,29 @@ $spaceAmounts: (
     }
 
     // full-width
-    .full-width {
-        // left: 50%;
-        // position: relative;
-        // transform: translateX(-50%);
-        // right: auto;
-        // display: table;
-        // width: 100vw;
+    >.full-width {
+
+        //1280
+        @include media-breakpoint-up(xl) {
+            position: relative;
+            width: calc(100vw - var(--widthScroll));
+            transform: translateX(-50%);
+            left: 50%;
+        }
     }
 
     // max-width
-    .max-width {
-        // position: relative;
-        // transform: translateX(-50%);
-        // left: 50%;
-        // width: calc(100vw - var(--widthScroll));
-        // max-width: 1300px;
-    }
+    >.max-width {
 
-    // center
-    .center {}
+        //1280
+        @include media-breakpoint-up(xl) {
+            position: relative;
+            transform: translateX(-50%);
+            left: 50%;
+            width: calc(100vw - var(--widthScroll));
+            max-width: 1300px;
+        }
+    }
 
     // left
     .align-left {
@@ -302,11 +305,6 @@ $spaceAmounts: (
         width: 50%;
         float: left;
         margin-right: $gutter-body;
-
-        //1280
-        @include media-breakpoint-up(xl) {
-            margin-left: -25%;
-        }
     }
 
     // outset-right
@@ -314,9 +312,15 @@ $spaceAmounts: (
         width: 50%;
         float: right;
         margin-left: $gutter-body;
+    }
 
-        //1280
-        @include media-breakpoint-up(xl) {
+    //1280, outset-left, outset-right 
+    @include media-breakpoint-up(xl) {
+        >.outset-left {
+            margin-left: -25%;
+        }
+
+        >.outset-right {
             margin-right: -25%;
         }
     }
@@ -326,7 +330,7 @@ $spaceAmounts: (
     .zce-content-body {
 
         // outset-left
-        .outset-left {
+        >.outset-left {
 
             //1280
             @include media-breakpoint-up(xl) {
@@ -335,7 +339,7 @@ $spaceAmounts: (
         }
 
         // outset-right
-        .outset-right {
+        >.outset-right {
 
             //1280
             @include media-breakpoint-up(xl) {
@@ -343,12 +347,15 @@ $spaceAmounts: (
             }
         }
     }
-
 }
 
-// other style
 .article,
 .article__footer {
-    display: grid;
-    gap: $gutter-body;
+    >* {
+        margin-bottom: 16px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
 }
