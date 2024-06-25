@@ -328,6 +328,10 @@ $spaceAmounts: (
 
 .detail-page {
     .zce-content-body {
+        >.max-width,
+        >.full-width {
+            width: 100%;
+        }
 
         // outset-left
         >.outset-left {
