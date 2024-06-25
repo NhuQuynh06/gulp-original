@@ -25,7 +25,8 @@
     grid-template-columns: 1fr;
     gap: var(--gutter);
 
-    @media (min-width: $lg) {
+    // 1024
+    @include media-breakpoint-up(lg) {
         grid-template-columns: 1fr 300px;
     }
 
@@ -49,7 +50,8 @@
             }
         }
 
-        @media (min-width: $lg) {
+        // 1024
+        @include media-breakpoint-up(lg) {
             display: block;
         }
     }

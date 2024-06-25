@@ -179,3 +179,17 @@ a {
         box-shadow: 0 0 12px 0 rgba(0, 0, 0, .4);
     }
 }
+
+// longform
+.longform-page {
+    .article {
+        margin-left: auto;
+        margin-right: auto;
+
+        //1024
+        @include media-breakpoint-up(lg) {
+            width: 825px;
+            min-width: 825px;
+        }
+    }
+}
