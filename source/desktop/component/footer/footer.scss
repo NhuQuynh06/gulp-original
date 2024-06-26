@@ -2,34 +2,11 @@
     border-top: 5px solid var(--primary, #980700);
     padding-bottom: 50px;
 
-    .networks {
-        padding: 20px 0px;
-        background: var(--gray-100, #f8f9fa);
-        margin-bottom: 20px;
-
-        .item {
-            border-radius: 6px;
-            border: 1px solid var(--gray-400, #ced4da);
-            background: var(--white, #fff);
-            padding: 5px 10px;
-        }
-
-        .swiper {
-            width: 730px;
-            height: 40px;
-            margin: 0 auto;
-
-        }
-
-        .swiper-slide {
-            width: auto !important;
-        }
-    }
-
     >.container {
         display: grid;
         grid-template-columns: 300px 1fr;
         gap: 70px;
+        margin-top: 20px;
 
         .content {
             >* {

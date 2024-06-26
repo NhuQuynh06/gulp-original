@@ -216,19 +216,6 @@
             background: var(--white, #fff);
         }
     }
-
-    .social-pin {
-        >* {
-            width: 36px;
-            height: 36px;
-            background: var(--white, #fff);
-
-            &::before {
-                font-size: 22px;
-                color: var(--primary, #980700);
-            }
-        }
-    }
 }
 
 .navigation {
