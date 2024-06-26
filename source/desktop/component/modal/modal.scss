@@ -14,12 +14,15 @@
 .modal-open {
     overflow: hidden;
 
-    @media (min-width: $lg) {
+    // 1024
+    @include media-breakpoint-up(lg) {
         padding-right: 17px;
     }
 
     .site-header .region-menu.fixed {
-        @media (min-width: $lg) {
+
+        // 1024
+        @include media-breakpoint-up(lg) {
             width: calc(100% - 17px);
         }
     }
@@ -40,7 +43,8 @@
     height: fit-content;
 
 
-    @media (min-width: $lg) {
+    // 1024
+    @include media-breakpoint-up(lg) {
         max-width: fit-content;
     }
 
@@ -75,8 +79,8 @@
                 font-size: 20px;
                 font-family: "icomoon";
             }
-            &:hover
-            {
+
+            &:hover {
                 &::before {
                     color: var(--black, #000);
                 }
@@ -129,7 +133,8 @@
         font-size: 16px;
         padding: 20px 50px 30px;
 
-        @media (min-width: $lg) {
+        // 1024
+        @include media-breakpoint-up(lg) {
             max-height: 412px;
             max-width: 500px;
             width: 500px;
