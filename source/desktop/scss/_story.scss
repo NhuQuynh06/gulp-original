@@ -37,10 +37,10 @@
         a {
             display: block;
             transition: 0.5s;
-            color: var(--gray-900, #212529);
-            font-family: $font-family-second;
+            color: var(--gray-900);
+            font-family: var(--font-family-second);
             line-height: 150%;
-            font-weight: $font-weight-medium;
+            font-weight: var(--font-weight-medium);
 
             &:hover {
                 color: var(--primary, #980700) !important;
@@ -51,7 +51,7 @@
 
     &__summary {
         display: flex;
-        font-weight: $font-weight-normal;
+        font-weight: var(--font-weight-normal);
         color: var(--summary);
         font-size: 16px;
 
@@ -59,7 +59,7 @@
             display: block;
             overflow: hidden;
             margin-bottom: 0;
-            font-weight: $font-weight-normal;
+            font-weight: var(--font-weight-normal);
             color: var(--summary);
         }
     }
@@ -69,12 +69,12 @@
         font-size: 12px;
         display: block;
         line-height: 150%;
-        font-weight: $font-weight-normal;
+        font-weight: var(--font-weight-normal);
     }
 
     .title-cate {
         color: var(--primary, #980700);
-        font-weight: $font-weight-semibold;
+        font-weight: var(--font-weight-semibold);
         line-height: 150%;
         text-transform: uppercase;
     }

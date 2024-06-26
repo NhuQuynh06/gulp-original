@@ -1,9 +1,9 @@
 // ----------------------------------
 // INFO : global
 // ----------------------------------
-$gutter-body : 16px !default;
-$lg : 1024px;
-$xl : 1280px;
+:root {
+    --gutter-body: 16px;
+}
 
 // style for mobile
 .zce-mobile .zce-content-body {
@@ -101,8 +101,8 @@ $xl : 1280px;
         background: 0 0;
         border: none;
         text-align: left;
-        margin-top: $gutter-body;
-        margin-bottom: $gutter-body;
+        margin-top: var(--gutter-body);
+        margin-bottom: var(--gutter-body);
         height: 10px;
     }
 
@@ -240,9 +240,9 @@ $spaceAmounts: (
     font-size: 16px;
 
     >* {
-        margin-bottom: $gutter-body;
+        margin-bottom: var(--gutter-body);
 
-        &:first-child {
+        &:last-child {
             margin-bottom: 0;
         }
     }
@@ -276,42 +276,42 @@ $spaceAmounts: (
     .align-left {
         width: 50%;
         float: left;
-        margin-right: $gutter-body;
+        margin-right: var(--gutter-body);
     }
 
     // align="left"
     [align="left"] {
         width: 50%;
         float: left;
-        margin-right: $gutter-body;
+        margin-right: var(--gutter-body);
     }
 
     // right
     .align-right {
         width: 50%;
         float: right;
-        margin-left: $gutter-body;
+        margin-left: var(--gutter-body);
     }
 
     // align="right"
     [align="right"] {
         width: 50%;
         float: right;
-        margin-left: $gutter-body;
+        margin-left: var(--gutter-body);
     }
 
     // outset-left
     .outset-left {
         width: 50%;
         float: left;
-        margin-right: $gutter-body;
+        margin-right: var(--gutter-body);
     }
 
     // outset-right
     .outset-right {
         width: 50%;
         float: right;
-        margin-left: $gutter-body;
+        margin-left: var(--gutter-body);
     }
 
     //1280, outset-left, outset-right 
@@ -328,6 +328,7 @@ $spaceAmounts: (
 
 .detail-page {
     .zce-content-body {
+
         >.max-width,
         >.full-width {
             width: 100%;

@@ -1,3 +1,4 @@
+// INFO : default for article
 // swiper
 if ($(".article").length) {
   var swiper = new Swiper(".article__slider", {

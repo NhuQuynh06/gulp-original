@@ -1,6 +1,6 @@
 @mixin title-decor {
     .box-heading {
-        font-family: $font-family-sans-serif;
+        font-family: var(--font-family-sans-serif);
         color: var(--white);
         position: relative;
         padding: 10px 30px;
@@ -11,7 +11,7 @@
         .title {
             color: var(--white);
             font-size: 18px;
-            font-weight: $font-weight-semibolder;
+            font-weight: var(--font-weight-semibold)er;
             text-transform: uppercase;
 
             &:hover {

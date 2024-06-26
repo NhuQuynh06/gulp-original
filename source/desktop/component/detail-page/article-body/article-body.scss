@@ -27,3 +27,9 @@
 @import './content-body/related-news/related-news.scss';
 @import './content-body/tags/tags.scss';
 @import './content-body/comment/comment.scss';
+
+// INFO : article-body
+.zce-content-body {
+    font-family: var(--font-family-sans-serif);
+    color: var(--body-color);
+}

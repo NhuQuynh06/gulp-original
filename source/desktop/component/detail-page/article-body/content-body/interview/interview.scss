@@ -14,7 +14,7 @@
 
           .desc {
               color: var(--gray-800);
-              font-weight: $font-weight-bold;
+              font-weight: var(--font-weight-bold);
           }
 
           .content {
@@ -96,7 +96,7 @@
                       color: var(--black);
                       font-family: var(--font-family-primary);
                       font-size: 14px;
-                      font-weight: $font-weight-normal;
+                      font-weight: var(--font-weight-normal);
                       line-height: 140%;
                   }
 
@@ -105,7 +105,7 @@
                   }
 
                   .name {
-                      font-weight: $font-weight-semibold;
+                      font-weight: var(--font-weight-semibold);
                       font-size: 18px;
                   }
               }
@@ -225,7 +225,7 @@
                   color: var(--gray-900);
                   font-family: var(--font-family-primary);
                   font-size: 18px;
-                  font-weight: $font-weight-semibold;
+                  font-weight: var(--font-weight-semibold);
                   line-height: 140%;
               }
 
@@ -233,7 +233,7 @@
                   color: var(--gray-700);
                   font-family: var(--font-family-primary);
                   font-size: 14px;
-                  font-weight: $font-weight-normal;
+                  font-weight: var(--font-weight-normal);
               }
           }
 
@@ -264,7 +264,7 @@
 
               >* {
                   margin-bottom: 12px;
-                  font-weight: $font-weight-normal;
+                  font-weight: var(--font-weight-normal);
                   font-size: 19px;
                   line-height: 29px;
                   color: var(--gray-800);
@@ -279,7 +279,7 @@
                       margin-bottom: 15px;
                       font-family: var(--font-family-primary);
                       font-size: 18px;
-                      font-weight: $font-weight-normal;
+                      font-weight: var(--font-weight-normal);
                       line-height: 140%;
 
                       &:last-child {
@@ -290,7 +290,7 @@
           }
 
           .heading {
-              font-weight: $font-weight-bold;
+              font-weight: var(--font-weight-bold);
               font-size: 18px;
               line-height: 27px;
               color: var(--gray-900);
@@ -301,7 +301,7 @@
 
           .title {
               font-style: italic;
-              font-weight: $font-weight-bold;
+              font-weight: var(--font-weight-bold);
               font-size: 18px;
               line-height: 28px;
               color: var(--gray-900);
@@ -331,7 +331,7 @@
                   color: var(--gray-800);
                   font-family: var(--font-family-primary);
                   font-size: 18px;
-                  font-weight: $font-weight-normal;
+                  font-weight: var(--font-weight-normal);
                   line-height: 150%;
                   margin-bottom: 3px;
 
@@ -353,7 +353,7 @@
                       color: var(--gray-300);
                       font-family: var(--font-family-primary);
                       font-size: 14px;
-                      font-weight: $font-weight-normal;
+                      font-weight: var(--font-weight-normal);
                       line-height: 150%;
                   }
               }
@@ -370,7 +370,7 @@
               text-align: center;
               font-family: var(--font-family-primary);
               font-size: 14px;
-              font-weight: $font-weight-semibold;
+              font-weight: var(--font-weight-semibold);
               text-transform: uppercase;
               width: fit-content;
               margin-left: auto;

@@ -18,9 +18,9 @@
     }
 
     .main {
-        // font-family: $font-family-second;
+        // font-family: var(--font-family-second);
         font-size: 56px;
-        font-weight: $font-weight-semibold;
+        font-weight: var(--font-weight-semibold);
         line-height: 140%;
         text-transform: uppercase;
         a{
@@ -38,7 +38,7 @@
 
         >* {
             font-size: 16px;
-            font-weight: $font-weight-normal;
+            font-weight: var(--font-weight-normal);
         }
         .active{
             color: var(--primary, #980700);

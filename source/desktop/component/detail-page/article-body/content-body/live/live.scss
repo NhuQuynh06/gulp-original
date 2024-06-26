@@ -6,7 +6,7 @@
       color: #03596B;
       font-family: var(--font-family-primary);
       font-size: 18px;
-      font-weight: $font-weight-normal;
+      font-weight: var(--font-weight-normal);
       line-height: 160%;
       text-align: center;
   }
@@ -88,7 +88,7 @@
           color: var(--gray-700);
           font-family: var(--font-family-primary);
           font-size: 14px;
-          font-weight: $font-weight-normal;
+          font-weight: var(--font-weight-normal);
           display: block;
           line-height: 160%;
           margin-bottom: 4px;
@@ -98,7 +98,7 @@
           color: var(--gray-900);
           font-family: var(--font-family-second);
           font-size: 24px;
-          font-weight: $font-weight-medium;
+          font-weight: var(--font-weight-medium);
           line-height: 150%;
           margin-bottom: 16px;
       }

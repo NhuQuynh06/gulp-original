@@ -1,16 +1,16 @@
 .article {
     .article__sub-title {
         font-size: 18px;
-        font-weight: $font-weight-bold;
+        font-weight: var(--font-weight-bold);
         line-height: 145%;
         text-transform: uppercase;
     }
 
     .article__title {
         color: var(--gray-900, #212529);
-        font-family: $font-family-second;
+        font-family: var(--font-family-second);
         font-size: 46px;
-        font-weight: $font-weight-medium;
+        font-weight: var(--font-weight-medium);
         line-height: 130%;
     }
 
@@ -21,14 +21,14 @@
         .author {
             color: var(--gray-800, #343A40);
             font-size: 16px;
-            font-weight: $font-weight-normal;
+            font-weight: var(--font-weight-normal);
             line-height: 150%;
         }
 
         .time {
             color: var(--gray-600, #6c757d);
             font-size: 14px;
-            font-weight: $font-weight-normal;
+            font-weight: var(--font-weight-normal);
             line-height: 150%;
             padding-top: 3px;
         }
@@ -52,7 +52,7 @@
     .article__sapo {
         color: var(--gray-800, #343A40);
         font-size: 22px;
-        font-weight: $font-weight-semibold;
+        font-weight: var(--font-weight-semibold);
         line-height: 140%;
     }
 }

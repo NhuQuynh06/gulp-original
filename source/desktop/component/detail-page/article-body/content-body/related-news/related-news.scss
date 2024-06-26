@@ -11,7 +11,7 @@
         align-items: center;
         gap: 10px;
         color: var(--gray-600, #6C757D);
-        font-family: Mulish;
+        
         font-size: 13px;
         font-weight: 500;
         text-transform: uppercase;
@@ -22,7 +22,7 @@
         padding: 0px 10px;
         background: #FFC107;
         color: var(--gray-800, #343A40);
-        font-family: Mulish;
+        
         font-size: 14px;
         font-weight: 500;
         white-space: normal;
@@ -43,7 +43,7 @@
 
         .time {
             color: #888;
-            font-family: Mulish;
+            
             font-size: 13px;
             font-weight: 400;
             line-height: 130%;
@@ -56,7 +56,7 @@
         &__heading a {
             padding-bottom: 16px;
             color: var(--gray-900, #212529);
-            font-family: Mulish;
+            
             font-size: 16px;
             font-weight: 400;
             line-height: 20px;

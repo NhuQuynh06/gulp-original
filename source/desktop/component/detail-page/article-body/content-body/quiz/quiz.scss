@@ -17,7 +17,7 @@
               position: relative;
               color: var(--primary);
               font-size: 18px;
-              font-weight: $font-weight-semibold;
+              font-weight: var(--font-weight-semibold);
               text-transform: uppercase;
               padding: 7px 22px 10px;
               width: fit-content;
@@ -83,7 +83,7 @@
               margin-bottom: 0;
               color: var(--gray-900);
               font-size: 18px;
-              font-weight: $font-weight-normal;
+              font-weight: var(--font-weight-normal);
               line-height: 160%;
           }
 
@@ -153,7 +153,7 @@
           .question {
               color: var(--white);
               font-size: 18px;
-              font-weight: $font-weight-normal;
+              font-weight: var(--font-weight-normal);
               line-height: 160%;
               position: absolute;
               bottom: 20px;
@@ -172,7 +172,7 @@
           background: var(--white);
           color: var(--black);
           font-size: 18px;
-          font-weight: $font-weight-normal;
+          font-weight: var(--font-weight-normal);
           line-height: 160%;
           padding: 16px;
 
@@ -183,7 +183,7 @@
       }
 
       .bold {
-          font-weight: $font-weight-bold;
+          font-weight: var(--font-weight-bold);
       }
   }
 
@@ -208,7 +208,7 @@
           .title {
               color: var(--primary);
               font-size: 18px;
-              font-weight: $font-weight-semibold;
+              font-weight: var(--font-weight-semibold);
               text-transform: uppercase;
               width: fit-content;
           }
@@ -217,7 +217,7 @@
       .heading {
           color: var(--black);
           font-size: 18px;
-          font-weight: $font-weight-normal;
+          font-weight: var(--font-weight-normal);
           text-transform: uppercase;
       }
 
@@ -229,7 +229,7 @@
       .text {
           color: var(--black);
           font-size: 36px;
-          font-weight: $font-weight-semibold;
+          font-weight: var(--font-weight-semibold);
           text-transform: uppercase;
           margin-left: auto;
           line-height: 40px;
@@ -255,7 +255,7 @@
       .title {
           color: var(--gray-800);
           font-size: 16px;
-          font-weight: $font-weight-semibold;
+          font-weight: var(--font-weight-semibold);
           line-height: 140%;
           margin-bottom: 36px;
           display: grid;
@@ -284,7 +284,7 @@
           label {
               color: var(--gray-600);
               font-size: 14px;
-              font-weight: $font-weight-normal;
+              font-weight: var(--font-weight-normal);
               line-height: 150%;
               background: var(--white);
               position: absolute;
@@ -301,7 +301,7 @@
               padding: 0;
               color: var(--black);
               font-size: 18px;
-              font-weight: $font-weight-normal;
+              font-weight: var(--font-weight-normal);
               line-height: 160%;
           }
       }

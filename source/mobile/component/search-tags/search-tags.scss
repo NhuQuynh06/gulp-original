@@ -12,7 +12,7 @@
     }
 
     .keywords {
-        font-weight: $font-weight-normal;
+        font-weight: var(--font-weight-normal);
         font-size: 32px;
         line-height: 47px;
         text-transform: uppercase;
@@ -59,7 +59,7 @@
             font-weight: 500;
 
             &::placeholder {
-                font-weight: $font-weight-normal;
+                font-weight: var(--font-weight-normal);
                 font-size: 22px;
                 line-height: 19px;
                 display: flex;

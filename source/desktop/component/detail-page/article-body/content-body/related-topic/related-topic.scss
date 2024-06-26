@@ -41,7 +41,7 @@
               font-size: 8px;
               top: -3px;
               color: var(--primary);
-              font-weight: $font-weight-semibold;
+              font-weight: var(--font-weight-semibold);
           }
 
           &__heading a {

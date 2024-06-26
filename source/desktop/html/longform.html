@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vietnam+ (VietnamPlus)</title>
+    <!-- Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" />
+    @@include('../component/global/css.html')
+  </head>
+
+  <body class="longform-page">
+    <!-- site header -->
+     @@include('../component/header/header.html')
+
+    <!-- site body -->
+    <div class="site-body">
+      <div class="container">
+        <figure class="full-width">
+          <img src="https://placehold.co/2960x640" alt="" />
+          <figcaption>full-width</figcaption>
+        </figure>
+        <table class="max-width">
+          <tbody>
+            <tr>
+              <td class="img">
+                <img src="https://placehold.co/3000x1200" alt="" />
+              </td>
+            </tr>
+            <tr>
+              <td class="caption">max-width</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="article">
+          @@include('../component/breadcrumb/breadcrumb.html')
+          @@include('../component/detail-page/article-header/article-header.html')
+          @@include('../component/detail-page/article-body/article-body.html')
+        </div>
+      </div>
+    </div>
+
+    <!-- site footer -->
+     @@include('../component/footer/footer.html')
+    <!-- JS Global Compulsory-->
+    @@include('../component/global/js.html')
+  </body>
+</html>

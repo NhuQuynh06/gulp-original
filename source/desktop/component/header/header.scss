@@ -63,7 +63,7 @@
 
             a {
                 color: var(--white, #fff);
-                font-family: $font-family-sans-serif;
+                font-family: var(--font-family-sans-serif);
                 font-size: 15px;
                 font-weight: 700;
                 line-height: 21px;
@@ -141,7 +141,7 @@
             &::placeholder {
                 color: var(--gray-100, #f8f9fa);
                 font-size: 15px;
-                font-weight: $font-weight-semibold;
+                font-weight: var(--font-weight-semibold);
                 line-height: 140%;
             }
         }
@@ -199,9 +199,9 @@
 
     .text {
         color: var(--white, #fff);
-        font-family: $font-family-second;
+        font-family: var(--font-family-second);
         font-size: 38px;
-        font-weight: $font-weight-semibold;
+        font-weight: var(--font-weight-semibold);
         position: relative;
         display: flex;
         align-items: center;
@@ -290,7 +290,7 @@
 
         a {
             font-size: 18px;
-            font-weight: $font-weight-semibold;
+            font-weight: var(--font-weight-semibold);
             display: flex;
             align-items: center;
         }
@@ -337,7 +337,7 @@
             a {
                 color: var(--gray-700, #495057);
                 font-size: 18px;
-                font-weight: $font-weight-normal;
+                font-weight: var(--font-weight-normal);
             }
         }
     }

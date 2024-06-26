@@ -47,7 +47,7 @@
         >* {
             color: var(--title-footer);
             font-size: 18px;
-            font-weight: $font-weight-medium;
+            font-weight: var(--font-weight-medium);
             line-height: 150%;
             font-family: "URW Geometric";
         }
@@ -68,7 +68,7 @@
         a {
             color: var(--title-footer);
             font-size: 18px;
-            font-weight: $font-weight-normal;
+            font-weight: var(--font-weight-normal);
         }
     }
 
@@ -76,7 +76,7 @@
         >* {
             color: var(--title-footer);
             font-size: 14px;
-            font-weight: $font-weight-normal;
+            font-weight: var(--font-weight-normal);
             line-height: 150%;
             padding-bottom: 5px;
 

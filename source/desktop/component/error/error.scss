@@ -8,7 +8,7 @@
     }
 
     .title {
-        font-weight: $font-weight-semibold;
+        font-weight: var(--font-weight-semibold);
         font-size: 30px;
         line-height: 36px;
         color: var(--gray-900, #212529);
@@ -47,7 +47,7 @@
             left: 0;
 
             &::placeholder {
-                font-weight: $font-weight-normal;
+                font-weight: var(--font-weight-normal);
                 font-size: 16px;
                 line-height: 19px;
                 display: flex;
