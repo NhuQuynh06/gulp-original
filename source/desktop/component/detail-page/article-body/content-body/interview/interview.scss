@@ -242,15 +242,9 @@
               grid-template-columns: 44px 1fr;
               gap: var(--gutter-body);
 
-              // @media (min-width: $lg) {
-              //     grid-template-columns: 120px 1fr;
-              // }
               &.answer {
                   grid-template-columns: 1fr 44px;
 
-                  // @media (min-width: $lg) {
-                  //     grid-template-columns: 1fr 120px;
-                  // }
                   .avatar {
                       order: 2;
                       margin-left: auto;

@@ -10,7 +10,7 @@
     }
 
     // 1024
-    @media (min-width: 1024px) {
+    @include media-breakpoint-up(lg) {
         flex-wrap: wrap;
     }
 

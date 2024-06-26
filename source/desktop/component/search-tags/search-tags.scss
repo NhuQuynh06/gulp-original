@@ -17,7 +17,7 @@
         line-height: 47px;
         text-transform: uppercase;
 
-        @media (min-width: 1366px) {
+        @include media-breakpoint-up(xl) {
             font-size: 32px;
         }
 

@@ -140,10 +140,11 @@
             width: 500px;
         }
 
-        // 1280
-        @media (min-width: $xl) {
+        //1280
+        @include media-breakpoint-up(xl) {
             max-height: 550px;
         }
+
 
         >* {
             margin-bottom: 16px;

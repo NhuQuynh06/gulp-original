@@ -14,12 +14,12 @@
 .modal-open {
     overflow: hidden;
 
-    @media (min-width: $lg) {
+    @include media-breakpoint-up(lg) {
         padding-right: 17px;
     }
 
     .site-header .region-menu.fixed {
-        @media (min-width: $lg) {
+        @include media-breakpoint-up(lg) {
             width: calc(100% - 17px);
         }
     }
@@ -40,7 +40,7 @@
     height: fit-content;
 
 
-    @media (min-width: $lg) {
+    @include media-breakpoint-up(lg) {
         max-width: fit-content;
     }
 
@@ -129,14 +129,14 @@
         font-size: 16px;
         padding: 20px 50px 30px;
 
-        @media (min-width: $lg) {
+        @include media-breakpoint-up(lg) {
             max-height: 412px;
             max-width: 500px;
             width: 500px;
         }
 
         // 1280
-        @media (min-width: $xl) {
+        @include media-breakpoint-up(xl) {
             max-height: 550px;
         }
 

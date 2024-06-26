@@ -333,7 +333,7 @@
 .show-menu {
     overflow: hidden;
 
-    @media (min-width: $lg) {
+    @include media-breakpoint-up(lg) {
         padding-right: 17px;
     }
 }
