@@ -2,19 +2,28 @@
 .banner {
     justify-content: center;
     display: grid;
-    gap: var(--gutter) 0;
     margin-bottom: 0 !important;
+
+    &-top {
+        .banner_show:last-child {
+            margin-bottom: 0;
+        }
+    }
 
     img {
         max-width: 100%;
         margin: 0 auto;
     }
 
-    .banner_show{
-        margin-bottom: var(--gutter);
+    .banner_show {
+        width: 100% !important;
+        margin-bottom: $gutter-div;
     }
-    .banner_show:not(:last-child) {
-        margin-bottom: var(--gutter);
+
+    &:last-child {
+        .banner_show:last-child {
+            margin-bottom: 0;
+        }
     }
 }
 
@@ -25,6 +34,7 @@
     flex-direction: initial;
     min-height: 90px;
     gap: 30px;
+
     .banner_show {
         margin-bottom: 0;
     }
@@ -32,9 +42,17 @@
 
 // class trong sidebar, format khoảng cách giữa các box
 .fyi-position {
-    margin-bottom: var(--gutter);
+    margin-bottom: $gutter-div;
 
-    &+div {
-        margin-bottom: var(--gutter);
+    & + div {
+        margin-bottom: $gutter-div;
+    }
+}
+
+.abf-homepage {
+    .banner {
+        margin-bottom: 20px !important;
+        padding-bottom: 20px;
+        border-bottom: 1px solid var(--border-color, #e9ecef);
     }
 }
